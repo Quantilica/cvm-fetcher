@@ -57,8 +57,9 @@ dev = [
     "pytest>=8.0.0",
     # Só para os testes: tests/test_plugin.py exercita o FetcherApp do host e
     # typer.testing. Nunca em [project].dependencies — o plugin consome o que o
-    # host já traz. Piso = 0.7.0, primeira versão com quantilica.cli.sdk.
-    "quantilica-cli>=0.7.0",
+    # host já traz. Piso = 0.8.0, primeira versão com command_convert /
+    # all_group_keys, que este plugin usa. 0.7.0 tem outra API e não serve.
+    "quantilica-cli>=0.8.0",
     "typer>=0.15.0",
     "rich>=13.0.0",
 ]
