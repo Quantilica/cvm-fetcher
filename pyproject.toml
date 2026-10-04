@@ -1,0 +1,75 @@
+[project]
+name = "cvm-fetcher"
+version = "0.1.0"
+description = "Coletor de dados abertos da CVM (Comissão de Valores Mobiliários)"
+readme = "README.md"
+authors = [
+    { name = "Komesu, D.K.", email = "daniel@dkko.me" },
+]
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.12"
+keywords = [
+    "cvm",
+    "mercado-capitais",
+    "fundos-investimento",
+    "companhias-abertas",
+    "brazil",
+    "open-data",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Typing :: Typed",
+]
+dependencies = [
+    "quantilica-core>=0.4.0",
+]
+
+[project.optional-dependencies]
+analysis = [
+    "quantilica-analytics>=0.3.0",
+    "polars>=1.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/Quantilica/cvm-fetcher"
+Repository = "https://github.com/Quantilica/cvm-fetcher"
+Issues = "https://github.com/Quantilica/cvm-fetcher/issues"
+
+[project.scripts]
+cvm-fetcher = "cvm_fetcher.cli:main"
+
+[project.entry-points."quantilica.fetchers"]
+cvm = "cvm_fetcher.plugin:app"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.9.0",
+    "pytest>=8.0.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = ["-p", "no:cacheprovider"]
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/cvm_fetcher"]
+
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
