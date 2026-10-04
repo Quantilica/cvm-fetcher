@@ -7,6 +7,12 @@ e este projeto adere ao [Semantic Versioning](https://semver.org/lang/pt-BR/).
 
 ## [Não lançado]
 
+## [0.1.0] - 2026-10-04
+
+Primeira release do `cvm-fetcher`. Catálogo determinístico sobre o espelho
+`https://dados.cvm.gov.br/dados/`, CLI dupla (standalone + plugin do
+`quantilica-cli`) e conversão para Parquet.
+
 ### Adicionado
 - Catálogo modular de 5 macro-domínios da CVM: `cadastros`, `cias`, `fundos`,
   `estruturados` e `mercado`, com resolução por grupo, alias e macro-alias.
