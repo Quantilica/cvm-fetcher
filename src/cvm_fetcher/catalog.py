@@ -7,6 +7,8 @@ Agrega os 5 macro-domínios canônicos (``cadastros``, ``cias``, ``fundos``,
   :func:`list_datasets`).
 - GROUP_ALIASES: macro-alias → lista de grupos canônicos (ex. ``fundos`` →
   todos os grupos de fundos de investimento).
+- :func:`list_canonical_datasets`: mesmo catálogo sem expansão de alias,
+  para hooks que já receberam o id canônico.
 """
 
 from __future__ import annotations
@@ -27,6 +29,7 @@ __all__ = [
     "expand_group",
     "resolve_group",
     "list_datasets",
+    "list_canonical_datasets",
 ]
 
 # Grupos canônicos agregados por ordem de macro-domínio.
@@ -137,6 +140,11 @@ def _list_group_datasets(group: str) -> list[DatasetEntry]:
 def list_datasets(group: str | None = None) -> list[DatasetEntry]:
     """Listar todas as entradas do catálogo, opcionalmente filtradas.
 
+    Expande aliases e macro-aliases: use apenas para consumo por nome
+    humano (``sync ofertas``, relatórios). Para um id já resolvido, use
+    :func:`list_canonical_datasets` — expandir aqui duplicaria entradas
+    quando o nome for simultaneamente grupo canônico e macro-alias.
+
     Args:
         group: Grupo, alias ou macro-alias. None lista todos.
 
@@ -152,3 +160,25 @@ def list_datasets(group: str | None = None) -> list[DatasetEntry]:
     if not canon:
         raise ValueError(f"Unknown group: {group!r}")
     return [entry for gid in canon for entry in _list_group_datasets(gid)]
+
+
+def list_canonical_datasets(group: str) -> list[DatasetEntry]:
+    """Listar as entradas de um único grupo canônico, sem expandir aliases.
+
+    Ponto de entrada para consumidores que já resolveram o nome para um id
+    canônico (o ``FetcherApp`` resolve alias → grupos antes de chamar o hook
+    de catálogo). Não aceita alias nem macro-alias, garantindo que um id por
+    grupo produza exatamente as suas entradas.
+
+    Args:
+        group: Id canônico (ex.: ``"ofertas"``, ``"cia-dfp"``).
+
+    Returns:
+        list[DatasetEntry]: Entradas do grupo.
+
+    Raises:
+        ValueError: Se ``group`` não for um id canônico.
+    """
+    if group not in GROUPS:
+        raise ValueError(f"Unknown group: {group!r}")
+    return _list_group_datasets(group)

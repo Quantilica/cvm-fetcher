@@ -26,6 +26,7 @@ from cvm_fetcher.catalog import (
     GROUPS,
     MACRO_ALIASES,
     expand_group,
+    list_canonical_datasets,
     list_datasets,
     resolve_group,
 )
@@ -125,6 +126,77 @@ def test_list_datasets_all_and_filtered() -> None:
     assert all(e.group == "fi-inf-diario" for e in diarios)
     with pytest.raises(ValueError, match="Unknown group"):
         list_datasets("grupo-inexistente")
+
+
+def test_list_canonical_datasets_nao_expande_alias() -> None:
+    """list_canonical_datasets exige id canônico e não expande macro-alias."""
+    total_by_modules = sum(
+        len(mod.list_datasets(gid)) for mod in _DOMAIN_MODULES for gid in mod.GROUPS
+    )
+    for gid in ALL_GROUP_KEYS:
+        canonical = list_canonical_datasets(gid)
+        assert canonical, f"Grupo canônico sem entradas: {gid}"
+        assert all(entry.group == gid for entry in canonical)
+    assert sum(len(list_canonical_datasets(gid)) for gid in ALL_GROUP_KEYS) == (
+        total_by_modules
+    )
+    # "ofertas" é simultaneamente grupo canônico e macro-alias: as duas
+    # leituras são legítimas e deliberadamente diferentes.
+    assert expand_group("ofertas") == ["ofertas", "securit-cra", "securit-cri"]
+    assert len(list_datasets("ofertas")) > len(list_canonical_datasets("ofertas"))
+    # Aliases (simples ou macro) não são ids canônicos.
+    for alias in ("cadastros", "oferta", "grupo-inexistente"):
+        with pytest.raises(ValueError, match="Unknown group"):
+            list_canonical_datasets(alias)
+
+
+def test_fip_trimestral_encerrado_em_2023() -> None:
+    """Série trimestral de FIP termina em 2023; a quadrimestral cobre 2024+."""
+    fip = list_datasets("fip-inf")
+    trim = sorted(e.year for e in fip if e.id == "inf_trimestral_fip")
+    quadrim = sorted(e.year for e in fip if e.id == "inf_quadrimestral_fip")
+    assert trim[-1] == 2023
+    assert quadrim[0] == 2024
+    # Contíguas e sem sobreposição entre as duas séries.
+    assert trim == list(range(trim[0], 2024))
+    assert quadrim == list(range(2024, quadrim[-1] + 1))
+    assert not [year for year in trim if year >= 2024]
+
+
+def test_monthly_meses_apenas_no_ano_de_estreia() -> None:
+    """``months`` corta o calendário só na estreia; anos seguintes são completos."""
+    custom = monthly_datasets(
+        "fiagro-inf-mensal",
+        slug="inf_mensal_fiagro",
+        path_pattern=(
+            "FIAGRO/DOC/INF_MENSAL/DADOS/inf_mensal_fiagro_{year}{month:02d}.zip"
+        ),
+        start_year=2025,
+        end_year=2026,
+        months=tuple(range(5, 13)),
+    )
+    debut = sorted(e.month for e in custom if e.year == 2025)
+    assert debut == list(range(5, 13))
+    following = sorted(e.month for e in custom if e.year == 2026)
+    # Janeiro do ano seguinte não pode faltar (o mês de estreia é do recorte).
+    assert following[:4] == [1, 2, 3, 4]
+    filenames = {e.url.rsplit("/", 1)[-1] for e in custom}
+    assert "inf_mensal_fiagro_202601.zip" in filenames
+    # Jan-ab do ano de estreia seguem fora do catálogo.
+    fora_da_estreia = {
+        f"inf_mensal_fiagro_2025{month:02d}.zip" for month in range(1, 5)
+    }
+    assert not filenames & fora_da_estreia
+
+
+@pytest.mark.parametrize("group", ["fiagro-inf-mensal", "fidc-inf-mensal"])
+def test_serie_mensal_completa_apos_estreia(group: str) -> None:
+    """Grupos mensais do catálogo cobrem janeiro em todos os anos pós-estreia."""
+    entries = list_datasets(group)
+    debut = min(e.year for e in entries)
+    for year in range(debut + 1, max(e.year for e in entries) + 1):
+        months = sorted(e.month for e in entries if e.year == year)
+        assert months and months[0] == 1, f"{group}: {year} sem janeiro"
 
 
 def test_entry_schema_sdk() -> None:

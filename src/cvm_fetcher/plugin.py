@@ -10,8 +10,7 @@ from typing import Any
 from quantilica.cli.sdk import FetcherApp, make_resolve_groups
 
 from .catalog import GROUP_ALIASES as CATALOG_GROUP_ALIASES
-from .catalog import GROUPS, MACRO_ALIASES
-from .catalog import list_datasets as catalog_list_datasets
+from .catalog import GROUPS, MACRO_ALIASES, list_canonical_datasets
 from .contracts import DatasetEntry
 from .storage import DEFAULT_OUTPUT, DataRepository
 
@@ -27,13 +26,17 @@ resolve_groups = make_resolve_groups(
 def sdk_list_datasets(group: str) -> list[dict[str, Any]]:
     """Hook de catálogo exigido pelo ``FetcherApp``.
 
+    Recebe sempre um id canônico (o ``FetcherApp`` resolve alias → grupos),
+    então consulta o catálogo sem expansão de macro-alias — expandir aqui
+    duplicaria entradas de grupos que também são macro (``ofertas``).
+
     Args:
         group: Grupo canônico (id já resolvido pelo SDK).
 
     Returns:
         list[dict[str, Any]]: Entradas no schema canônico do SDK.
     """
-    entries: list[DatasetEntry] = catalog_list_datasets(group)
+    entries: list[DatasetEntry] = list_canonical_datasets(group)
     return [entry.to_dict() for entry in entries]
 
 

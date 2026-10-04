@@ -144,7 +144,10 @@ def monthly_datasets(
             do espelho.
         start_year: Primeiro ano coberto (padrão: ano atual - janela).
         end_year: Último ano coberto (padrão: ano atual).
-        months: Meses a gerar (1-12). Se None, todos os meses.
+        months: Meses a gerar **no ano de estreia** (``start_year``), 1-12.
+            A partir do ano seguinte a série cobre o calendário completo —
+            use-o para séries que nasceram no meio de um ano (ex.: FIAGRO em
+            2025-05). Se None, todos os meses em todos os anos.
         description: Descrição opcional aplicada às entradas.
         **extra: Metadados extras encaminhados às entradas.
 
@@ -161,7 +164,8 @@ def monthly_datasets(
         msg = f"Janela mensal inválida: {start} > {end}"
         raise ValueError(msg)
 
-    all_months = tuple(range(1, 13)) if months is None else tuple(months)
+    full_year = tuple(range(1, 13))
+    debut_months = full_year if months is None else tuple(months)
 
     entries = []
     cursor = dt.date(start, 1, 1)
@@ -169,11 +173,14 @@ def monthly_datasets(
     while cursor <= last:
         year = cursor.year
         month = cursor.month
+        # ``months`` descreve a estreia da série, não uma estação: só o ano
+        # inicial é incompleto. Os anos seguintes geram os 12 meses.
+        allowed = debut_months if year == start else full_year
         if year == today.year:
-            last_month = min(max(all_months), today.month)
+            last_month = min(max(allowed), today.month)
             if month > last_month:
                 break
-        if month not in all_months:
+        if month not in allowed:
             cursor = dt.date(year + (month // 12), (month % 12) + 1, 1)
             continue
         if "{year}" in path_pattern:

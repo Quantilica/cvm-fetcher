@@ -17,6 +17,10 @@ _FII_START = 2016
 _FIDC_START = (2025, 1)
 _FIAGRO_START = (2025, 5)
 _FIP_TRIM_START = 2010
+# A série trimestral foi descontinuada ao fim de 2023: a partir de 2024 a CVM
+# publica apenas a quadrimestral (``_FIP_QUADRIM``). Estender a trimestral até
+# o ano corrente geraria URLs com HTTP 404 permanente.
+_FIP_TRIM_END = 2023
 _FIP_QUADRIM_START = 2024
 
 _FII_INF_MENSAL: list[DatasetEntry] = annual_datasets(
@@ -76,6 +80,7 @@ _FIP_TRIM: list[DatasetEntry] = annual_datasets(
     slug="inf_trimestral_fip",
     path_pattern="FIP/DOC/INF_TRIMESTRAL/DADOS/inf_trimestral_fip_{year}.csv",
     start_year=_FIP_TRIM_START,
+    end_year=_FIP_TRIM_END,
     description="Informe trimestral dos fundos de participação (CSV).",
 )
 

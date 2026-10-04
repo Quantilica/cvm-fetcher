@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import re
+from collections import Counter
 from pathlib import Path
 from typing import Any, ClassVar
 
@@ -10,7 +12,8 @@ from quantilica.cli.sdk import FetcherApp
 from typer.testing import CliRunner
 
 from cvm_fetcher import plugin as plugin_module
-from cvm_fetcher.plugin import app, fetcher, resolve_groups
+from cvm_fetcher.catalog import list_datasets
+from cvm_fetcher.plugin import app, fetcher, resolve_groups, sdk_list_datasets
 
 runner = CliRunner(env={"COLUMNS": "200"})
 
@@ -98,6 +101,32 @@ def test_sync_dry_run_multi_grupos(tmp_path: Path, fake_http: Any) -> None:
     assert _FakeSdkHttp.downloads == []
     for g in ("cia-dfp", "cia-itr", "ofertas"):
         assert g in result.output
+
+
+def test_plano_sync_total_sem_duplicatas() -> None:
+    """Hook do SDK devolve só o grupo pedido (regressão do macro 'ofertas')."""
+    plan = [e for gid in fetcher.all_group_keys for e in sdk_list_datasets(gid)]
+    keys = [
+        (f"{e['group']}:{e['id']}", e.get("year") or 0, e.get("month") or 0)
+        for e in plan
+    ]
+    duplicated = sorted(key for key, count in Counter(keys).items() if count > 1)
+    assert not duplicated, f"Entradas duplicadas no plano do sync: {duplicated}"
+    # O plano total equivale ao catálogo canônico (mesma soma dos módulos).
+    assert len(plan) == len(list_datasets(None))
+    assert len(sdk_list_datasets("ofertas")) == len(list_datasets("ofertas")) - len(
+        list_datasets("securit-cra")
+    ) - len(list_datasets("securit-cri"))
+
+
+def test_sync_dry_run_total_une_entries(tmp_path: Path, fake_http: Any) -> None:
+    """sync --dry-run sem grupos planeja o catálogo canônico inteiro."""
+    result = runner.invoke(app, ["sync", "-o", str(tmp_path), "--dry-run"])
+    assert result.exit_code == 0
+    assert _FakeSdkHttp.downloads == []
+    expected = len(list_datasets(None))
+    flat = re.sub(r"\s+", " ", result.output)
+    assert f"{expected} arquivo(s) listado(s)." in flat
 
 
 def test_sync_download_single_group(tmp_path: Path, fake_http: Any) -> None:
