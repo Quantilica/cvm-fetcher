@@ -7,6 +7,11 @@ e este projeto adere ao [Semantic Versioning](https://semver.org/lang/pt-BR/).
 
 ## [Não lançado]
 
+### Alterado
+
+- `cli.py` protege o import do plugin; sem o host a CLI standalone sai com
+  código 1 e orienta `quantilica install <fonte>`.
+
 ## [0.1.0] - 2026-10-04
 
 Primeira release do `cvm-fetcher`. Catálogo determinístico sobre o espelho
