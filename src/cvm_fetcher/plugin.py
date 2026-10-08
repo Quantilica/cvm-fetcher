@@ -138,6 +138,8 @@ def cmd_convert(input: Path, output: Path) -> None:
         input: Diretório de origem com arquivos brutos.
         output: Diretório de destino para os Parquet.
     """
+    # O ImportError de polars/analysis não é tratado aqui: o SDK já o
+    # converte em saída amigável (sdk.py, ``command_convert``).
     converted = _convert_impl(input, output)
     from quantilica.cli.ui import get_console
 

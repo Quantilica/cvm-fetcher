@@ -7,6 +7,12 @@ e este projeto adere ao [Semantic Versioning](https://semver.org/lang/pt-BR/).
 
 ## [Não lançado]
 
+### Corrigido
+- `.gitignore`: cabeçalho do bloco de IA de volta ao canônico `# Claude`.
+- `plugin.py` (`cmd_convert`): comentário documentando que o `ImportError`
+  de polars/analysis é tratado pelo SDK (`command_convert`); sem mudança de
+  comportamento.
+
 ### Alterado
 
 - `cli.py` protege o import do plugin; sem o host a CLI standalone sai com

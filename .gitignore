@@ -34,7 +34,7 @@ Thumbs.db
 .env
 .env.local
 
-# Claude / Gemini / AI
+# Claude
 .claude/
 
 # Específico do repo
