@@ -30,10 +30,15 @@ class _FakeSdkHttp:
         self.attempts = kwargs.get("attempts", 1)
         self.retry_base_delay = kwargs.get("retry_base_delay", 0.0)
         self.verify = kwargs.get("verify", True)
+        self.transport = kwargs.get("transport", None)
         self.limits = kwargs.get("limits", None)
+        self.emulate_browser = kwargs.get("emulate_browser", False)
 
     def __enter__(self) -> _FakeSdkHttp:
         return self
+
+    def __exit__(self, *exc: Any) -> None:
+        return None
 
     def close(self) -> None:
         return None
