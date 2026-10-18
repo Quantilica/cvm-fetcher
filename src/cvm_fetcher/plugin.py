@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import datetime as dt
-import tempfile
 from pathlib import Path
 from typing import Any
 
@@ -83,51 +82,9 @@ def _convert_impl(input_dir: Path, output_dir: Path) -> int:
     Raises:
         ImportError: Se o extra ``analysis`` não estiver instalado.
     """
-    import polars as pl
-    from quantilica.core.files import decompress_archive
+    from .wrangling import convert_all
 
-    converted = 0
-    input_path = Path(input_dir)
-    output_path = Path(output_dir)
-    output_path.mkdir(parents=True, exist_ok=True)
-
-    def _read_smart(path: Path) -> pl.DataFrame:
-        """Ler CSV da CVM com separador ``;`` e fallback de encoding."""
-        try:
-            return pl.read_csv(path, separator=";", encoding="utf-8")
-        except Exception:
-            return pl.read_csv(path, separator=";", encoding="latin-1")
-
-    def _write_parquet(df: pl.DataFrame, target: Path) -> None:
-        target.parent.mkdir(parents=True, exist_ok=True)
-        df.write_parquet(target)
-
-    for csv_path in sorted(input_path.rglob("*.csv")):
-        rel = csv_path.relative_to(input_path)
-        df = _read_smart(csv_path)
-        _write_parquet(df, output_path / rel.parent / f"{csv_path.stem}.parquet")
-        converted += 1
-
-    for zip_path in sorted(input_path.rglob("*.zip")):
-        rel = zip_path.relative_to(input_path)
-        with tempfile.TemporaryDirectory() as tmp:
-            extracted = decompress_archive(zip_path, Path(tmp))
-            members = (
-                [extracted]
-                if extracted.is_file()
-                else sorted(Path(extracted).glob("*"))
-            )
-            for member in members:
-                if member.is_file():
-                    target = (
-                        output_path
-                        / rel.parent
-                        / f"{zip_path.stem}__{member.stem}.parquet"
-                    )
-                    df = _read_smart(member)
-                    _write_parquet(df, target)
-                    converted += 1
-    return converted
+    return convert_all(input_dir, output_dir)
 
 
 @fetcher.command_convert
