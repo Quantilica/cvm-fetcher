@@ -13,20 +13,20 @@ from cvm_fetcher.storage import DataRepository, build_stamped_filename, stamp_fi
 _STAMP = dt.date(2026, 10, 3)
 
 
-def test_static_path() -> None:
+def test_static_path(tmp_path: Path) -> None:
     """Entradas estáticas recebem ``{slug}@{stamp}.{ext}``."""
     entry = next(e for e in list_datasets("cia-cad") if e.id == "cad_cia_aberta")
-    repo = DataRepository("/tmp/cvm-test")
+    repo = DataRepository(tmp_path)
     path = repo.path_for_entry(entry.to_dict(), last_modified=_STAMP)
-    assert path == Path("/tmp/cvm-test/cia-cad/cad_cia_aberta@20261003.csv")
+    assert path == tmp_path / "cia-cad/cad_cia_aberta@20261003.csv"
 
 
-def test_static_path_without_last_modified() -> None:
+def test_static_path_without_last_modified(tmp_path: Path) -> None:
     """Sem carimbo, o nome fica ``{slug}.{ext}``."""
     entry = next(e for e in list_datasets("ofertas") if e.id == "oferta_distribuicao")
-    repo = DataRepository("/tmp/cvm-test")
+    repo = DataRepository(tmp_path)
     path = repo.path_for_entry(entry.to_dict(), last_modified=None)
-    assert path == Path("/tmp/cvm-test/ofertas/oferta_distribuicao.zip")
+    assert path == tmp_path / "ofertas/oferta_distribuicao.zip"
 
 
 def test_annual_path(tmp_path: Path) -> None:
@@ -89,5 +89,5 @@ def test_invalid_root_raises(tmp_path: Path) -> None:
     """Repositório recusa raiz inválida (arquivo não diretório)."""
     file_root = tmp_path / "arquivo.txt"
     file_root.write_text("x")
-    with pytest.raises(Exception, match="File exists"):
+    with pytest.raises((FileExistsError, NotADirectoryError, OSError)):
         DataRepository(file_root)
