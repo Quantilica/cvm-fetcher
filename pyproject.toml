@@ -1,6 +1,6 @@
 [project]
 name = "cvm-fetcher"
-version = "0.1.0"
+version = "0.1.1"
 description = "Coletor de dados abertos da CVM (Comissão de Valores Mobiliários)"
 readme = "README.md"
 authors = [

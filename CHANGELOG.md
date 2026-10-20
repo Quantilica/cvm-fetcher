@@ -5,9 +5,11 @@ Todas as mudanças notáveis deste projeto serão documentadas neste arquivo.
 O formato segue [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/),
 e este projeto adere ao [Semantic Versioning](https://semver.org/lang/pt-BR/).
 
-## [Não lançado]
+## [0.1.1] - 2026-10-20
 
 ### Corrigido
+- Testes com fake HTTP isolado (`transport`, `emulate_browser` e `__exit__`).
+- Compatibilidade de testes de storage em ambiente Windows.
 - `.gitignore`: cabeçalho do bloco de IA de volta ao canônico `# Claude`.
 - `plugin.py` (`cmd_convert`): comentário documentando que o `ImportError`
   de polars/analysis é tratado pelo SDK (`command_convert`); sem mudança de
@@ -16,7 +18,9 @@ e este projeto adere ao [Semantic Versioning](https://semver.org/lang/pt-BR/).
 ### Alterado
 
 - `cli.py` protege o import do plugin; sem o host a CLI standalone sai com
-  código 1 e orienta `quantilica install <fonte>`.
+  código 1 e orienta `quantilica install cvm`.
+- `analysis`: extração de `reader` e `wrangling` do plugin, com metadados canônicos de proveniência Parquet.
+- Dependências atualizadas: `quantilica-core>=0.12.0` e `quantilica-analytics>=0.4.0`.
 
 ## [0.1.0] - 2026-10-04
 
@@ -39,6 +43,8 @@ Primeira release do `cvm-fetcher`. Catálogo determinístico sobre o espelho
   SHA-256 (`DownloadManifest` de `quantilica-core`).
 
 ### Corrigido
+- Testes com fake HTTP isolado (`transport`, `emulate_browser` e `__exit__`).
+- Compatibilidade de testes de storage em ambiente Windows.
 - `sync` total não planeja mais 33 arquivos duplicados: o hook do SDK consultava
   o catálogo reexpandindo o macro-alias `ofertas` (que também é grupo canônico),
   duplicando `securit-cra` (2×) e `securit-cri` (2×).
