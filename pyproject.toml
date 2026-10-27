@@ -1,6 +1,6 @@
 [project]
 name = "cvm-fetcher"
-version = "0.1.1"
+version = "0.2.0"
 description = "Coletor de dados abertos da CVM (Comissão de Valores Mobiliários)"
 readme = "README.md"
 authors = [
@@ -36,7 +36,7 @@ dependencies = [
 
 [project.optional-dependencies]
 analysis = [
-    "quantilica-analytics>=0.4.0",
+    "quantilica-analytics>=0.8.0",
     "polars>=1.0.0",
 ]
 
@@ -50,6 +50,9 @@ cvm-fetcher = "cvm_fetcher.cli:main"
 
 [project.entry-points."quantilica.fetchers"]
 cvm = "cvm_fetcher.plugin:app"
+
+[project.entry-points."quantilica.lake"]
+cvm = "cvm_fetcher.lake:converter"
 
 [dependency-groups]
 dev = [

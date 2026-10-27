@@ -72,34 +72,29 @@ def _convert_impl(input_dir: Path, output_dir: Path) -> int:
     """Converter CSVs (diretos ou dentro de ZIPs) para Parquet.
 
     Args:
-        input_dir: Diretório de origem com dados brutos (``--output`` do
-            ``sync``).
+        input_dir: Diretório de origem com dados brutos.
         output_dir: Diretório de destino dos Parquet.
 
     Returns:
         int: Quantidade de Parquet gerados.
-
-    Raises:
-        ImportError: Se o extra ``analysis`` não estiver instalado.
     """
     from .wrangling import convert_all
 
     return convert_all(input_dir, output_dir)
 
 
-@fetcher.command_convert
-def cmd_convert(input: Path, output: Path) -> None:
-    """Corpo de conversão chamado pelo ``convert`` gerado pelo SDK.
+def convert(
+    input_dir: Path,
+    lake_dir: Path,
+    *,
+    dataset: list[str] | None = None,
+    force: bool = False,
+) -> Any:
+    """Converte arquivos brutos da CVM para o lake Hive (Parquet)."""
+    from cvm_fetcher import lake
 
-    Args:
-        input: Diretório de origem com arquivos brutos.
-        output: Diretório de destino para os Parquet.
-    """
-    # O ImportError de polars/analysis não é tratado aqui: o SDK já o
-    # converte em saída amigável (sdk.py, ``command_convert``).
-    converted = _convert_impl(input, output)
-    from quantilica.cli.ui import get_console
+    return lake.converter.convert(input_dir, lake_dir, datasets=dataset, force=force)
 
-    get_console().print(
-        f"[bold]{converted}[/bold] Parquet(s) gerado(s) em [dim]{output}[/dim]."
-    )
+
+fetcher.command_convert(convert)
+fetcher.command_pipeline(convert)
