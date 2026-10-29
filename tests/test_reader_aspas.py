@@ -30,3 +30,14 @@ def test_csv_comum_continua_igual(tmp_path: Path) -> None:
     src = tmp_path / "x.csv"
     src.write_text('a;b\n1;"x;y"\n', encoding="utf-8")
     assert read_csv_smart(src)["b"].to_list() == ["x;y"]
+
+
+def test_tipo_inferido_do_arquivo_inteiro(tmp_path: Path) -> None:
+    # Texto numa coluna numérica só depois das primeiras linhas (CD_SELIC da CDA).
+    rows = ["CNPJ;CD_SELIC"] + [f"{i};{100 + i}" for i in range(500)] + ["999;PDD"]
+    csv = tmp_path / "cda.csv"
+    csv.write_text("\n".join(rows) + "\n", encoding="latin-1")
+    df = read_csv_smart(csv)
+    assert df.height == 501
+    assert df["CD_SELIC"].dtype == pl.String
+    assert df["CD_SELIC"][-1] == "PDD"

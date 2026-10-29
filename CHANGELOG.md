@@ -11,6 +11,8 @@ e este projeto adere ao [Semantic Versioning](https://semver.org/lang/pt-BR/).
 - `read_csv_smart` relê sem tratar aspas os CSVs em que elas fazem parte do texto
   ("Spin-off" da Contax, no Assunto do IPE); antes, cerca de 250 arquivos falhavam com
   "could not parse" ou "CSV malformed".
+- `read_csv_smart` infere o esquema a partir do arquivo inteiro: na CDA de fundos,
+  `CD_SELIC` é numérico nas primeiras linhas e traz texto ("PDD") mais adiante.
 
 ## [0.2.0] - 2026-10-27
 

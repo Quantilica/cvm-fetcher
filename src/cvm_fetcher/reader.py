@@ -26,13 +26,19 @@ def read_csv_smart(path: Path) -> pl.DataFrame:
         pl.DataFrame: Conteúdo do CSV (tenta UTF-8, depois latin-1).
     """
     errors = []
+    # Esquema inferido do arquivo inteiro: na CDA, ``CD_SELIC`` é numérico nas
+    # primeiras linhas e traz texto ("PDD") mais adiante.
     # A CVM não delimita campos com aspas: elas fazem parte do texto ("Spin-off" da
     # Contax, no Assunto do IPE). Lidas como delimitador, desalinham as colunas.
     for quote in ('"', None):
         for encoding in ("utf-8", "latin-1"):
             try:
                 return pl.read_csv(
-                    path, separator=";", encoding=encoding, quote_char=quote
+                    path,
+                    separator=";",
+                    encoding=encoding,
+                    quote_char=quote,
+                    infer_schema_length=None,
                 )
             except Exception as exc:  # noqa: BLE001 - próxima combinação
                 errors.append(exc)
