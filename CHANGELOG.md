@@ -10,6 +10,7 @@ e este projeto adere ao [Semantic Versioning](https://semver.org/lang/pt-BR/).
 ### Corrigido
 - A conversão para o lake pula o arquivo bruto que já está lá: com vários arquivos do mesmo dado guardados em datas diferentes (`cad_adm_cart@20261027.zip`, `@20261028.zip`...), só o mais recente é convertido e os anteriores contam como pulados. Antes, cada um sobrescrevia o anterior no lake e a execução seguinte reconvertia todos os cadastros e parte das séries mensais.
 - ZIPs com vários CSVs (os cadastros, a CDA e outros) agora levam todos os CSVs ao lake; antes só o primeiro era convertido e os demais eram ignorados em silêncio.
+- `read_csv_smart` lê CSVs com linhas de campos a mais, em que um `;` digitado dentro de um texto livre, sem aspas, criava uma coluna extra e a conversão falhava com "found more fields than defined in 'Schema'" (caso do `securit-cra`: o campo `CNPJ` do cedente/devedor de CRA traz texto como `Ata da Assembleia (27052026, 04052026); Sumário da`). O `;` volta para o campo a que pertence, nenhuma linha é descartada e um aviso informa a quantidade e os números das linhas reparadas.
 - Dependência `quantilica-core` atualizada para `>=0.15.0`, que traz a escolha da versão vigente do arquivo bruto.
 
 ## [0.2.1] - 2026-10-29
