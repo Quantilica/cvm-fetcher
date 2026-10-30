@@ -137,3 +137,86 @@ def test_cli_convert(tmp_path: Path) -> None:
     )
     assert result.exit_code == 0, result.output
     assert (lake_dir / SOURCE_ID / "cia-cad").exists()
+
+
+def _zip(path: Path, members: dict[str, str]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with zipfile.ZipFile(path, "w") as z:
+        for name, text in members.items():
+            z.writestr(name, text)
+
+
+def test_cadastro_com_varios_snapshots_converte_so_o_mais_novo(
+    tmp_path: Path,
+) -> None:
+    """Cadastro (ZIP com vários CSVs, sem partição) guardado em três datas."""
+    raw = tmp_path / "raw" / "adm-cart-cad"
+    for day, nome in (("27", "ANTIGO"), ("28", "MEIO"), ("29", "NOVO")):
+        _zip(
+            raw / f"cad_adm_cart@202610{day}.zip",
+            {
+                "cad_adm_cart_pf.csv": f"CPF;NOME\n1;{nome}\n",
+                "cad_adm_cart_pj.csv": f"CNPJ;NOME\n2;{nome}\n",
+            },
+        )
+    lake = tmp_path / "lake"
+
+    res1 = converter.convert(tmp_path / "raw", lake)
+    assert not res1.errors, res1.errors
+    assert res1.converted == 2  # dois CSVs do snapshot vigente
+    assert res1.skipped == 2  # dois snapshots superados
+
+    res2 = converter.convert(tmp_path / "raw", lake)
+    assert not res2.errors, res2.errors
+    assert res2.converted == 0
+    assert res2.skipped == 4
+
+    df = scan_dataset(lake / SOURCE_ID / "adm-cart-cad").collect()
+    assert set(df["NOME"].to_list()) == {"NOVO"}
+
+
+def test_historico_com_snapshots_na_mesma_particao(tmp_path: Path) -> None:
+    """Série mensal baixada em duas datas e um mês só com uma data."""
+    raw = tmp_path / "raw" / "fi-entrega"
+    _zip(
+        raw / "fi_entrega_documento_2026-09@20261027.zip",
+        {"fi_entrega_documento_202609.csv": "CNPJ;DOC\n1;velho\n"},
+    )
+    _zip(
+        raw / "fi_entrega_documento_2026-09@20261029.zip",
+        {"fi_entrega_documento_202609.csv": "CNPJ;DOC\n1;novo\n"},
+    )
+    _zip(
+        raw / "fi_entrega_documento_2026-08@20261024.zip",
+        {"fi_entrega_documento_202608.csv": "CNPJ;DOC\n2;unico\n"},
+    )
+    lake = tmp_path / "lake"
+
+    res1 = converter.convert(tmp_path / "raw", lake)
+    assert not res1.errors, res1.errors
+    assert (res1.converted, res1.skipped) == (2, 1)
+
+    res2 = converter.convert(tmp_path / "raw", lake)
+    assert not res2.errors, res2.errors
+    assert (res2.converted, res2.skipped) == (0, 3)
+
+    df = scan_dataset(lake / SOURCE_ID / "fi-entrega").collect()
+    assert sorted(df["DOC"].to_list()) == ["novo", "unico"]
+
+
+def test_snapshot_novo_substitui_o_anterior_uma_vez(tmp_path: Path) -> None:
+    """Quando sai um snapshot novo, ele é convertido uma vez e depois pulado."""
+    raw = tmp_path / "raw" / "cia-cad"
+    raw.mkdir(parents=True)
+    (raw / "cad_cia_aberta@20261027.csv").write_text("CNPJ;SIT\n1;A\n")
+    lake = tmp_path / "lake"
+    assert converter.convert(tmp_path / "raw", lake).converted == 1
+
+    (raw / "cad_cia_aberta@20261028.csv").write_text("CNPJ;SIT\n1;B\n")
+    res = converter.convert(tmp_path / "raw", lake)
+    assert (res.converted, res.skipped) == (1, 1)
+    res = converter.convert(tmp_path / "raw", lake)
+    assert (res.converted, res.skipped) == (0, 2)
+
+    df = scan_dataset(lake / SOURCE_ID / "cia-cad").collect()
+    assert df["SIT"].to_list() == ["B"]

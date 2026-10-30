@@ -19,7 +19,7 @@ try:
     import polars as pl
     from quantilica.analytics.lake import LakeError, LakeWriter
     from quantilica.core.files import decompress_archive
-    from quantilica.core.lake import DatasetDescriptor, file_key
+    from quantilica.core.lake import DatasetDescriptor, file_key, select_current
 except ImportError as exc:
     raise ImportError(
         "cvm_fetcher.lake requer o extra 'analysis': "
@@ -113,11 +113,27 @@ class LakeConverter:
                 result.errors.append(f"dataset desconhecido: {u}")
             return result
 
-        files = sorted(
+        candidates = sorted(
             p
             for p in input_dir.rglob("*")
             if p.is_file() and p.suffix.lower() in {".csv", ".zip"}
         )
+        # The raw folder keeps every snapshot of a file (``x@20261027.zip``,
+        # ``x@20261028.zip``...), and they all map to one lake file. Converting each
+        # one in turn made them overwrite each other, so the next run found the
+        # lake holding the wrong version and reconverted. Only the newest snapshot
+        # is current; the older ones count as skipped.
+        current = set(
+            select_current(p.relative_to(input_dir).as_posix() for p in candidates)
+        )
+        files = []
+        for path in candidates:
+            if path.relative_to(input_dir).as_posix() in current:
+                files.append(path)
+                continue
+            group = resolve_group(path)
+            if group and group in allowed:
+                result.skipped += 1
 
         writers: dict[str, LakeWriter] = {}
 
@@ -171,11 +187,15 @@ class LakeConverter:
                 with tempfile.TemporaryDirectory() as tmp:
                     try:
                         extracted = decompress_archive(path, Path(tmp))
-                        members = (
-                            [extracted]
-                            if extracted.is_file()
-                            else sorted(Path(extracted).rglob("*.csv"))
+                        # ``decompress_archive`` returns just the first data file of
+                        # a multi-file archive; every CSV in the ZIP goes to the lake.
+                        members = sorted(
+                            m
+                            for m in Path(tmp).rglob("*")
+                            if m.is_file() and m.suffix.lower() == ".csv"
                         )
+                        if not members and extracted.is_file():
+                            members = [extracted]
                         for member in members:
                             if not member.is_file():
                                 continue
