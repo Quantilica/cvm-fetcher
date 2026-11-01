@@ -6,6 +6,7 @@ import io
 import logging
 import re
 from pathlib import Path
+from typing import Any
 
 try:
     import polars as pl
@@ -26,7 +27,11 @@ _DATE = re.compile(r"\d{4}-\d{2}-\d{2}")
 _SEMICOLON = "\x1f"
 
 
-def read_csv_smart(path: Path) -> pl.DataFrame:
+def read_csv_smart(
+    path: Path,
+    *,
+    schema_overrides: dict[str, Any] | None = None,
+) -> pl.DataFrame:
     """Ler CSV da CVM com separador ``;`` e fallback de encoding.
 
     Linhas com mais campos que o cabeçalho (um ``;`` dentro do texto de um campo,
@@ -35,6 +40,8 @@ def read_csv_smart(path: Path) -> pl.DataFrame:
 
     Args:
         path: Arquivo CSV.
+        schema_overrides: Mapeamento opcional de coluna para tipo Polars
+            (ex: pl.String).
 
     Returns:
         pl.DataFrame: Conteúdo do CSV (tenta UTF-8, depois latin-1).
@@ -53,11 +60,12 @@ def read_csv_smart(path: Path) -> pl.DataFrame:
                     encoding=encoding,
                     quote_char=quote,
                     infer_schema_length=None,
+                    schema_overrides=schema_overrides,
                 )
             except Exception as exc:  # noqa: BLE001 - próxima combinação
                 errors.append(exc)
     if any(_RAGGED in str(exc) for exc in errors):
-        return _read_ragged(path)
+        return _read_ragged(path, schema_overrides=schema_overrides)
     raise errors[-1]
 
 
@@ -87,7 +95,10 @@ def _fits(kind: str, value: str) -> bool:
     return bool(_DATE.fullmatch(value.strip()))
 
 
-def _read_ragged(path: Path) -> pl.DataFrame:
+def _read_ragged(
+    path: Path,
+    schema_overrides: dict[str, Any] | None = None,
+) -> pl.DataFrame:
     """Ler um CSV com linhas de campos a mais, juntando o excesso ao campo de texto.
 
     A CVM publica alguns campos de texto livre sem aspas, e um ``;`` digitado ali
@@ -164,6 +175,7 @@ def _read_ragged(path: Path) -> pl.DataFrame:
                 separator=";",
                 quote_char=quote,
                 infer_schema_length=None,
+                schema_overrides=schema_overrides,
             )
             break
         except Exception:  # noqa: BLE001 - próxima combinação

@@ -102,7 +102,7 @@ def test_convert_end_to_end(tmp_path: Path) -> None:
     assert df_fi.height == 1
     assert "ano" in df_fi.columns
     assert "mes" in df_fi.columns
-    assert df_fi["ano"][0] == "2024"
+    assert df_fi["ano"][0] == 2024
     assert df_fi["mes"][0] == "05"
 
     # Second pass skips
@@ -220,3 +220,51 @@ def test_snapshot_novo_substitui_o_anterior_uma_vez(tmp_path: Path) -> None:
 
     df = scan_dataset(lake / SOURCE_ID / "cia-cad").collect()
     assert df["SIT"].to_list() == ["B"]
+
+
+def test_securit_cri_alias_and_code_columns(tmp_path: Path) -> None:
+    import polars as pl
+    from quantilica.core.lake import DatasetDescriptor
+
+    raw = tmp_path / "raw" / "securit-cri"
+    raw.mkdir(parents=True)
+    (raw / "securit_cri_2024@20240601.csv").write_text(
+        "CNPJ_EMISSOR;CD_CVM;CODIGO_ISIN;DENOM_SOCIAL\n"
+        "00123456000199;01234;BRCRI0000001;EMISSORA TESTE\n",
+        encoding="utf-8",
+    )
+    lake = tmp_path / "lake"
+    res = converter.convert(tmp_path / "raw", lake, datasets=["securit-cri"])
+    assert not res.errors, res.errors
+    assert res.converted == 1
+
+    ds_dir = lake / SOURCE_ID / "securit-cri"
+    assert check_dataset(ds_dir) == []
+    desc = DatasetDescriptor.load(ds_dir)
+    assert desc.alias == "securitizacao_cri"
+
+    df = scan_dataset(ds_dir).collect()
+    assert df["CNPJ_EMISSOR"].dtype == pl.String
+    assert df["CD_CVM"].dtype == pl.String
+    assert df["CODIGO_ISIN"].dtype == pl.String
+    assert df["CD_CVM"][0] == "01234"
+
+
+def test_convert_by_canonical_alias_cvm(tmp_path: Path) -> None:
+    raw = tmp_path / "raw" / "securit-cri"
+    raw.mkdir(parents=True)
+    (raw / "securit_cri_2023@20240101.csv").write_text(
+        "CNPJ_EMISSOR;CD_CVM;CODIGO_ISIN;DENOM_SOCIAL\n"
+        "00123456000199;01234;BRCRI0000001;EMISSORA TESTE\n",
+        encoding="utf-8",
+    )
+    lake = tmp_path / "lake"
+    res = converter.convert(tmp_path / "raw", lake, datasets=["securitizacao_cri"])
+    assert not res.errors, res.errors
+    assert res.converted == 1
+
+
+def test_convert_unknown_dataset_cvm(tmp_path: Path) -> None:
+    res = converter.convert(tmp_path, tmp_path, datasets=["desconhecido_cvm"])
+    assert len(res.errors) == 1
+    assert "dataset desconhecido: desconhecido_cvm" in res.errors[0]

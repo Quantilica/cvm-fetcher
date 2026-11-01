@@ -14,12 +14,18 @@ import tempfile
 import zipfile
 from dataclasses import dataclass, field
 from pathlib import Path
+from typing import Any
 
 try:
     import polars as pl
     from quantilica.analytics.lake import LakeError, LakeWriter
     from quantilica.core.files import decompress_archive
-    from quantilica.core.lake import DatasetDescriptor, file_key, select_current
+    from quantilica.core.lake import (
+        DatasetDescriptor,
+        composite_file_key,
+        partition_types_for,
+        select_current,
+    )
 except ImportError as exc:
     raise ImportError(
         "cvm_fetcher.lake requer o extra 'analysis': "
@@ -33,8 +39,48 @@ from cvm_fetcher.reader import read_csv_smart
 
 SOURCE_ID = "cvm"
 
+DATASET_ALIASES: dict[str, str] = {
+    "securit-cri": "securitizacao_cri",
+    "securit-cra": "securitizacao_cra",
+    "ofertas": "ofertas_distribuicao",
+    "fidc-inf-mensal": "inf_mensal_fidc",
+    "fip-inf": "inf_quadrimestral_fip",
+}
+
+REVERSE_DATASET_ALIASES: dict[str, str] = {v: k for k, v in DATASET_ALIASES.items()}
+REVERSE_DATASET_ALIASES.update(
+    {v.replace("_", "-"): k for k, v in DATASET_ALIASES.items()}
+)
+
 _YM = re.compile(r"[-_](?P<ano>(?:19|20)\d{2})-(?P<mes>0[1-9]|1[0-2])(?:@|\.|$|\b)")
 _Y = re.compile(r"[-_](?P<ano>(?:19|20)\d{2})(?:@|\.|$|\b)")
+
+
+def _cast_code_columns(df: pl.DataFrame) -> pl.DataFrame:
+    """Garante que CNPJ, ISIN e códigos CVM permaneçam como pl.String."""
+    exprs = []
+    for col in df.columns:
+        norm = col.lower().replace("-", "_")
+        if any(key in norm for key in ("cnpj", "isin", "codigo_cvm", "cd_cvm")):
+            if df.schema[col] != pl.String:
+                exprs.append(pl.col(col).cast(pl.String))
+    return df.with_columns(exprs) if exprs else df
+
+
+def _detect_code_overrides(path: Path) -> dict[str, Any]:
+    """Detecta colunas de código pelo cabeçalho para leitura direta como pl.String."""
+    try:
+        with open(path, "rb") as f:
+            line = f.readline().decode("latin-1", errors="replace").strip()
+        headers = [h.strip('" ') for h in line.split(";")]
+        overrides: dict[str, Any] = {}
+        for h in headers:
+            norm = h.lower().replace("-", "_")
+            if any(key in norm for key in ("cnpj", "isin", "codigo_cvm", "cd_cvm")):
+                overrides[h] = pl.String
+        return overrides
+    except Exception:
+        return {}
 
 
 @dataclass
@@ -106,12 +152,21 @@ class LakeConverter:
             result.errors.append(f"diretório '{input_dir}' não existe")
             return result
 
-        allowed = set(datasets) if datasets else set(GROUPS)
-        unknown = allowed - set(GROUPS)
-        if unknown:
-            for u in sorted(unknown):
-                result.errors.append(f"dataset desconhecido: {u}")
-            return result
+        allowed: set[str] = set()
+        if datasets:
+            unknown: set[str] = set()
+            for d in datasets:
+                target = REVERSE_DATASET_ALIASES.get(d, d)
+                if target in GROUPS:
+                    allowed.add(target)
+                else:
+                    unknown.add(d)
+            if unknown:
+                for u in sorted(unknown):
+                    result.errors.append(f"dataset desconhecido: {u}")
+                return result
+        else:
+            allowed = set(GROUPS)
 
         candidates = sorted(
             p
@@ -146,14 +201,15 @@ class LakeConverter:
             writer_key = f"{group}:" + ",".join(part_keys)
 
             if writer_key not in writers:
+                alias = DATASET_ALIASES.get(group, group.replace("-", "_"))
                 writers[writer_key] = LakeWriter(
                     lake_dir / SOURCE_ID / group,
                     DatasetDescriptor(
                         source_id=SOURCE_ID,
                         dataset_id=group,
-                        alias=group,
+                        alias=alias,
                         partition_keys=part_keys,
-                        partition_types={k: "varchar" for k in part_keys},
+                        partition_types=partition_types_for(part_keys),
                     ),
                     force=force,
                 )
@@ -161,7 +217,9 @@ class LakeConverter:
 
             if path.suffix.lower() == ".csv":
                 try:
-                    df = read_csv_smart(path)
+                    overrides = _detect_code_overrides(path)
+                    df = read_csv_smart(path, schema_overrides=overrides)
+                    df = _cast_code_columns(df)
                     written = writer.write_polars(
                         df,
                         path,
@@ -199,8 +257,10 @@ class LakeConverter:
                         for member in members:
                             if not member.is_file():
                                 continue
-                            df = read_csv_smart(member)
-                            key = f"{file_key(path)}__{file_key(member)}"
+                            overrides = _detect_code_overrides(member)
+                            df = read_csv_smart(member, schema_overrides=overrides)
+                            df = _cast_code_columns(df)
+                            key = composite_file_key(path, member.stem)
                             written = writer.write_polars(
                                 df,
                                 path,
