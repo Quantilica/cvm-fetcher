@@ -64,7 +64,7 @@ fetcher = FetcherApp(
     list_datasets=sdk_list_datasets,
     path_builder=path_builder,
     default_output=Path(DEFAULT_OUTPUT),
-    freshness_policy=FreshnessPolicy.REMOTE_ONLY,
+    freshness_policy=FreshnessPolicy.HEAD_OR_MANIFEST,
 )
 
 app = fetcher.app
