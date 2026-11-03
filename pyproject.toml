@@ -31,7 +31,7 @@ classifiers = [
     "Typing :: Typed",
 ]
 dependencies = [
-    "quantilica-core>=0.15.0",
+    "quantilica-core>=0.16.0",
 ]
 
 [project.optional-dependencies]
@@ -62,7 +62,7 @@ dev = [
     # typer.testing. Nunca em [project].dependencies — o plugin consome o que o
     # host já traz. Piso = 0.13.0, primeira versão com o convert do lake
     # (--lake, --dataset, --force), que este plugin usa.
-    "quantilica-cli>=0.13.0",
+    "quantilica-cli>=0.15.0",
     "typer>=0.15.0",
     "rich>=13.0.0",
 ]
