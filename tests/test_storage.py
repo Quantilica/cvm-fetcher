@@ -21,12 +21,13 @@ def test_static_path(tmp_path: Path) -> None:
     assert path == tmp_path / "cia-cad/cad_cia_aberta@20261003.csv"
 
 
-def test_static_path_without_last_modified(tmp_path: Path) -> None:
-    """Sem carimbo, o nome fica ``{slug}.{ext}``."""
+def test_static_path_fallback_timestamp(tmp_path: Path) -> None:
+    """Sem carimbo remoto, usa a data de hoje como fallback (@YYYYMMDD)."""
     entry = next(e for e in list_datasets("ofertas") if e.id == "oferta_distribuicao")
     repo = DataRepository(tmp_path)
+    today = dt.date.today()
     path = repo.path_for_entry(entry.to_dict(), last_modified=None)
-    assert path == tmp_path / "ofertas/oferta_distribuicao.zip"
+    assert path == tmp_path / f"ofertas/oferta_distribuicao@{today:%Y%m%d}.zip"
 
 
 def test_annual_path(tmp_path: Path) -> None:
@@ -67,9 +68,10 @@ def test_helpers_reexport() -> None:
 def test_entry_without_partition_fields_defaults(tmp_path: Path) -> None:
     """Faltando campos, o path degrada graciosamente (defaults)."""
     repo = DataRepository(tmp_path)
+    today = dt.date.today()
     path = repo.path_for_entry({"id": "foo", "ext": "csv"}, last_modified=None)
     # Sem "group", a raiz passa a agrupar em "datasets" por contrato do SDK.
-    assert path == tmp_path / "foo/foo.csv"
+    assert path == tmp_path / f"foo/foo@{today:%Y%m%d}.csv"
 
 
 def test_targets_are_disjoint_by_group_directory(tmp_path: Path) -> None:
@@ -77,12 +79,11 @@ def test_targets_are_disjoint_by_group_directory(tmp_path: Path) -> None:
     repo = DataRepository(tmp_path)
     dfp = next(e for e in list_datasets("cia-dfp") if e.year == 2026)
     itr = next(e for e in list_datasets("cia-itr") if e.year == 2026)
-    assert repo.path_for_entry(dfp.to_dict()).parent.name == "cia-dfp"
-    assert repo.path_for_entry(itr.to_dict()).parent.name == "cia-itr"
-    assert (
-        repo.path_for_entry(dfp.to_dict()).parent
-        != repo.path_for_entry(itr.to_dict()).parent
-    )
+    dfp_path = repo.path_for_entry(dfp.to_dict(), last_modified=_STAMP)
+    itr_path = repo.path_for_entry(itr.to_dict(), last_modified=_STAMP)
+    assert dfp_path.parent.name == "cia-dfp"
+    assert itr_path.parent.name == "cia-itr"
+    assert dfp_path.parent != itr_path.parent
 
 
 def test_invalid_root_raises(tmp_path: Path) -> None:
