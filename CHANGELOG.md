@@ -5,6 +5,15 @@ Todas as mudanças notáveis deste projeto serão documentadas neste arquivo.
 O formato segue [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/),
 e este projeto adere ao [Semantic Versioning](https://semver.org/lang/pt-BR/).
 
+## [Não lançado]
+
+### Corrigido
+- Sem o extra `analysis`, o comando `convert` termina com código 1 e a instrução de instalação (`quantilica install cvm --extra analysis`), sem traceback.
+
+### Alterado
+- O diretório de saída padrão (`/data/cvm`) passa a ser declarado explicitamente no plugin; o valor não muda.
+- A leitura dos CSVs com colunas de código (CNPJ, ISIN, código CVM) fica em uma única função, sem mudança no resultado do lake.
+
 ## [0.3.0] - 2026-11-04
 
 ### Corrigido
