@@ -83,6 +83,12 @@ def _detect_code_overrides(path: Path) -> dict[str, Any]:
         return {}
 
 
+def _read_csv_with_codes(path: Path) -> pl.DataFrame:
+    """Lê um CSV da CVM mantendo CNPJ, ISIN e códigos CVM como ``pl.String``."""
+    df = read_csv_smart(path, schema_overrides=_detect_code_overrides(path))
+    return _cast_code_columns(df)
+
+
 @dataclass
 class ConvertResult:
     """Counts of a conversion run; ``errors`` holds one message per failure."""
@@ -217,9 +223,7 @@ class LakeConverter:
 
             if path.suffix.lower() == ".csv":
                 try:
-                    overrides = _detect_code_overrides(path)
-                    df = read_csv_smart(path, schema_overrides=overrides)
-                    df = _cast_code_columns(df)
+                    df = _read_csv_with_codes(path)
                     written = writer.write_polars(
                         df,
                         path,
@@ -257,10 +261,9 @@ class LakeConverter:
                         for member in members:
                             if not member.is_file():
                                 continue
-                            overrides = _detect_code_overrides(member)
-                            df = read_csv_smart(member, schema_overrides=overrides)
-                            df = _cast_code_columns(df)
-                            key = composite_file_key(path, member.stem)
+                            df = _read_csv_with_codes(member)
+                            member_name = member.stem
+                            key = composite_file_key(path, member_name)
                             written = writer.write_polars(
                                 df,
                                 path,
