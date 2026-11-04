@@ -12,7 +12,7 @@ from quantilica.core.sync import FreshnessPolicy
 from .catalog import GROUP_ALIASES as CATALOG_GROUP_ALIASES
 from .catalog import GROUPS, MACRO_ALIASES, list_canonical_datasets
 from .contracts import DatasetEntry
-from .storage import DEFAULT_OUTPUT, DataRepository
+from .storage import DataRepository
 
 __all__ = ["app", "fetcher", "path_builder", "resolve_groups"]
 
@@ -63,7 +63,7 @@ fetcher = FetcherApp(
     aliases_dict=CATALOG_GROUP_ALIASES,
     list_datasets=sdk_list_datasets,
     path_builder=path_builder,
-    default_output=Path(DEFAULT_OUTPUT),
+    default_output=Path("/data/cvm"),
     freshness_policy=FreshnessPolicy.HEAD_OR_MANIFEST,
 )
 
@@ -80,7 +80,13 @@ def _convert_impl(input_dir: Path, output_dir: Path) -> int:
     Returns:
         int: Quantidade de Parquet gerados.
     """
-    from .wrangling import convert_all
+    try:
+        from .wrangling import convert_all
+    except ImportError as exc:
+        raise ImportError(
+            "Conversão para Parquet requer o extra 'analysis'. "
+            "Instale com: quantilica install cvm --extra analysis"
+        ) from exc
 
     return convert_all(input_dir, output_dir)
 
@@ -93,7 +99,13 @@ def convert(
     force: bool = False,
 ) -> Any:
     """Converte arquivos brutos da CVM para o lake Hive (Parquet)."""
-    from cvm_fetcher import lake
+    try:
+        from cvm_fetcher import lake
+    except ImportError as exc:
+        raise ImportError(
+            "Conversão para o lake requer o extra 'analysis'. "
+            "Instale com: quantilica install cvm --extra analysis"
+        ) from exc
 
     return lake.converter.convert(input_dir, lake_dir, datasets=dataset, force=force)
 
