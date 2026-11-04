@@ -5,7 +5,7 @@ Todas as mudanças notáveis deste projeto serão documentadas neste arquivo.
 O formato segue [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/),
 e este projeto adere ao [Semantic Versioning](https://semver.org/lang/pt-BR/).
 
-## [Não lançado]
+## [0.3.0] - 2026-11-04
 
 ### Corrigido
 - Política de frescor volta a F1 (`HEAD_OR_MANIFEST`): `REMOTE_ONLY` (F3, para fontes sem validadores) causava re-download diário de fontes com Last-Modified/ETag, porque descartava o Last-Modified e o nome do arquivo caía em `@hoje`.
@@ -13,6 +13,9 @@ e este projeto adere ao [Semantic Versioning](https://semver.org/lang/pt-BR/).
 - ZIPs com vários CSVs (os cadastros, a CDA e outros) agora levam todos os CSVs ao lake; antes só o primeiro era convertido e os demais eram ignorados em silêncio.
 - `read_csv_smart` lê CSVs com linhas de campos a mais, em que um `;` digitado dentro de um texto livre, sem aspas, criava uma coluna extra e a conversão falhava com "found more fields than defined in 'Schema'" (caso do `securit-cra`: o campo `CNPJ` do cedente/devedor de CRA traz texto como `Ata da Assembleia (27052026, 04052026); Sumário da`). O `;` volta para o campo a que pertence, nenhuma linha é descartada e um aviso informa a quantidade e os números das linhas reparadas.
 - Dependência `quantilica-core` atualizada para `>=0.15.0`, que traz a escolha da versão vigente do arquivo bruto.
+
+### Alterado
+- Exige `quantilica-core>=0.16.0`.
 
 ## [0.2.1] - 2026-10-29
 
