@@ -7,6 +7,7 @@ from pathlib import Path
 from typing import Any
 
 from quantilica.cli.sdk import FetcherApp, make_resolve_groups
+from quantilica.core.registry import FetcherInfo
 from quantilica.core.sync import FreshnessPolicy
 
 from .catalog import GROUP_ALIASES as CATALOG_GROUP_ALIASES
@@ -59,6 +60,14 @@ def path_builder(
 fetcher = FetcherApp(
     name="cvm-fetcher",
     help="Dados abertos da CVM (Comissão de Valores Mobiliários).",
+    info=FetcherInfo(
+        id="cvm",
+        nome="CVM - Dados Abertos",
+        orgao="Comissão de Valores Mobiliários (CVM)",
+        homepage="https://dados.cvm.gov.br/dados/",
+        cadencia="daily",
+        dominio="financas",
+    ),
     groups_dict={gid: info.to_dict() for gid, info in GROUPS.items()},
     aliases_dict=CATALOG_GROUP_ALIASES,
     list_datasets=sdk_list_datasets,
