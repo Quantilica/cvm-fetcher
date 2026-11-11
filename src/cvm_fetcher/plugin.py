@@ -64,6 +64,7 @@ fetcher = FetcherApp(
         id="cvm",
         nome="CVM - Dados Abertos",
         orgao="Comissão de Valores Mobiliários (CVM)",
+        licenca="Open Data Commons Open Database License (ODbL)",
         homepage="https://dados.cvm.gov.br/dados/",
         cadencia="daily",
         dominio="financas",

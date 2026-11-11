@@ -12,6 +12,7 @@ e este projeto adere ao [Semantic Versioning](https://semver.org/lang/pt-BR/).
 
 ### Alterado
 - Requer `quantilica-core>=0.19.0` (e `quantilica-cli>=0.17.0` como host).
+- `FetcherInfo.licenca` passa a declarar a licença da fonte: ODbL (evidência: https://dados.cvm.gov.br/dataset/cia_aberta-doc-dfp).
 
 ## [0.3.1] - 2026-11-04
 
