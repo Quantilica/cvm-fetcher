@@ -9,6 +9,7 @@ unpartitioned.
 
 from __future__ import annotations
 
+import logging
 import re
 import tempfile
 import zipfile
@@ -38,6 +39,8 @@ from cvm_fetcher.catalog import GROUPS
 from cvm_fetcher.reader import read_csv_smart
 
 SOURCE_ID = "cvm"
+
+logger = logging.getLogger(__name__)
 
 DATASET_ALIASES: dict[str, str] = {
     "securit-cri": "securitizacao_cri",
@@ -79,7 +82,13 @@ def _detect_code_overrides(path: Path) -> dict[str, Any]:
             if any(key in norm for key in ("cnpj", "isin", "codigo_cvm", "cd_cvm")):
                 overrides[h] = pl.String
         return overrides
-    except Exception:
+    except Exception as exc:  # noqa: BLE001 - cabeçalho ilegível não deve abortar a conversão
+        logger.warning(
+            "%s: cabeçalho ilegível (%s); sem override de código; "
+            "colunas de CNPJ/ISIN podem vir tipadas errado",
+            path.name,
+            exc,
+        )
         return {}
 
 
