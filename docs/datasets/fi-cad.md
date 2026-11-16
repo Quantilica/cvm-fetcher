@@ -17,7 +17,7 @@ dataset:
     TAXA_PERFM: "percentual (%)"
     TAXA_ADM: "percentual (%)"
     VL_PATRIM_LIQ: "moeda (R$)"
-    VL_TAXA_PERFM: "moeda (R$)"
+    VL_TAXA_PERFM: "percentual (%)"
     ID_Registro_Fundo: "código ou número de identificação (sem unidade)"
     ID_Registro_Classe: "código ou número de identificação (sem unidade)"
     Patrimonio_Liquido: "moeda (R$)"
@@ -57,7 +57,7 @@ Cadastro dos fundos de investimento em três arquivos: o cadastro dos fundos nã
 | Partições | — |
 | Chave | — |
 | Colunas | 122 |
-| Unidades de medida | `TAXA_PERFM`: percentual (%); `TAXA_ADM`: percentual (%); `VL_PATRIM_LIQ`: moeda (R$); `VL_TAXA_PERFM`: moeda (R$); `ID_Registro_Fundo`: código ou número de identificação (sem unidade); `ID_Registro_Classe`: código ou número de identificação (sem unidade); `Patrimonio_Liquido`: moeda (R$) |
+| Unidades de medida | `TAXA_PERFM`: percentual (%); `TAXA_ADM`: percentual (%); `VL_PATRIM_LIQ`: moeda (R$); `VL_TAXA_PERFM`: percentual (%); `ID_Registro_Fundo`: código ou número de identificação (sem unidade); `ID_Registro_Classe`: código ou número de identificação (sem unidade); `Patrimonio_Liquido`: moeda (R$) |
 | Dados pessoais | `DIRETOR` (nome de pessoa física (diretor, responsável ou representante)); `Diretor` (nome de pessoa física (diretor, responsável ou representante)); `CPF_CNPJ_GESTOR` (endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)); `CPF_CNPJ_Gestor` (endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)) |
 | Eras | 2024-10: o arquivo `cad_fi` passa a listar só os fundos não adaptados à Resolução CVM 175 (renomeado no portal em 2024-10-07); os adaptados ficam em `registro_fundo_classe` |
 | Revisado em | 2026-11-16 |
@@ -178,41 +178,41 @@ Descrições do dicionário de dados (arquivos `META`) da CVM. Os nomes de colun
 | `DT_FIM_ST_COTAS` | `DT_FIM_ST_COTAS` | texto | Data fim do status de cotas (só em: `cad_fi_hist_fic`) | — | todo |
 | `DT_INI_GESTOR` | `DT_INI_GESTOR` | texto | Data início do gestor (só em: `cad_fi_hist_gestor`) | — | todo |
 | `DT_FIM_GESTOR` | `DT_FIM_GESTOR` | texto | Data fim do gestor (só em: `cad_fi_hist_gestor`) | — | todo |
-| `DT_INI_PUBLICO_ALVO` | `DT_INI_PUBLICO_ALVO` | texto | (nome da coluna nos arquivos anteriores à adaptação à Resolução CVM 175; depois, `DT_INI_PUBLICO_ALVO`) (só em: `cad_fi_hist_publico_alvo`) | — | todo |
-| `DT_FIM_PUBLICO_ALVO` | `DT_FIM_PUBLICO_ALVO` | texto | (nome da coluna nos arquivos anteriores à adaptação à Resolução CVM 175; depois, `DT_FIM_PUBLICO_ALVO`) (só em: `cad_fi_hist_publico_alvo`) | — | todo |
+| `DT_INI_PUBLICO_ALVO` | `DT_INI_PUBLICO_ALVO` | texto | Sem descrição no dicionário da CVM; pelo nome da coluna: dt ini publico alvo (só em: `cad_fi_hist_publico_alvo`) | — | todo |
+| `DT_FIM_PUBLICO_ALVO` | `DT_FIM_PUBLICO_ALVO` | texto | Sem descrição no dicionário da CVM; pelo nome da coluna: dt fim publico alvo (só em: `cad_fi_hist_publico_alvo`) | — | todo |
 | `DT_INI_RENTAB` | `DT_INI_RENTAB` | texto | Data início da rentabilidade (só em: `cad_fi_hist_rentab`) | — | todo |
 | `DT_FIM_RENTAB` | `DT_FIM_RENTAB` | texto | Data fim da rentabilidade (só em: `cad_fi_hist_rentab`) | — | todo |
 | `DT_FIM_SIT` | `DT_FIM_SIT` | texto | Data fim da situação (só em: `cad_fi_hist_sit`) | — | todo |
 | `DT_INI_TAXA_ADM` | `DT_INI_TAXA_ADM` | texto | Data início da taxa de administração (só em: `cad_fi_hist_taxa_adm`) | — | todo |
-| `VL_TAXA_PERFM` | `VL_TAXA_PERFM` | decimal | valor da taxa de performance (só em: `cad_fi_hist_taxa_perfm`) | moeda (R$) | todo |
+| `VL_TAXA_PERFM` | `VL_TAXA_PERFM` | decimal | valor da taxa de performance (só em: `cad_fi_hist_taxa_perfm`) | percentual (%) | todo |
 | `DS_TAXA_PERFM` | `DS_TAXA_PERFM` | texto | Descrição da taxa de performance (só em: `cad_fi_hist_taxa_perfm`) | — | todo |
 | `DT_INI_TAXA_PERFM` | `DT_INI_TAXA_PERFM` | texto | Data início da taxa de performance (só em: `cad_fi_hist_taxa_perfm`) | — | todo |
 | `DT_INI_ST_TRIB_LPRAZO` | `DT_INI_ST_TRIB_LPRAZO` | texto | Data início do status de tributação de longo prazo (só em: `cad_fi_hist_trib_lprazo`) | — | todo |
 | `DT_FIM_ST_TRIB_LPRAZO` | `DT_FIM_ST_TRIB_LPRAZO` | texto | Data fim do status de tributação de longo prazo (só em: `cad_fi_hist_trib_lprazo`) | — | todo |
-| `ID_Registro_Fundo` | `ID_Registro_Fundo` | inteiro | Sem descrição no dicionário da CVM (só em: `registro_classe`, `registro_fundo`) | código ou número de identificação (sem unidade) | todo |
+| `ID_Registro_Fundo` | `ID_Registro_Fundo` | inteiro | Sem descrição no dicionário da CVM; pelo nome da coluna: id registro fundo (só em: `registro_classe`, `registro_fundo`) | código ou número de identificação (sem unidade) | todo |
 | `ID_Registro_Classe` | `ID_Registro_Classe` | inteiro | Identificador de Registro da Classe (só em: `registro_classe`, `registro_subclasse`) | código ou número de identificação (sem unidade) | todo |
-| `CNPJ_Classe` | `CNPJ_Classe` | texto | (nome da coluna nos arquivos anteriores à adaptação à Resolução CVM 175; depois, `CNPJ_Classe`) (só em: `registro_classe`) | — | todo |
+| `CNPJ_Classe` | `CNPJ_Classe` | texto | Sem descrição no dicionário da CVM; pelo nome da coluna: cnpj classe (só em: `registro_classe`) | — | todo |
 | `Codigo_CVM` | `Codigo_CVM` | texto | Código CVM (só em: `registro_classe`, `registro_fundo`, `registro_subclasse`) | — | todo |
-| `Data_Registro` | `Data_Registro` | texto | (nome da coluna nos arquivos anteriores à adaptação à Resolução CVM 175; depois, `Data_Registro`) (só em: `registro_classe`, `registro_fundo`) | — | todo |
+| `Data_Registro` | `Data_Registro` | texto | Sem descrição no dicionário da CVM; pelo nome da coluna: data registro (só em: `registro_classe`, `registro_fundo`) | — | todo |
 | `Data_Constituicao` | `Data_Constituicao` | texto | Data da constituição (só em: `registro_classe`, `registro_fundo`, `registro_subclasse`) | — | todo |
-| `Data_Inicio` | `Data_Inicio` | texto | (nome da coluna nos arquivos anteriores à adaptação à Resolução CVM 175; depois, `Data_Inicio`) (só em: `registro_classe`, `registro_subclasse`) | — | todo |
-| `Tipo_Classe` | `Tipo_Classe` | texto | (nome da coluna nos arquivos anteriores à adaptação à Resolução CVM 175; depois, `Tipo_Classe`) (só em: `registro_classe`) | — | todo |
-| `Denominacao_Social` | `Denominacao_Social` | texto | (nome da coluna nos arquivos anteriores à adaptação à Resolução CVM 175; depois, `Denominacao_Social`) (só em: `registro_classe`, `registro_fundo`, `registro_subclasse`) | — | todo |
-| `Situacao` | `Situacao` | texto | (nome da coluna nos arquivos anteriores à adaptação à Resolução CVM 175; depois, `Situacao`) (só em: `registro_classe`, `registro_fundo`, `registro_subclasse`) | — | todo |
-| `Data_Inicio_Situacao` | `Data_Inicio_Situacao` | texto | (nome da coluna nos arquivos anteriores à adaptação à Resolução CVM 175; depois, `Data_Inicio_Situacao`) (só em: `registro_classe`, `registro_fundo`, `registro_subclasse`) | — | todo |
-| `Classificacao` | `Classificacao` | texto | (nome da coluna nos arquivos anteriores à adaptação à Resolução CVM 175; depois, `Classificacao`) (só em: `registro_classe`) | — | todo |
-| `Indicador_Desempenho` | `Indicador_Desempenho` | texto | (nome da coluna nos arquivos anteriores à adaptação à Resolução CVM 175; depois, `Indicador_Desempenho`) (só em: `registro_classe`) | — | todo |
-| `Classe_Cotas` | `Classe_Cotas` | texto | (nome da coluna nos arquivos anteriores à adaptação à Resolução CVM 175; depois, `Classe_Cotas`) (só em: `registro_classe`) | — | todo |
-| `Classificacao_Anbima` | `Classificacao_Anbima` | texto | (nome da coluna nos arquivos anteriores à adaptação à Resolução CVM 175; depois, `Classificacao_Anbima`) (só em: `registro_classe`) | — | todo |
-| `Tributacao_Longo_Prazo` | `Tributacao_Longo_Prazo` | texto | (nome da coluna nos arquivos anteriores à adaptação à Resolução CVM 175; depois, `Tributacao_Longo_Prazo`) (só em: `registro_classe`) | — | todo |
-| `Entidade_Investimento` | `Entidade_Investimento` | texto | (nome da coluna nos arquivos anteriores à adaptação à Resolução CVM 175; depois, `Entidade_Investimento`) (só em: `registro_classe`) | — | todo |
-| `Permitido_Aplicacao_CemPorCento_Exterior` | `Permitido_Aplicacao_CemPorCento_Exterior` | texto | (nome da coluna nos arquivos anteriores à adaptação à Resolução CVM 175; depois, `Permitido_Aplicacao_CemPorCento_Exterior`) (só em: `registro_classe`) | — | todo |
-| `Classe_ESG` | `Classe_ESG` | texto | (nome da coluna nos arquivos anteriores à adaptação à Resolução CVM 175; depois, `Classe_ESG`) (só em: `registro_classe`) | — | todo |
+| `Data_Inicio` | `Data_Inicio` | texto | Sem descrição no dicionário da CVM; pelo nome da coluna: data inicio (só em: `registro_classe`, `registro_subclasse`) | — | todo |
+| `Tipo_Classe` | `Tipo_Classe` | texto | Sem descrição no dicionário da CVM; pelo nome da coluna: tipo classe (só em: `registro_classe`) | — | todo |
+| `Denominacao_Social` | `Denominacao_Social` | texto | Sem descrição no dicionário da CVM; pelo nome da coluna: denominacao social (só em: `registro_classe`, `registro_fundo`, `registro_subclasse`) | — | todo |
+| `Situacao` | `Situacao` | texto | Sem descrição no dicionário da CVM; pelo nome da coluna: situacao (só em: `registro_classe`, `registro_fundo`, `registro_subclasse`) | — | todo |
+| `Data_Inicio_Situacao` | `Data_Inicio_Situacao` | texto | Sem descrição no dicionário da CVM; pelo nome da coluna: data inicio situacao (só em: `registro_classe`, `registro_fundo`, `registro_subclasse`) | — | todo |
+| `Classificacao` | `Classificacao` | texto | Sem descrição no dicionário da CVM; pelo nome da coluna: classificacao (só em: `registro_classe`) | — | todo |
+| `Indicador_Desempenho` | `Indicador_Desempenho` | texto | Sem descrição no dicionário da CVM; pelo nome da coluna: indicador desempenho (só em: `registro_classe`) | — | todo |
+| `Classe_Cotas` | `Classe_Cotas` | texto | Sem descrição no dicionário da CVM; pelo nome da coluna: classe cotas (só em: `registro_classe`) | — | todo |
+| `Classificacao_Anbima` | `Classificacao_Anbima` | texto | Sem descrição no dicionário da CVM; pelo nome da coluna: classificacao anbima (só em: `registro_classe`) | — | todo |
+| `Tributacao_Longo_Prazo` | `Tributacao_Longo_Prazo` | texto | Sem descrição no dicionário da CVM; pelo nome da coluna: tributacao longo prazo (só em: `registro_classe`) | — | todo |
+| `Entidade_Investimento` | `Entidade_Investimento` | texto | Sem descrição no dicionário da CVM; pelo nome da coluna: entidade investimento (só em: `registro_classe`) | — | todo |
+| `Permitido_Aplicacao_CemPorCento_Exterior` | `Permitido_Aplicacao_CemPorCento_Exterior` | texto | Sem descrição no dicionário da CVM; pelo nome da coluna: permitido aplicacao cemporcento exterior (só em: `registro_classe`) | — | todo |
+| `Classe_ESG` | `Classe_ESG` | texto | Sem descrição no dicionário da CVM; pelo nome da coluna: classe esg (só em: `registro_classe`) | — | todo |
 | `Forma_Condominio` | `Forma_Condominio` | texto | Forma de Condomínio (só em: `registro_classe`, `registro_subclasse`) | Aberto/Fechado | todo |
-| `Exclusivo` | `Exclusivo` | texto | (nome da coluna nos arquivos anteriores à adaptação à Resolução CVM 175; depois, `Exclusivo`) (só em: `registro_classe`, `registro_subclasse`) | — | todo |
+| `Exclusivo` | `Exclusivo` | texto | Sem descrição no dicionário da CVM; pelo nome da coluna: exclusivo (só em: `registro_classe`, `registro_subclasse`) | — | todo |
 | `Publico_Alvo` | `Publico_Alvo` | texto | Público-alvo (só em: `registro_classe`, `registro_subclasse`) | — | todo |
-| `Patrimonio_Liquido` | `Patrimonio_Liquido` | decimal | (nome da coluna nos arquivos anteriores à adaptação à Resolução CVM 175; depois, `Patrimonio_Liquido`) (só em: `registro_classe`, `registro_fundo`) | moeda (R$) | todo |
-| `Data_Patrimonio_Liquido` | `Data_Patrimonio_Liquido` | texto | (nome da coluna nos arquivos anteriores à adaptação à Resolução CVM 175; depois, `Data_Patrimonio_Liquido`) (só em: `registro_classe`, `registro_fundo`) | — | todo |
+| `Patrimonio_Liquido` | `Patrimonio_Liquido` | decimal | Sem descrição no dicionário da CVM; pelo nome da coluna: patrimonio liquido (só em: `registro_classe`, `registro_fundo`) | moeda (R$) | todo |
+| `Data_Patrimonio_Liquido` | `Data_Patrimonio_Liquido` | texto | Sem descrição no dicionário da CVM; pelo nome da coluna: data patrimonio liquido (só em: `registro_classe`, `registro_fundo`) | — | todo |
 | `CNPJ_Auditor` | `CNPJ_Auditor` | texto | CNPJ do Auditor (só em: `registro_classe`) | — | todo |
 | `Auditor` | `Auditor` | texto | Nome do Auditor (só em: `registro_classe`) | — | todo |
 | `CNPJ_Custodiante` | `CNPJ_Custodiante` | texto | CNPJ do Custodiante (só em: `registro_classe`) | — | todo |
@@ -220,15 +220,15 @@ Descrições do dicionário de dados (arquivos `META`) da CVM. Os nomes de colun
 | `CNPJ_Controlador` | `CNPJ_Controlador` | texto | CNPJ do Controlador (só em: `registro_classe`) | — | todo |
 | `Controlador` | `Controlador` | texto | Nome do Controlador (só em: `registro_classe`) | — | todo |
 | `CNPJ_Fundo` | `CNPJ_Fundo` | texto | CNPJ do fundo (só em: `registro_fundo`) | — | todo |
-| `Tipo_Fundo` | `Tipo_Fundo` | texto | Sem descrição no dicionário da CVM (só em: `registro_fundo`) | — | todo |
-| `Data_Cancelamento` | `Data_Cancelamento` | texto | (nome da coluna nos arquivos anteriores à adaptação à Resolução CVM 175; depois, `Data_Cancelamento`) (só em: `registro_fundo`) | — | todo |
-| `Data_Adaptacao_RCVM175` | `Data_Adaptacao_RCVM175` | texto | (nome da coluna nos arquivos anteriores à adaptação à Resolução CVM 175; depois, `Data_Adaptacao_RCVM175`) (só em: `registro_fundo`) | — | todo |
+| `Tipo_Fundo` | `Tipo_Fundo` | texto | Sem descrição no dicionário da CVM; pelo nome da coluna: tipo fundo (só em: `registro_fundo`) | — | todo |
+| `Data_Cancelamento` | `Data_Cancelamento` | texto | Sem descrição no dicionário da CVM; pelo nome da coluna: data cancelamento (só em: `registro_fundo`) | — | todo |
+| `Data_Adaptacao_RCVM175` | `Data_Adaptacao_RCVM175` | texto | Sem descrição no dicionário da CVM; pelo nome da coluna: data adaptacao rcvm175 (só em: `registro_fundo`) | — | todo |
 | `Data_Inicio_Exercicio_Social` | `Data_Inicio_Exercicio_Social` | texto | Data de início do Exercício Social (só em: `registro_fundo`) | — | todo |
 | `Data_Fim_Exercicio_Social` | `Data_Fim_Exercicio_Social` | texto | Data fim do Exercício Social (só em: `registro_fundo`) | — | todo |
 | `Diretor` | `Diretor` | texto | Nome do Diretor Responsável (só em: `registro_fundo`) | — | todo |
-| `CNPJ_Administrador` | `CNPJ_Administrador` | texto | (nome da coluna nos arquivos anteriores à adaptação à Resolução CVM 175; depois, `CNPJ_Administrador`) (só em: `registro_fundo`) | — | todo |
-| `Administrador` | `Administrador` | texto | (nome da coluna nos arquivos anteriores à adaptação à Resolução CVM 175; depois, `Administrador`) (só em: `registro_fundo`) | — | todo |
-| `Tipo_Pessoa_Gestor` | `Tipo_Pessoa_Gestor` | texto | (nome da coluna nos arquivos anteriores à adaptação à Resolução CVM 175; depois, `Tipo_Pessoa_Gestor`) (só em: `registro_fundo`) | — | todo |
+| `CNPJ_Administrador` | `CNPJ_Administrador` | texto | Sem descrição no dicionário da CVM; pelo nome da coluna: cnpj administrador (só em: `registro_fundo`) | — | todo |
+| `Administrador` | `Administrador` | texto | Sem descrição no dicionário da CVM; pelo nome da coluna: administrador (só em: `registro_fundo`) | — | todo |
+| `Tipo_Pessoa_Gestor` | `Tipo_Pessoa_Gestor` | texto | Sem descrição no dicionário da CVM; pelo nome da coluna: tipo pessoa gestor (só em: `registro_fundo`) | — | todo |
 | `CPF_CNPJ_Gestor` | `CPF_CNPJ_Gestor` | texto | Informa o código de identificação do gestor pessoa física ou jurídica (só em: `registro_fundo`) | — | todo |
 | `Gestor` | `Gestor` | texto | Nome do Gestor (só em: `registro_fundo`) | — | todo |
 | `ID_Subclasse` | `ID_Subclasse` | texto | Identificador da subclasse (só em: `registro_subclasse`) | — | todo |
@@ -248,6 +248,7 @@ Descrições do dicionário de dados (arquivos `META`) da CVM. Os nomes de colun
 - **Dois arquivos de cadastro.** Para a lista completa de fundos hoje, use `registro_fundo`; `cad_fi` cobre só os fundos ainda não adaptados à RCVM 175 e deixou de receber os demais em 2024-10. Para o histórico anterior à RCVM 175, use as tabelas `cad_fi_hist_*`.
 - **CNPJ com e sem máscara.** `cad_fi` e `cad_fi_hist_*` trazem o CNPJ com máscara (`00.000.000/0000-00`); as tabelas `registro_*` trazem só os 14 dígitos (`CNPJ_Fundo`, `CNPJ_Classe`, `CNPJ_Administrador`, `CPF_CNPJ_Gestor`). Normalize antes de juntar.
 - **Situações com maiúsculas diferentes.** `cad_fi` e o histórico escrevem `EM FUNCIONAMENTO NORMAL` e `CANCELADA`; `registro_fundo` escreve `Em Funcionamento Normal` e `Cancelado`. As tabelas de histórico de situação têm um valor a mais (`EM LIQUIDAÇÃO ORDINÁRIA`, 1 linha).
+- **Taxas com valores absurdos.** `TAXA_ADM` e `TAXA_PERFM` de `cad_fi` chegam a 450.000 (a mediana de `TAXA_ADM` é 0,46); trate valores muito acima de 100 como erro de digitação na fonte antes de agregar.
 - **Dados pessoais.** `DIRETOR`/`Diretor` trazem o nome do diretor responsável, e `CPF_CNPJ_GESTOR`/`CPF_CNPJ_Gestor` o CNPJ do gestor ou, para gestor pessoa física, o CPF (226 linhas de `registro_fundo` têm 11 dígitos). O fetcher e o lake preservam o que a fonte publica.
 - **Linhas repetidas.** No arquivo mais recente convertido há linhas inteiramente repetidas em: `cad_fi_hist_admin` (12), `cad_fi_hist_auditor` (35), `cad_fi_hist_controlador` (16), `cad_fi_hist_custodiante` (26), `cad_fi_hist_denom_social` (567), `cad_fi_hist_diretor_resp` (24) e mais 3. Remova as duplicatas antes de contar ou somar.
 

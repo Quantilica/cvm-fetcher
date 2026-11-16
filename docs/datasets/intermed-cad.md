@@ -122,7 +122,7 @@ Descrições do dicionário de dados (arquivos `META`) da CVM. Os nomes de colun
 | `DDD_FAX` | `DDD_FAX` | inteiro | Código de DDD (FAX) (só em: `cad_intermed`) | código ou número de identificação (sem unidade) | todo |
 | `FAX` | `FAX` | inteiro | FAX (só em: `cad_intermed`) | código ou número de identificação (sem unidade) | todo |
 | `EMAIL` | `EMAIL` | texto | Endereço de e-mail (só em: `cad_intermed`) | — | todo |
-| `SITE_WEB` | `SITE_WEB` | texto | (nome da coluna nos arquivos anteriores à adaptação à Resolução CVM 175; depois, `SITE_WEB`) (só em: `cad_intermed`) | — | todo |
+| `SITE_WEB` | `SITE_WEB` | texto | Sem descrição no dicionário da CVM; pelo nome da coluna: site web (só em: `cad_intermed`) | — | todo |
 | `TP_RESP` | `TP_RESP` | texto | Tipo de responsável (só em: `cad_intermed_resp`) | — | todo |
 | `RESP` | `RESP` | texto | Nome do Responsável (só em: `cad_intermed_resp`) | — | todo |
 | `DT_INI_RESP` | `DT_INI_RESP` | texto | Data início de atuação do responsável (só em: `cad_intermed_resp`) | — | todo |

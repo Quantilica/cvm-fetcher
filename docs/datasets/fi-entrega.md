@@ -81,17 +81,17 @@ Descrições do dicionário de dados (arquivos `META`) da CVM. Os nomes de colun
 
 | Coluna no lake | Na fonte | Tipo | Descrição | Unidade / códigos | Período |
 |---|---|---|---|---|---|
-| `Tipo_Fundo_Classe` | `Tipo_Fundo_Classe` | texto | Sem descrição no dicionário da CVM | — | todo |
+| `Tipo_Fundo_Classe` | `Tipo_Fundo_Classe` | texto | Sem descrição no dicionário da CVM; pelo nome da coluna: tipo fundo classe | — | todo |
 | `CNPJ_Fundo_Classe` | `CNPJ_Fundo_Classe` | texto | CNPJ do fundo/classe | — | todo |
 | `ID_Subclasse` | `ID_Subclasse` | texto | Identificador da subclasse | — | todo |
-| `Tipo_Documento` | `Tipo_Documento` | texto | (nome da coluna nos arquivos anteriores à adaptação à Resolução CVM 175; depois, `Tipo_Documento`) | — | todo |
-| `Data_Inicio_Competencia` | `Data_Inicio_Competencia` | texto | (nome da coluna nos arquivos anteriores à adaptação à Resolução CVM 175; depois, `Data_Inicio_Competencia`) | — | todo |
-| `Data_Fim_Competencia` | `Data_Fim_Competencia` | texto | (nome da coluna nos arquivos anteriores à adaptação à Resolução CVM 175; depois, `Data_Fim_Competencia`) | — | todo |
+| `Tipo_Documento` | `Tipo_Documento` | texto | Sem descrição no dicionário da CVM; pelo nome da coluna: tipo documento | — | todo |
+| `Data_Inicio_Competencia` | `Data_Inicio_Competencia` | texto | Sem descrição no dicionário da CVM; pelo nome da coluna: data inicio competencia | — | todo |
+| `Data_Fim_Competencia` | `Data_Fim_Competencia` | texto | Sem descrição no dicionário da CVM; pelo nome da coluna: data fim competencia | — | todo |
 | `ID_Documento` | `ID_Documento` | inteiro | Identificador do documento | código ou número de identificação (sem unidade) | todo |
-| `Data_Hora_Entrega` | `Data_Hora_Entrega` | texto | (nome da coluna nos arquivos anteriores à adaptação à Resolução CVM 175; depois, `Data_Hora_Entrega`) | — | todo |
+| `Data_Hora_Entrega` | `Data_Hora_Entrega` | texto | Sem descrição no dicionário da CVM; pelo nome da coluna: data hora entrega | — | todo |
 | `Tipo_Apresentacao` | `Tipo_Apresentacao` | texto | Tipo de Apresentação | — | todo |
-| `Ativo` | `Ativo` | texto | (nome da coluna nos arquivos anteriores à adaptação à Resolução CVM 175; depois, `Ativo`) | — | todo |
-| `Sistema_Origem` | `Sistema_Origem` | texto | (nome da coluna nos arquivos anteriores à adaptação à Resolução CVM 175; depois, `Sistema_Origem`) | — | todo |
+| `Ativo` | `Ativo` | texto | Sem descrição no dicionário da CVM; pelo nome da coluna: ativo | — | todo |
+| `Sistema_Origem` | `Sistema_Origem` | texto | Sem descrição no dicionário da CVM; pelo nome da coluna: sistema origem | — | todo |
 | `ano` | — (partição) | inteiro | Ano do arquivo de origem | — | todo |
 | `mes` | — (partição) | inteiro | Mês do arquivo de origem | — | todo |
 

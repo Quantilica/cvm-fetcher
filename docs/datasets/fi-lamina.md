@@ -44,8 +44,8 @@ dataset:
     ANO_ANTER_EXEMPLO: "ano"
     VL_RESGATE_EXEMPLO: "moeda (R$)"
     VL_IMPOSTO_EXEMPLO: "moeda (R$)"
-    VL_TAXA_ENTR_EXEMPLO: "moeda (R$)"
-    VL_TAXA_SAIDA_EXEMPLO: "moeda (R$)"
+    VL_TAXA_ENTR_EXEMPLO: "percentual (%)"
+    VL_TAXA_SAIDA_EXEMPLO: "percentual (%)"
     VL_AJUSTE_PERFM_EXEMPLO: "moeda (R$)"
     VL_DESPESA_EXEMPLO: "moeda (R$)"
     VL_DESPESA_3ANO: "moeda (R$)"
@@ -98,7 +98,7 @@ Lâmina de informações essenciais dos fundos de investimento (ICVM 555): perfi
 | Partições | `ano`, `mes` |
 | Chave | — |
 | Colunas | 91 |
-| Unidades de medida | `PR_PL_ATIVO_EXTERIOR`: percentual (%); `PR_PL_ATIVO_CRED_PRIV`: percentual (%); `PR_PL_ALAVANC`: percentual (%); `PR_ATIVO_EMISSOR`: percentual (%); `PR_PL_APLIC_MAX_FUNDO_UNICO`: percentual (%); `INVEST_INICIAL_MIN`: moeda (R$); `INVEST_ADIC`: moeda (R$); `RESGATE_MIN`: moeda (R$); `VL_MIN_PERMAN`: moeda (R$); `QT_DIA_CAREN`: dias; `QT_DIA_CONVERSAO_COTA_COMPRA`: dias; `QT_DIA_CONVERSAO_COTA_RESGATE`: dias; `QT_DIA_PAGTO_RESGATE`: dias; `TAXA_ADM`: percentual (%); `TAXA_ADM_MIN`: percentual (%); `TAXA_ADM_MAX`: percentual (%); `TAXA_ENTR`: percentual (%); `QT_DIA_SAIDA`: dias; `TAXA_SAIDA`: percentual (%); `PR_PL_DESPESA`: percentual (%); `VL_PATRIM_LIQ`: moeda (R$); `CLASSE_RISCO_ADMIN`: escala de 1 a 5 (sem unidade); `PR_RENTAB_FUNDO_5ANO`: percentual (%); `PR_VARIACAO_INDICE_REFER_5ANO`: percentual (%); `QT_ANO_PERDA`: anos; `PR_VARIACAO_PERFM`: percentual (%); `ANO_EXEMPLO`: ano; `ANO_ANTER_EXEMPLO`: ano; `VL_RESGATE_EXEMPLO`: moeda (R$); `VL_IMPOSTO_EXEMPLO`: moeda (R$); `VL_TAXA_ENTR_EXEMPLO`: moeda (R$); `VL_TAXA_SAIDA_EXEMPLO`: moeda (R$); `VL_AJUSTE_PERFM_EXEMPLO`: moeda (R$); `VL_DESPESA_EXEMPLO`: moeda (R$); `VL_DESPESA_3ANO`: moeda (R$); `VL_DESPESA_5ANO`: moeda (R$); `VL_RETORNO_3ANO`: moeda (R$); `VL_RETORNO_5ANO`: moeda (R$); `TEL_SAC`: código ou número de identificação (sem unidade); `PR_PL_ATIVO`: percentual (%); `ANO_RENTAB`: ano; `PR_RENTAB_ANO`: percentual (%); `PR_VARIACAO_INDICE_REFER_ANO`: percentual (%); `PR_PERFM_INDICE_REFER_ANO`: percentual (%); `MES_RENTAB`: mês (1 a 12); `PR_RENTAB_MES`: percentual (%); `PR_VARIACAO_INDICE_REFER_MES`: percentual (%); `PR_PERFM_INDICE_REFER_MES`: percentual (%) |
+| Unidades de medida | `PR_PL_ATIVO_EXTERIOR`: percentual (%); `PR_PL_ATIVO_CRED_PRIV`: percentual (%); `PR_PL_ALAVANC`: percentual (%); `PR_ATIVO_EMISSOR`: percentual (%); `PR_PL_APLIC_MAX_FUNDO_UNICO`: percentual (%); `INVEST_INICIAL_MIN`: moeda (R$); `INVEST_ADIC`: moeda (R$); `RESGATE_MIN`: moeda (R$); `VL_MIN_PERMAN`: moeda (R$); `QT_DIA_CAREN`: dias; `QT_DIA_CONVERSAO_COTA_COMPRA`: dias; `QT_DIA_CONVERSAO_COTA_RESGATE`: dias; `QT_DIA_PAGTO_RESGATE`: dias; `TAXA_ADM`: percentual (%); `TAXA_ADM_MIN`: percentual (%); `TAXA_ADM_MAX`: percentual (%); `TAXA_ENTR`: percentual (%); `QT_DIA_SAIDA`: dias; `TAXA_SAIDA`: percentual (%); `PR_PL_DESPESA`: percentual (%); `VL_PATRIM_LIQ`: moeda (R$); `CLASSE_RISCO_ADMIN`: escala de 1 a 5 (sem unidade); `PR_RENTAB_FUNDO_5ANO`: percentual (%); `PR_VARIACAO_INDICE_REFER_5ANO`: percentual (%); `QT_ANO_PERDA`: anos; `PR_VARIACAO_PERFM`: percentual (%); `ANO_EXEMPLO`: ano; `ANO_ANTER_EXEMPLO`: ano; `VL_RESGATE_EXEMPLO`: moeda (R$); `VL_IMPOSTO_EXEMPLO`: moeda (R$); `VL_TAXA_ENTR_EXEMPLO`: percentual (%); `VL_TAXA_SAIDA_EXEMPLO`: percentual (%); `VL_AJUSTE_PERFM_EXEMPLO`: moeda (R$); `VL_DESPESA_EXEMPLO`: moeda (R$); `VL_DESPESA_3ANO`: moeda (R$); `VL_DESPESA_5ANO`: moeda (R$); `VL_RETORNO_3ANO`: moeda (R$); `VL_RETORNO_5ANO`: moeda (R$); `TEL_SAC`: código ou número de identificação (sem unidade); `PR_PL_ATIVO`: percentual (%); `ANO_RENTAB`: ano; `PR_RENTAB_ANO`: percentual (%); `PR_VARIACAO_INDICE_REFER_ANO`: percentual (%); `PR_PERFM_INDICE_REFER_ANO`: percentual (%); `MES_RENTAB`: mês (1 a 12); `PR_RENTAB_MES`: percentual (%); `PR_VARIACAO_INDICE_REFER_MES`: percentual (%); `PR_PERFM_INDICE_REFER_MES`: percentual (%) |
 | Dados pessoais | `ENDER_ELETRONICO` (endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)); `ENDER_ELETRONICO_DESPESA` (endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)); `TEL_SAC` (endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)); `ENDER_ELETRONICO_RECLAMACAO` (endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)) |
 | Eras | 2023-11: `CNPJ_FUNDO` vira `CNPJ_FUNDO_CLASSE`, e entram `TP_FUNDO_CLASSE` e `ID_SUBCLASSE` (adaptação à Resolução CVM 175) |
 | Revisado em | 2026-11-16 |
@@ -197,8 +197,8 @@ Descrições do dicionário de dados (arquivos `META`) da CVM. Os nomes de colun
 | `ANO_ANTER_EXEMPLO` | `ANO_ANTER_EXEMPLO` | inteiro | Ano anterior ao de referência (exemplo para comparar custos e benefícios de se investir no fundo) (só em: `lamina_fi`) | ano | todo |
 | `VL_RESGATE_EXEMPLO` | `VL_RESGATE_EXEMPLO` | decimal | Valor que poderia ser resgatado já deduzido dos impostos (exemplo para comparar custos e benefícios de se investir no fundo) (só em: `lamina_fi`) | moeda (R$) | todo |
 | `VL_IMPOSTO_EXEMPLO` | `VL_IMPOSTO_EXEMPLO` | decimal | Valor dos impostos que seriam pagos (exemplo para comparar custos e benefícios de se investir no fundo) (só em: `lamina_fi`) | moeda (R$) | todo |
-| `VL_TAXA_ENTR_EXEMPLO` | `VL_TAXA_ENTR_EXEMPLO` | decimal | Valor da taxa de ingresso (exemplo para comparar custos e benefícios de se investir no fundo) (só em: `lamina_fi`) | moeda (R$) | todo |
-| `VL_TAXA_SAIDA_EXEMPLO` | `VL_TAXA_SAIDA_EXEMPLO` | decimal | Valor da taxa de saída (exemplo para comparar custos e benefícios de se investir no fundo) (só em: `lamina_fi`) | moeda (R$) | todo |
+| `VL_TAXA_ENTR_EXEMPLO` | `VL_TAXA_ENTR_EXEMPLO` | decimal | Valor da taxa de ingresso (exemplo para comparar custos e benefícios de se investir no fundo) (só em: `lamina_fi`) | percentual (%) | todo |
+| `VL_TAXA_SAIDA_EXEMPLO` | `VL_TAXA_SAIDA_EXEMPLO` | decimal | Valor da taxa de saída (exemplo para comparar custos e benefícios de se investir no fundo) (só em: `lamina_fi`) | percentual (%) | todo |
 | `VL_AJUSTE_PERFM_EXEMPLO` | `VL_AJUSTE_PERFM_EXEMPLO` | decimal | Valor do ajuste sobre performance individual (exemplo para comparar custos e benefícios de se investir no fundo) (só em: `lamina_fi`) | moeda (R$) | todo |
 | `VL_DESPESA_EXEMPLO` | `VL_DESPESA_EXEMPLO` | decimal | Valor total das despesas do fundo (exemplo para comparar custos e benefícios de se investir no fundo) (só em: `lamina_fi`) | moeda (R$) | todo |
 | `VL_DESPESA_3ANO` | `VL_DESPESA_3ANO` | decimal | Despesas previstas para 3 anos (se a taxa total de despesas se mantiver constante) (só em: `lamina_fi`) | moeda (R$) | todo |
@@ -210,7 +210,7 @@ Descrições do dicionário de dados (arquivos `META`) da CVM. Os nomes de colun
 | `CONFLITO_VENDA` | `CONFLITO_VENDA` | texto | Informa se existe conflito de interesses no esforço de venda (só em: `lamina_fi`) | — | todo |
 | `TEL_SAC` | `TEL_SAC` | inteiro | Telefone do serviço de atendimento ao cotista (só em: `lamina_fi`) | código ou número de identificação (sem unidade) | todo |
 | `ENDER_ELETRONICO_RECLAMACAO` | `ENDER_ELETRONICO_RECLAMACAO` | texto | Endereço eletrônico e demais canais disponíveis para o encaminhamento de reclamações (só em: `lamina_fi`) | — | todo |
-| `INF_SAC` | `INF_SAC` | texto | (nome da coluna nos arquivos anteriores à adaptação à Resolução CVM 175; depois, `INF_SAC`) (só em: `lamina_fi`) | — | todo |
+| `INF_SAC` | `INF_SAC` | texto | Sem descrição no dicionário da CVM; pelo nome da coluna: inf sac (só em: `lamina_fi`) | — | todo |
 | `TP_ATIVO` | `TP_ATIVO` | texto | Tipo de ativo (só em: `lamina_fi_carteira`) | — | todo |
 | `PR_PL_ATIVO` | `PR_PL_ATIVO` | decimal | Concentração dos investimentos do fundo por tipo de ativo (em % do PL) (só em: `lamina_fi_carteira`) | percentual (%) | todo |
 | `ANO_RENTAB` | `ANO_RENTAB` | inteiro | Ano referente à rentabilidade do fundo (só em: `lamina_fi_rentab_ano`) | ano | todo |
