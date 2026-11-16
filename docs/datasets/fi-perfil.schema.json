@@ -1,0 +1,876 @@
+{
+  "fonte": "cvm",
+  "dataset": "fi-perfil",
+  "gerado_em": "2026-11-16T03:54:15+00:00",
+  "particoes": [
+    "ano",
+    "mes"
+  ],
+  "colunas": [
+    {
+      "nome": "CNPJ_FUNDO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2022-12"
+    },
+    {
+      "nome": "DENOM_SOCIAL",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "DT_COMPTC",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "VERSAO",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "NR_COTST_PF_PB",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "NR_COTST_PF_VAREJO",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "NR_COTST_PJ_NAO_FINANC_PB",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "NR_COTST_PJ_NAO_FINANC_VAREJO",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "NR_COTST_BANCO",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "NR_COTST_CORRETORA_DISTRIB",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "NR_COTST_PJ_FINANC",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "NR_COTST_INVNR",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "NR_COTST_EAPC",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "NR_COTST_EFPC",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "NR_COTST_RPPS",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "NR_COTST_SEGUR",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "NR_COTST_CAPITALIZ",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "NR_COTST_FI_CLUBE",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "NR_COTST_DISTRIB",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "NR_COTST_OUTRO",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_PL_COTST_PF_PB",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_PL_COTST_PF_VAREJO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_PL_COTST_PJ_NAO_FINANC_PB",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_PL_COTST_PJ_NAO_FINANC_VAREJO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_PL_COTST_BANCO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_PL_COTST_CORRETORA_DISTRIB",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_PL_COTST_PJ_FINANC",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_PL_COTST_INVNR",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_PL_COTST_EAPC",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_PL_COTST_EFPC",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_PL_COTST_RPPS",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_PL_COTST_SEGUR",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_PL_COTST_CAPITALIZ",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_PL_COTST_FI_CLUBE",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_PL_COTST_DISTRIB",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_PL_COTST_OUTRO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "VOTO_ADMIN_ASSEMB",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "JUSTIF_VOTO_ADMIN_ASSEMB",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_VAR_CARTEIRA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "MOD_VAR",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PRAZO_CARTEIRA_TITULO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "DELIB_ASSEMB",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "VL_CONTRATO_COMPRA_DOLAR",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "VL_CONTRATO_VENDA_DOLAR",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_VARIACAO_DIARIA_COTA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "FPR",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CENARIO_FPR_IBOVESPA",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CENARIO_FPR_JUROS",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CENARIO_FPR_CUPOM",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CENARIO_FPR_DOLAR",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CENARIO_FPR_OUTRO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_VARIACAO_DIARIA_COTA_ESTRESSE",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_VARIACAO_DIARIA_PL_TAXA_ANUAL",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_VARIACAO_DIARIA_PL_TAXA_CAMBIO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_VARIACAO_DIARIA_PL_IBOVESPA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "FATOR_RISCO_OUTRO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_VARIACAO_DIARIA_OUTRO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_COLATERAL_DERIV",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "FATOR_RISCO_NOCIONAL",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "VL_FATOR_RISCO_NOCIONAL_LONG_IBOVESPA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "VL_FATOR_RISCO_NOCIONAL_LONG_JUROS",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "VL_FATOR_RISCO_NOCIONAL_LONG_CUPOM",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "VL_FATOR_RISCO_NOCIONAL_LONG_DOLAR",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "VL_FATOR_RISCO_NOCIONAL_LONG_OUTRO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "VL_FATOR_RISCO_NOCIONAL_SHORT_IBOVESPA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "VL_FATOR_RISCO_NOCIONAL_SHORT_JUROS",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "VL_FATOR_RISCO_NOCIONAL_SHORT_CUPOM",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "VL_FATOR_RISCO_NOCIONAL_SHORT_DOLAR",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "VL_FATOR_RISCO_NOCIONAL_SHORT_OUTRO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PF_PJ_COMITENTE_1",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CPF_CNPJ_COMITENTE_1",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "COMITENTE_LIGADO_1",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_COMITENTE_1",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PF_PJ_COMITENTE_2",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CPF_CNPJ_COMITENTE_2",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "COMITENTE_LIGADO_2",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_COMITENTE_2",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PF_PJ_COMITENTE_3",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CPF_CNPJ_COMITENTE_3",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "COMITENTE_LIGADO_3",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_COMITENTE_3",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_ATIVO_EMISSOR_LIGADO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PF_PJ_EMISSOR_1",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CPF_CNPJ_EMISSOR_1",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "EMISSOR_LIGADO_1",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_EMISSOR_1",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PF_PJ_EMISSOR_2",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CPF_CNPJ_EMISSOR_2",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "EMISSOR_LIGADO_2",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_EMISSOR_2",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PF_PJ_EMISSOR_3",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CPF_CNPJ_EMISSOR_3",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "EMISSOR_LIGADO_3",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_EMISSOR_3",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_ATIVO_CRED_PRIV",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "VEDAC_TAXA_PERFM",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "DT_COTA_TAXA_PERFM",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "VL_COTA_TAXA_PERFM",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "VL_DIREITO_DISTRIB",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "NR_COTST_ENTID_PREVID_COMPL",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_COTST_ENTID_PREVID_COMPL",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_PATRIM_LIQ_MAIOR_COTST",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "NR_DIA_CINQU_PERC",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "NR_DIA_CEM_PERC",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "ST_LIQDEZ",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_PATRIM_LIQ_CONVTD_CAIXA",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TP_FUNDO_CLASSE",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2026-10",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CNPJ_FUNDO_CLASSE",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2026-10",
+      "periodo_fim": "2026-10"
+    }
+  ],
+  "arquivos": 3
+}

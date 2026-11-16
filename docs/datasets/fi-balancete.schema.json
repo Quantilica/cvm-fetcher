@@ -1,0 +1,68 @@
+{
+  "fonte": "cvm",
+  "dataset": "fi-balancete",
+  "gerado_em": "2026-11-16T03:54:15+00:00",
+  "particoes": [
+    "ano",
+    "mes"
+  ],
+  "colunas": [
+    {
+      "nome": "CNPJ_FUNDO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2015-01",
+      "periodo_fim": "2020-12"
+    },
+    {
+      "nome": "DT_COMPTC",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2015-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PLANO_CONTA_BALCTE",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2015-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CD_CONTA_BALCTE",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2015-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "VL_SALDO_BALCTE",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TP_FUNDO_CLASSE",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2026-10",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CNPJ_FUNDO_CLASSE",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2026-10",
+      "periodo_fim": "2026-10"
+    }
+  ],
+  "arquivos": 3
+}

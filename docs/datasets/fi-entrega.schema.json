@@ -1,0 +1,100 @@
+{
+  "fonte": "cvm",
+  "dataset": "fi-entrega",
+  "gerado_em": "2026-11-16T03:54:15+00:00",
+  "particoes": [
+    "ano",
+    "mes"
+  ],
+  "colunas": [
+    {
+      "nome": "Tipo_Fundo_Classe",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CNPJ_Fundo_Classe",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "ID_Subclasse",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Tipo_Documento",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Data_Inicio_Competencia",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Data_Fim_Competencia",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "ID_Documento",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Data_Hora_Entrega",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Tipo_Apresentacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Ativo",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Sistema_Origem",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    }
+  ],
+  "arquivos": 4
+}

@@ -1,0 +1,741 @@
+{
+  "fonte": "cvm",
+  "dataset": "fi-cad",
+  "gerado_em": "2026-11-16T03:54:15+00:00",
+  "particoes": [],
+  "colunas": [
+    {
+      "nome": "TP_FUNDO",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "CNPJ_FUNDO",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DENOM_SOCIAL",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_REG",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_CONST",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "CD_CVM",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_CANCEL",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "SIT",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_INI_SIT",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_INI_ATIV",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_INI_EXERC",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_FIM_EXERC",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "CLASSE",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_INI_CLASSE",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "RENTAB_FUNDO",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "CONDOM",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "FUNDO_COTAS",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "FUNDO_EXCLUSIVO",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "TRIB_LPRAZO",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "PUBLICO_ALVO",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "ENTID_INVEST",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "TAXA_PERFM",
+      "tipos": [
+        "double"
+      ]
+    },
+    {
+      "nome": "INF_TAXA_PERFM",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "TAXA_ADM",
+      "tipos": [
+        "double"
+      ]
+    },
+    {
+      "nome": "INF_TAXA_ADM",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "VL_PATRIM_LIQ",
+      "tipos": [
+        "double"
+      ]
+    },
+    {
+      "nome": "DT_PATRIM_LIQ",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DIRETOR",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "CNPJ_ADMIN",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "ADMIN",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "PF_PJ_GESTOR",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "CPF_CNPJ_GESTOR",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "GESTOR",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "CNPJ_AUDITOR",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "AUDITOR",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "CNPJ_CUSTODIANTE",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "CUSTODIANTE",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "CNPJ_CONTROLADOR",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "CONTROLADOR",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "INVEST_CEMPR_EXTER",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "CLASSE_ANBIMA",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_INI_ADMIN",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_FIM_ADMIN",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_INI_AUDITOR",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_FIM_AUDITOR",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_FIM_CLASSE",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_INI_CONDOM",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_FIM_CONDOM",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_INI_CONTROLADOR",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_FIM_CONTROLADOR",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_INI_CUSTODIANTE",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_FIM_CUSTODIANTE",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DENOM_COMERC",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_INI_DENOM_COMERC",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_FIM_DENOM_COMERC",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_INI_DENOM_SOCIAL",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_FIM_DENOM_SOCIAL",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_INI_DIRETOR",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_FIM_DIRETOR",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_INI_ST_EXCLUSIVO",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_FIM_ST_EXCLUSIVO",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_INI_ST_COTAS",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_FIM_ST_COTAS",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_INI_GESTOR",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_FIM_GESTOR",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_INI_PUBLICO_ALVO",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_FIM_PUBLICO_ALVO",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_INI_RENTAB",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_FIM_RENTAB",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_FIM_SIT",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_INI_TAXA_ADM",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "VL_TAXA_PERFM",
+      "tipos": [
+        "double"
+      ]
+    },
+    {
+      "nome": "DS_TAXA_PERFM",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_INI_TAXA_PERFM",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_INI_ST_TRIB_LPRAZO",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_FIM_ST_TRIB_LPRAZO",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "ID_Registro_Fundo",
+      "tipos": [
+        "int64"
+      ]
+    },
+    {
+      "nome": "ID_Registro_Classe",
+      "tipos": [
+        "int64"
+      ]
+    },
+    {
+      "nome": "CNPJ_Classe",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "Codigo_CVM",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "Data_Registro",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "Data_Constituicao",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "Data_Inicio",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "Tipo_Classe",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "Denominacao_Social",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "Situacao",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "Data_Inicio_Situacao",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "Classificacao",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "Indicador_Desempenho",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "Classe_Cotas",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "Classificacao_Anbima",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "Tributacao_Longo_Prazo",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "Entidade_Investimento",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "Permitido_Aplicacao_CemPorCento_Exterior",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "Classe_ESG",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "Forma_Condominio",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "Exclusivo",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "Publico_Alvo",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "Patrimonio_Liquido",
+      "tipos": [
+        "double"
+      ]
+    },
+    {
+      "nome": "Data_Patrimonio_Liquido",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "CNPJ_Auditor",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "Auditor",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "CNPJ_Custodiante",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "Custodiante",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "CNPJ_Controlador",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "Controlador",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "CNPJ_Fundo",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "Tipo_Fundo",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "Data_Cancelamento",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "Data_Adaptacao_RCVM175",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "Data_Inicio_Exercicio_Social",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "Data_Fim_Exercicio_Social",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "Diretor",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "CNPJ_Administrador",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "Administrador",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "Tipo_Pessoa_Gestor",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "CPF_CNPJ_Gestor",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "Gestor",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "ID_Subclasse",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "Previdenciario",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "Exclusivo_INR",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "Exclusivo_Previdencia_Complementar",
+      "tipos": [
+        "large_string"
+      ]
+    }
+  ],
+  "arquivos": 23
+}

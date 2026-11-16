@@ -1,0 +1,956 @@
+{
+  "fonte": "cvm",
+  "dataset": "fi-extrato",
+  "gerado_em": "2026-11-16T03:54:15+00:00",
+  "particoes": [
+    "ano"
+  ],
+  "colunas": [
+    {
+      "nome": "CNPJ_FUNDO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2015"
+    },
+    {
+      "nome": "DENOM_SOCIAL",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "DT_COMPTC",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CONDOM",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "NEGOC_MERC",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "MERCADO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "TP_PRAZO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PRAZO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PUBLICO_ALVO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "REG_ANBIMA",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CLASSE_ANBIMA",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "DISTRIB",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "POLIT_INVEST",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "APLIC_MAX_FUNDO_LIGADO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "RESULT_CART_INCORP_PL",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "FUNDO_COTAS",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "FUNDO_ESPELHO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "APLIC_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "ATUALIZ_DIARIA_COTA",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PRAZO_ATUALIZ_COTA",
+      "tipos": [
+        "int64",
+        "large_string"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "COTA_EMISSAO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "COTA_PL",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "QT_DIA_CONVERSAO_COTA",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "QT_DIA_PAGTO_COTA",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "QT_DIA_RESGATE_COTAS",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "QT_DIA_PAGTO_RESGATE",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "TP_DIA_PAGTO_RESGATE",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "TAXA_SAIDA_PAGTO_RESGATE",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "TAXA_ADM",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "TAXA_CUSTODIA_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "EXISTE_TAXA_PERFM",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "TAXA_PERFM",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PARAM_TAXA_PERFM",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_INDICE_REFER_TAXA_PERFM",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "VL_CUPOM",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CALC_TAXA_PERFM",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "INF_TAXA_PERFM",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "EXISTE_TAXA_INGRESSO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "TAXA_INGRESSO_REAL",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "TAXA_INGRESSO_PR",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "EXISTE_TAXA_SAIDA",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "TAXA_SAIDA_REAL",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "TAXA_SAIDA_PR",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "OPER_DERIV",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "FINALIDADE_OPER_DERIV",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "OPER_VL_SUPERIOR_PL",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "FATOR_OPER_VL_SUPERIOR_PL",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CONTRAP_LIGADO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "INVEST_EXTERIOR",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "APLIC_MAX_ATIVO_EXTERIOR",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "ATIVO_CRED_PRIV",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "APLIC_MAX_ATIVO_CRED_PRIV",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_INSTITUICAO_FINANC_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_INSTITUICAO_FINANC_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_CIA_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_CIA_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_FI_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_FI_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_UNIAO_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_UNIAO_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_ADMIN_GESTOR_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_ADMIN_GESTOR_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_EMISSOR_OUTRO_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_EMISSOR_OUTRO_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COTA_FI_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COTA_FI_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COTA_FIC_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COTA_FIC_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COTA_FI_QUALIF_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COTA_FI_QUALIF_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COTA_FIC_QUALIF_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COTA_FIC_QUALIF_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COTA_FI_PROF_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COTA_FI_PROF_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COTA_FIC_PROF_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COTA_FIC_PROF_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COTA_FII_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COTA_FII_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COTA_FIDC_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COTA_FIDC_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COTA_FICFIDC_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COTA_FICFIDC_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COTA_FIDC_NP_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COTA_FIDC_NP_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COTA_FICFIDC_NP_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COTA_FICFIDC_NP_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COTA_ETF_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COTA_ETF_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_CRI_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_CRI_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_TITPUB_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_TITPUB_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_OURO_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_OURO_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_TIT_INSTITUICAO_FINANC_BACEN_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_TIT_INSTITUICAO_FINANC_BACEN_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_VLMOB_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_VLMOB_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_ACAO_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_ACAO_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_DEBENTURE_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_DEBENTURE_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_NP_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_NP_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COMPROM_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COMPROM_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_DERIV_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_DERIV_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_ATIVO_OUTRO_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_ATIVO_OUTRO_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COTA_FMIEE_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COTA_FMIEE_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COTA_FIP_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COTA_FIP_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COTA_FICFIP_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COTA_FICFIP_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2015",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "TP_FUNDO_CLASSE",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2021",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CNPJ_FUNDO_CLASSE",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2021",
+      "periodo_fim": "2026"
+    }
+  ],
+  "arquivos": 3
+}

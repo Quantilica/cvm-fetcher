@@ -1,0 +1,741 @@
+{
+  "fonte": "cvm",
+  "dataset": "fi-lamina",
+  "gerado_em": "2026-11-16T03:54:15+00:00",
+  "particoes": [
+    "ano",
+    "mes"
+  ],
+  "colunas": [
+    {
+      "nome": "CNPJ_FUNDO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2022-12"
+    },
+    {
+      "nome": "DENOM_SOCIAL",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "DT_COMPTC",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "NM_FANTASIA",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "ENDER_ELETRONICO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PUBLICO_ALVO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "RESTR_INVEST",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "OBJETIVO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "POLIT_INVEST",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_PL_ATIVO_EXTERIOR",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_PL_ATIVO_CRED_PRIV",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_PL_ALAVANC",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_ATIVO_EMISSOR",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "DERIV_PROTECAO_CARTEIRA",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "RISCO_PERDA",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "RISCO_PERDA_NEGATIVO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_PL_APLIC_MAX_FUNDO_UNICO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "INVEST_INICIAL_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "INVEST_ADIC",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "RESGATE_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "HORA_APLIC_RESGATE",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "VL_MIN_PERMAN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "QT_DIA_CAREN",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CONDIC_CAREN",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CONVERSAO_COTA_COMPRA",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "QT_DIA_CONVERSAO_COTA_COMPRA",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CONVERSAO_COTA_CANC",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "QT_DIA_CONVERSAO_COTA_RESGATE",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TP_DIA_PAGTO_RESGATE",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "QT_DIA_PAGTO_RESGATE",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TP_TAXA_ADM",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAXA_ADM",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAXA_ADM_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAXA_ADM_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAXA_ADM_OBS",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAXA_ENTR",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CONDIC_ENTR",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "QT_DIA_SAIDA",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAXA_SAIDA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CONDIC_SAIDA",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAXA_PERFM",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_PL_DESPESA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "DT_INI_DESPESA",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "DT_FIM_DESPESA",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "ENDER_ELETRONICO_DESPESA",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "VL_PATRIM_LIQ",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CLASSE_RISCO_ADMIN",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_RENTAB_FUNDO_5ANO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "INDICE_REFER",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_VARIACAO_INDICE_REFER_5ANO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "QT_ANO_PERDA",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "DT_INI_ATIV_5ANO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "ANO_SEM_RENTAB",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CALC_RENTAB_FUNDO_GATILHO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_VARIACAO_PERFM",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CALC_RENTAB_FUNDO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "RENTAB_GATILHO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "DS_RENTAB_GATILHO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "ANO_EXEMPLO",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "ANO_ANTER_EXEMPLO",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "VL_RESGATE_EXEMPLO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "VL_IMPOSTO_EXEMPLO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "VL_TAXA_ENTR_EXEMPLO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "VL_TAXA_SAIDA_EXEMPLO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "VL_AJUSTE_PERFM_EXEMPLO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "VL_DESPESA_EXEMPLO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "VL_DESPESA_3ANO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "VL_DESPESA_5ANO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "VL_RETORNO_3ANO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "VL_RETORNO_5ANO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "REMUN_DISTRIB",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "DISTRIB_GESTOR_UNICO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CONFLITO_VENDA",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TEL_SAC",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "ENDER_ELETRONICO_RECLAMACAO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "INF_SAC",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TP_ATIVO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_PL_ATIVO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "ANO_RENTAB",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_RENTAB_ANO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_VARIACAO_INDICE_REFER_ANO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_PERFM_INDICE_REFER_ANO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "RENTAB_ANO_OBS",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "MES_RENTAB",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_RENTAB_MES",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_VARIACAO_INDICE_REFER_MES",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_PERFM_INDICE_REFER_MES",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "RENTAB_MES_OBS",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TP_FUNDO_CLASSE",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2026-10",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CNPJ_FUNDO_CLASSE",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2026-10",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "ID_SUBCLASSE",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2026-10",
+      "periodo_fim": "2026-10"
+    }
+  ],
+  "arquivos": 12
+}

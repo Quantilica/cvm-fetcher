@@ -1,0 +1,108 @@
+{
+  "fonte": "cvm",
+  "dataset": "fi-inf-diario",
+  "gerado_em": "2026-11-16T03:54:15+00:00",
+  "particoes": [
+    "ano",
+    "mes"
+  ],
+  "colunas": [
+    {
+      "nome": "TP_FUNDO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2021-01",
+      "periodo_fim": "2021-01"
+    },
+    {
+      "nome": "CNPJ_FUNDO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2021-01",
+      "periodo_fim": "2021-01"
+    },
+    {
+      "nome": "DT_COMPTC",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2021-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "VL_TOTAL",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2021-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "VL_QUOTA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2021-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "VL_PATRIM_LIQ",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2021-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CAPTC_DIA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2021-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "RESG_DIA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2021-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "NR_COTST",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2021-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TP_FUNDO_CLASSE",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2023-12",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CNPJ_FUNDO_CLASSE",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2023-12",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "ID_SUBCLASSE",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2023-12",
+      "periodo_fim": "2026-10"
+    }
+  ],
+  "arquivos": 3
+}
