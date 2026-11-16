@@ -1,0 +1,1434 @@
+{
+  "fonte": "cvm",
+  "dataset": "fii-inf-anual",
+  "gerado_em": "2026-11-16T03:58:45+00:00",
+  "particoes": [
+    "ano"
+  ],
+  "colunas": [
+    {
+      "nome": "CNPJ_Fundo",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2016"
+    },
+    {
+      "nome": "Data_Referencia",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Versao",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nome_Ativo",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Objetivos",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Montante_Investido",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Origem_Recursos",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Ativo_Negociado",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Natureza_Transacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Transacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Valor_Envolvido",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Assembleia",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Contraparte",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Valor",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Valor_Justo",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Valorizacao_Desvalorizacao",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nome_Gestor",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CNPJ_Gestor",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Endereco_Gestor",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Telefone_Gestor",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nome_Custodiante",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CNPJ_Custodiante",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Endereco_Custodiante",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Telefone_Custodiante",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nome_Auditor_Independente",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CNPJ_Auditor_Independente",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Endereco_Auditor_Independente",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Telefone_Auditor_Independente",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nome_Formador_Mercado",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CNPJ_Formador_Mercado",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Endereco_Formador_Mercado",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Telefone_Formador_Mercado",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nome_Distribuidor_Cotas",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CNPJ_Distribuidor_Cotas",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Endereco_Distribuidor_Cotas",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Telefone_Distribuidor_Cotas",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nome_Consultor_Especializado",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CNPJ_Consultor_Especializado",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Endereco_Consultor_Especializado",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Telefone_Consultor_Especializado",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nome_Empresa_Locacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CNPJ_Empresa_Locacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Endereco_Empresa_Locacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Telefone_Empresa_Locacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Programa_Investimentos_Exercicio_Seguinte",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Resultado_Exercicio_Findo",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Conjuntura_Economica_Periodo_Findo",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Perspectiva_Periodo_Seguinte",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Criterios_Avaliacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Analise_Impacto_Perda_Processos_Sigilosos",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Endereco_Fisico_Documentos_Assembleia_Geral",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Endereco_Eletronico_Documentos_Assembleia_Geral",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Meio_Comunicacao_Cotistas",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Regras_Participacao_Cotistas_Assembleia_Geral",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Pratica_Assembleia_Meio_Eletronico",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Politica_Remuneracao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Valor_Pago_Ano_Referencia",
+      "tipos": [
+        "double",
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Patrimonio_Contabil",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Patrimonio_Valor_Mercado",
+      "tipos": [
+        "double",
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Politica_Divulgacao_Fato_Relevante",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Politica_Negociacao_Cotas",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Politica_Exercicio_Direito_Voto",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Responsaveis_Politica_Divulgacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Regras_Prazos_Chamada_Capital",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Link_Download_Anexo",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nome_Diretor_Responsavel",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Idade",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CPF",
+      "tipos": [
+        "int64",
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Profissao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Email",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Formacao_Academica",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_Cotas_FII_Detidas",
+      "tipos": [
+        "double",
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_Cotas_FII_Compradas",
+      "tipos": [
+        "int64",
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_Cotas_FII_Vendidas",
+      "tipos": [
+        "double",
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Inicio",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Condenacao_Criminal",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Condenacao_Processo_CVM",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Numero_Cotistas_Faixa_Ate_5",
+      "tipos": [
+        "double",
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Numero_Cotas_Detidas_Faixa_Ate_5",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Cotas_Detidas_Faixa_Ate_5",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Detido_PF_Faixa_Ate_5",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Detido_PJ_Faixa_Ate_5",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Numero_Cotistas_Faixa_5a10",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Numero_Cotas_Detidas_Faixa_5a10",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Cotas_Detidas_Faixa_5a10",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Detido_PF_Faixa_5a10",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Detido_PJ_Faixa_5a10",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Numero_Cotistas_Faixa_10a15",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Numero_Cotas_Detidas_Faixa_10a15",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Cotas_Detidas_Faixa_10a15",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Detido_PF_Faixa_10a15",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Detido_PJ_Faixa_10a15",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Numero_Cotistas_Faixa_15a20",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Numero_Cotas_Detidas_Faixa_15a20",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Cotas_Detidas_Faixa_15a20",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Detido_PF_Faixa_15a20",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Detido_PJ_Faixa_15a20",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Numero_Cotistas_Faixa_20a30",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Numero_Cotas_Detidas_Faixa_20a30",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Cotas_Detidas_Faixa_20a30",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Detido_PF_Faixa_20a30",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Detido_PJ_Faixa_20a30",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Numero_Cotistas_Faixa_30a40",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Numero_Cotas_Detidas_Faixa_30a40",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Cotas_Detidas_Faixa_30a40",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Detido_PF_Faixa_30a40",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Detido_PJ_Faixa_30a40",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Numero_Cotistas_Faixa_40a50",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Numero_Cotas_Detidas_Faixa_40a50",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Cotas_Detidas_Faixa_40a50",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Detido_PF_Faixa_40a50",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Detido_PJ_Faixa_40a50",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Numero_Cotistas_Faixa_Acima_50",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Numero_Cotas_Detidas_Faixa_Acima_50",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Cotas_Detidas_Faixa_Acima_50",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Detido_PF_Faixa_Acima_50",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Detido_PJ_Faixa_Acima_50",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nome_Diretor_Representante",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Funcao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nome_Empresa",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Periodo",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Cargo_Funcao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Atividade_Principal",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Entrega",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nome_Fundo",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2021"
+    },
+    {
+      "nome": "Data_Funcionamento",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Publico_Alvo",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Codigo_ISIN",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_Cotas_Emitidas",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Fundo_Exclusivo",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Cotistas_Vinculo_Familiar",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Mandato",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Segmento_Atuacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Tipo_Gestao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Prazo_Duracao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Prazo_Duracao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Encerramento_Exercicio_Social",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Mercado_Negociacao_Bolsa",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Mercado_Negociacao_MBO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Mercado_Negociacao_MB",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Entidade_Administradora_BVMF",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Entidade_Administradora_CETIP",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nome_Administrador",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CNPJ_Administrador",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Logradouro",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Numero",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Complemento",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Bairro",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Cidade",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Estado",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CEP",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Telefone1",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Telefone2",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Telefone3",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Site",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nome_Prestador",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CNPJ_Prestador",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Endereco",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Telefone",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Numero_Processo",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Juizo",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Instancia",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Instauracao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Valor_Causa",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Partes_Processo",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Chance_Perda",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Principais_Fatos",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Analise_Impacto_Perda",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Valores",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2021"
+    },
+    {
+      "nome": "Causa_Contingencia",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2021"
+    },
+    {
+      "nome": "Nome_Representante",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2021"
+    },
+    {
+      "nome": "Forma_Remuneracao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2021"
+    },
+    {
+      "nome": "Data_Eleicao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2021"
+    },
+    {
+      "nome": "Termino_Mandato",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2021"
+    },
+    {
+      "nome": "CNPJ_Fundo_Classe",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2021",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Tipo_Fundo_Classe",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2021",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nome_Fundo_Classe",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2021",
+      "periodo_fim": "2026"
+    }
+  ],
+  "arquivos": 36
+}

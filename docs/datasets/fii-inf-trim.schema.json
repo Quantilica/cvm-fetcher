@@ -1,0 +1,1790 @@
+{
+  "fonte": "cvm",
+  "dataset": "fii-inf-trim",
+  "gerado_em": "2026-11-16T03:58:45+00:00",
+  "particoes": [
+    "ano"
+  ],
+  "colunas": [
+    {
+      "nome": "CNPJ_Fundo",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2016"
+    },
+    {
+      "nome": "Data_Referencia",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Versao",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nome_Imovel",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Endereco",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Alienacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Area",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Numero_Unidades",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Outras_Caracteristicas_Relevantes",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Imovel_Total_Investido",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Imovel_PL",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Terreno_Total_Investido",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Terreno_PL",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Categoria",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Tipo",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Emissor",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CNPJ_Emissor",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Emissao",
+      "tipos": [
+        "int64",
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Serie",
+      "tipos": [
+        "int64",
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Codigo_Acao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nome_Ativo",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Vencimento",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Valor",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Garantido_Relativo",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Garantidor",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Principais_Caracteristicas_Garantia",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Vencimento_Valor_Total_Faixa_Ate_3Meses",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Vencimento_Receita_FII_Faixa_Ate_3Meses",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Vencimento_Valor_Total_Faixa_3a6Meses",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Vencimento_Receita_FII_Faixa_3a6Meses",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Vencimento_Valor_Total_Faixa_6a9Meses",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Vencimento_Receita_FII_Faixa_6a9Meses",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Vencimento_Valor_Total_Faixa_9a12Meses",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Vencimento_Receita_FII_Faixa_9a12Meses",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Vencimento_Valor_Total_Faixa_12a15Meses",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Vencimento_Receita_FII_Faixa_12a15Meses",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Vencimento_Valor_Total_Faixa_15a18Meses",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Vencimento_Receita_FII_Faixa_15a18Meses",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Vencimento_Valor_Total_Faixa_18a21Meses",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Vencimento_Receita_FII_Faixa_18a21Meses",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Vencimento_Valor_Total_Faixa_21a24Meses",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Vencimento_Receita_FII_Faixa_21a24Meses",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Vencimento_Valor_Total_Faixa_24a27Meses",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Vencimento_Receita_FII_Faixa_24a27Meses",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Vencimento_Valor_Total_Faixa_27a30Meses",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Vencimento_Receita_FII_Faixa_27a30Meses",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Vencimento_Valor_Total_Faixa_30a33Meses",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Vencimento_Receita_FII_Faixa_30a33Meses",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Vencimento_Valor_Total_Faixa_33a36Meses",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Vencimento_Receita_FII_Faixa_33a36Meses",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Vencimento_Valor_Total_Faixa_Acima_36Meses",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Vencimento_Receita_FII_Faixa_Acima_36Meses",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Vencimento_Valor_Total_Faixa_Indeterminado",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Vencimento_Receita_FII_Faixa_Indeterminado",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Indexador_Valor_Total_IGPM",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Indexador_Receita_FII_IGPM",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Indexador_Valor_Total_INPC",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Indexador_Receita_FII_INPC",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Indexador_Valor_Total_IPCA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Indexador_Receita_FII_IPCA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Indexador_Valor_Total_INCC",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Indexador_Receita_FII_INCC",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Caracteristicas_Contratuais",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Politica_Contratacao_Seguro_Imovel_Renda_Acabado",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Politica_Contratacao_Seguro_Imovel_Renda_Construcao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Politica_Contratacao_Seguro_Imovel_Venda_Acabado",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Politica_Contratacao_Seguro_Imovel_Venda_Construcao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Ativo_Liquidez_Valor_Disponibilidades",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Ativo_Liquidez_Valor_Titulos_Publicos",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Ativo_Liquidez_Valor_Titulos_Privados",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Ativo_Liquidez_Valor_Fundos_Renda_Fixa",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Principais_Caracteristicas",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Entrega",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nome_Fundo",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2016"
+    },
+    {
+      "nome": "Data_Funcionamento",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Publico_Alvo",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Codigo_ISIN",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_Cotas_Emitidas",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Fundo_Exclusivo",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Fundo_Nao_Listado_Exclusivo",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Cotistas_Vinculo_Familiar",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Mandato",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Segmento_Atuacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Tipo_Gestao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Prazo_Duracao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Prazo_Duracao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Encerramento_Exercicio_Social",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Mercado_Negociacao_Bolsa",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Mercado_Negociacao_MBO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Mercado_Negociacao_MB",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Entidade_Administradora_BVMF",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Entidade_Administradora_CETIP",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nome_Administrador",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CNPJ_Administrador",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Logradouro",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Numero",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Complemento",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Bairro",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Cidade",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Estado",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CEP",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Telefone1",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Telefone2",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Telefone3",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Site",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Email",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Encerramento_Trimestre",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Classe",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Vacancia",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Inadimplencia",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Receitas_FII",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Locado",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Vendido",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Conclusao_Obras_Realizado",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Conclusao_Obras_Previsto",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Custo_Construcao_Realizado",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Custo_Construcao_Previsto",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nome_Endereco_Imovel",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Justificativa_Evolucao_Inferior_Previsto",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Justificativa_Custo_Superior_Previsto",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Setor_Atuacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Receita_Imovel",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Mes_Referencia",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Rentabilidade_Efetiva_Mes",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Rentabilidade_Auferida_Ausencia_Garantia",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Receita_Venda_Estoque_Contabil",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Receita_Venda_Estoque_Financeiro",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Custo_Estoque_Contabil",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Custo_Estoque_Financeiro",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Ajuste_Realizacao_Estoque_Contabil",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Ajuste_Realizacao_Estoque_Financeiro",
+      "tipos": [
+        "double",
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Outras_Receitas_Despesas_Estoque_Contabil",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Outras_Receitas_Despesas_Estoque_Financeiro",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Resultado_Liquido_Estoque_Contabil",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Resultado_Liquido_Estoque_Financeiro",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Receita_Aluguel_Investimento_Contabil",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Receita_Aluguel_Investimento_Financeiro",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Despesa_Manutencao_Investimento_Contabil",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Despesa_Manutencao_Investimento_Financeiro",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Receita_Venda_Investimento_Contabil",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Receita_Venda_Investimento_Financeiro",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Custo_Investimento_Contabil",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Custo_Investimento_Financeiro",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Ajuste_Justo_Investimento_Contabil",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Ajuste_Justo_Investimento_Financeiro",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Outras_Receitas_Despesas_Investimento_Contabil",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Outras_Receitas_Despesas_Investimento_Financeiro",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Resultado_Liquido_Renda_Contabil",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Resultado_Liquido_Renda_Investimento_Financeiro",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Receita_Juros_TVM_Contabil",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Receita_Juros_TVM_Financeiro",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Ajuste_Justo_TVM_Contabil",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Ajuste_Justo_TVM_Financeiro",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Resultado_Venda_TVM_Contabil",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Resultado_Venda_TVM_Financeiro",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Outras_Receitas_Despesas_TVM_Contabil",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Outras_Receitas_Despesas_TVM_Financeiro",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Resultado_Liquido_TVM_Contabil",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Resultado_Liquido_TVM_Financeiro",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Resultado_Liquido_Total_Contabil",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Resultado_Liquido_Total_Financeiro",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Receita_Juros_Aplicacao_Contabil",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Receita_Juros_Aplicacao_Financeiro",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Ajuste_Justo_Aplicacao_Contabil",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Ajuste_Justo_Aplicacao_Financeiro",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Resultado_Venda_Aplicacao_Contabil",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Resultado_Venda_Aplicacao_Financeiro",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Outras_Receitas_Despesas_Aplicacao_Contabil",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Outras_Receitas_Despesas_Aplicacao_Financeiro",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Resultado_Liquido_Recurso_Liquidez_Contabil",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Resultado_Liquido_Recurso_Liquidez_Financeiro",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Resultado_Liquido_Derivativos_Contabil",
+      "tipos": [
+        "double",
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Resultado_Liquido_Derivativos_Financeiro",
+      "tipos": [
+        "double",
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Taxa_Administracao_Contabil",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Taxa_Administracao_Financeiro",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Taxa_Desempenho_Contabil",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Taxa_Desempenho_Financeiro",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Despesa_Consultoria_Especializada_Contabil",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Despesa_Consultoria_Especializada_Financeiro",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Despesa_Empresa_Especializada_Contabil",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Despesa_Empresa_Especializada_Financeiro",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Despesa_Formador_Mercado_Contabil",
+      "tipos": [
+        "double",
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Despesa_Formador_Mercado_Financeiro",
+      "tipos": [
+        "double",
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Despesa_Custodia_Contabil",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Despesa_Custodia_Financeiro",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Despesa_Auditoria_Independente_Contabil",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Despesa_Auditoria_Independente_Financeiro",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Despesa_Representantes_Cotistas_Contabil",
+      "tipos": [
+        "double",
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Despesa_Representantes_Cotistas_Financeiro",
+      "tipos": [
+        "double",
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Taxa_Imposto_Contribuicao_Contabil",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Taxa_Imposto_Contribuicao_Financeiro",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Despesa_Comissoes_Emolumentos_Contabil",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Despesa_Comissoes_Emolumentos_Financeiro",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Despesa_Honorarios_Defesas_Contabil",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Despesa_Honorarios_Defesas_Financeiro",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Despesa_Contratos_Seguros_Contabil",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Despesa_Contratos_Seguros_Financeiro",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Despesa_Avaliacoes_Contabil",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Despesa_Avaliacoes_Financeiro",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Taxa_Ingresso_Saida_Cotista_Contabil",
+      "tipos": [
+        "double",
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Taxa_Ingresso_Saida_Cotista_Financeiro",
+      "tipos": [
+        "double",
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Despesa_Registro_Cartorio_Contabil",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Despesa_Registro_Cartorio_Financeiro",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Outras_Receitas_Depesas_Contabil",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Outras_Receitas_Depesas_Financeiro",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Total_Receitas_Despesas_Contabil",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Total_Receitas_Despesas_Financeiro",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Resultado_Trimestral_Liquido_Contabil",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Resultado_Trimestral_Liquido_Financeiro",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Resultado_Financeiro_Liquido_Acumulado",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Resultado_Financeiro_Liquido_Acumulado_95",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Parcela_Rendimento_Retido",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Lucro_Contabil",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Rendimentos_Declarados",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Rendimentos_Pagos_Antecipadamente",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Rendimento_Liquido_Pagar",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Resultado_Financeiro_Liquido_Declarado",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CNPJ_Fundo_Classe",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2021",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Tipo_Fundo_Classe",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2021",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nome_Fundo_Classe",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2021",
+      "periodo_fim": "2026"
+    }
+  ],
+  "arquivos": 48
+}

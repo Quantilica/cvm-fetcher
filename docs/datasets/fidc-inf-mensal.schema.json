@@ -1,0 +1,3124 @@
+{
+  "fonte": "cvm",
+  "dataset": "fidc-inf-mensal",
+  "gerado_em": "2026-11-16T03:58:44+00:00",
+  "particoes": [
+    "ano",
+    "mes"
+  ],
+  "colunas": [
+    {
+      "nome": "TP_FUNDO_CLASSE",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CNPJ_FUNDO_CLASSE",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "DENOM_SOCIAL",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "DT_COMPTC",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CLASSE_UNICA",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CNPJ_ADMIN",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "ADMIN",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CLASSE",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CNPJ_CLASSE",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CONDOM",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "FUNDO_EXCLUSIVO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "COTST_INTERESSE",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PRAZO_CONVERSAO_COTA",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TP_PRAZO_CONVERSAO_COTA",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PRAZO_PAGTO_RESGATE",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TP_PRAZO_PAGTO_RESGATE",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I_VL_ATIVO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I1_VL_DISP",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2_VL_CARTEIRA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2A_VL_DIRCRED_RISCO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2A1_VL_CRED_VENC_AD",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2A2_VL_CRED_VENC_INAD",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2A21_VL_TOTAL_PARCELA_INAD",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2A3_VL_CRED_INAD",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2A4_VL_CRED_DIRCRED_PERFM",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2A5_VL_CRED_VENCIDO_PENDENTE",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2A6_VL_CRED_EMP_RECUP",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2A7_VL_CRED_RECEITA_PUBLICA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2A8_VL_CRED_ACAO_JUDIC",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2A9_VL_CRED_FATOR_RISCO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2A10_VL_CRED_DIVERSO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2A11_VL_REDUCAO_RECUP",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2A12_CPF_CNPJ_CEDENTE_1",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2A12_PR_CEDENTE_1",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2A12_CPF_CNPJ_CEDENTE_2",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2A12_PR_CEDENTE_2",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2A12_CPF_CNPJ_CEDENTE_3",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2A12_PR_CEDENTE_3",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2A12_CPF_CNPJ_CEDENTE_4",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2A12_PR_CEDENTE_4",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2A12_CPF_CNPJ_CEDENTE_5",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2A12_PR_CEDENTE_5",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2A12_CPF_CNPJ_CEDENTE_6",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2A12_PR_CEDENTE_6",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2A12_CPF_CNPJ_CEDENTE_7",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2A12_PR_CEDENTE_7",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2A12_CPF_CNPJ_CEDENTE_8",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2A12_PR_CEDENTE_8",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2A12_CPF_CNPJ_CEDENTE_9",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2A12_PR_CEDENTE_9",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2B_VL_DIRCRED_SEM_RISCO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2B1_VL_CRED_VENC_AD",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2B2_VL_CRED_VENC_INAD",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2B21_VL_TOTAL_PARCELA_INAD",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2B3_VL_CRED_INAD",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2B4_VL_CRED_DIRCRED_PERFM",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2B5_VL_CRED_VENCIDO_PENDENTE",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2B6_VL_CRED_EMP_RECUP",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2B7_VL_CRED_RECEITA_PUBLICA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2B8_VL_CRED_ACAO_JUDIC",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2B9_VL_CRED_FATOR_RISCO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2B10_VL_CRED_DIVERSO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2B11_VL_REDUCAO_RECUP",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2B12_CPF_CNPJ_CEDENTE_1",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2B12_PR_CEDENTE_1",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2B12_CPF_CNPJ_CEDENTE_2",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2B12_PR_CEDENTE_2",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2B12_CPF_CNPJ_CEDENTE_3",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2B12_PR_CEDENTE_3",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2B12_CPF_CNPJ_CEDENTE_4",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2B12_PR_CEDENTE_4",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2B12_CPF_CNPJ_CEDENTE_5",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2B12_PR_CEDENTE_5",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2B12_CPF_CNPJ_CEDENTE_6",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2B12_PR_CEDENTE_6",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2B12_CPF_CNPJ_CEDENTE_7",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2B12_PR_CEDENTE_7",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2B12_CPF_CNPJ_CEDENTE_8",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2B12_PR_CEDENTE_8",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2B12_CPF_CNPJ_CEDENTE_9",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2B12_PR_CEDENTE_9",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2C_VL_VLMOB",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2C1_VL_DEBENTURE",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2C2_VL_CRI",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2C3_VL_NP_COMERC",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2C4_VL_LETRA_FINANC",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2C5_VL_COTA_FUNDO_ICVM555",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2C5_VL_COTA_FIF",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2C6_VL_OUTRO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2D_VL_TITPUB_FED",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2E_VL_CDB",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2F_VL_OPER_COMPROM",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2G_VL_OUTRO_RF",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2H_VL_COTA_FIDC",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2I_VL_COTA_FIDC_NP",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2J_VL_CONTRATO_FUTURO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2_DEBENTURE_CRI",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2_COTA_FIDC",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I2_VL_OUTRO_ATIVO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I3_VL_POSICAO_DERIV",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I3A_VL_MERCADO_TERMO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I3B_VL_MERCADO_OPCAO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I3C_VL_MERCADO_FUTURO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I3D_VL_DIFER_SWAP",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I3E_VL_COBERTURA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I3F_VL_DEPOSITO_MARGEM",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I4_VL_OUTRO_ATIVO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I4A_VL_CPRAZO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_I4B_VL_LPRAZO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_II_VL_CARTEIRA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_II_A_VL_INDUST",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_II_B_VL_IMOBIL",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_II_C_VL_COMERC",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_II_C1_VL_COMERC",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_II_C2_VL_VAREJO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_II_C3_VL_ARREND",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_II_D_VL_SERV",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_II_D1_VL_SERV",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_II_D2_VL_SERV_PUBLICO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_II_D3_VL_SERV_EDUC",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_II_D4_VL_ENTRET",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_II_E_VL_AGRONEG",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_II_F_VL_FINANC",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_II_F1_VL_CRED_PESSOA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_II_F2_VL_CRED_PESSOA_CONSIG",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_II_F3_VL_CRED_CORP",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_II_F4_VL_MIDMARKET",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_II_F5_VL_VEICULO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_II_F6_VL_IMOBIL_EMPRESA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_II_F7_VL_IMOBIL_RESID",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_II_F8_VL_OUTRO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_II_G_VL_CREDITO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_II_H_VL_FACTOR",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_II_H1_VL_PESSOA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_II_H2_VL_CORP",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_II_I_VL_SETOR_PUBLICO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_II_I1_VL_PRECAT",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_II_I2_VL_TRIBUT",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_II_I3_VL_ROYALTIES",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_II_I4_VL_OUTRO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_II_J_VL_JUDICIAL",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_II_K_VL_MARCA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_III_VL_PASSIVO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_III_A_VL_PAGAR",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_III_A1_VL_CPRAZO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_III_A2_VL_LPRAZO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_III_B_VL_POSICAO_DERIV",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_III_B1_VL_TERMO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_III_B2_VL_OPCAO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_III_B3_VL_FUTURO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_III_B4_VL_SWAP_PAGAR",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IV_A_VL_PL",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IV_B_VL_PL_MEDIO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_A1_1_1_COMPRA_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_A1_1_2_COMPRA_MEDIA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_A1_1_3_COMPRA_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_A1_2_1_VENDA_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_A1_2_2_VENDA_MEDIA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_A1_2_3_VENDA_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_A2_1_1_COMPRA_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_A2_1_2_COMPRA_MEDIA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_A2_1_3_COMPRA_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_A2_2_1_VENDA_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_A2_2_2_VENDA_MEDIA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_A2_2_3_VENDA_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_B1_1_1_COMPRA_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_B1_1_2_COMPRA_MEDIA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_B1_1_3_COMPRA_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_B1_2_1_VENDA_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_B1_2_2_VENDA_MEDIA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_B1_2_3_VENDA_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_B2_1_1_COMPRA_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_B2_1_2_COMPRA_MEDIA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_B2_1_3_COMPRA_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_B2_2_1_VENDA_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_B2_2_2_VENDA_MEDIA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_B2_2_3_VENDA_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_C1_1_1_COMPRA_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_C1_1_2_COMPRA_MEDIA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_C1_1_3_COMPRA_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_C1_2_1_VENDA_MIN",
+      "tipos": [
+        "double",
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_C1_2_2_VENDA_MEDIA",
+      "tipos": [
+        "double",
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_C1_2_3_VENDA_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_C2_1_1_COMPRA_MIN",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_C2_1_2_COMPRA_MEDIA",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_C2_1_3_COMPRA_MAX",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_C2_2_1_VENDA_MIN",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_C2_2_2_VENDA_MEDIA",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_C2_2_3_VENDA_MAX",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_D1_1_1_COMPRA_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_D1_1_2_COMPRA_MEDIA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_D1_1_3_COMPRA_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_D1_2_1_VENDA_MIN",
+      "tipos": [
+        "double",
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_D1_2_2_VENDA_MEDIA",
+      "tipos": [
+        "double",
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_D1_2_3_VENDA_MAX",
+      "tipos": [
+        "double",
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_D2_1_1_COMPRA_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_D2_1_2_COMPRA_MEDIA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_D2_1_3_COMPRA_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_D2_2_1_VENDA_MIN",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_D2_2_2_VENDA_MEDIA",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_D2_2_3_VENDA_MAX",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_E1_1_1_COMPRA_MIN",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_E1_1_2_COMPRA_MEDIA",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_E1_1_3_COMPRA_MAX",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_E1_2_1_VENDA_MIN",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_E1_2_2_VENDA_MEDIA",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_E1_2_3_VENDA_MAX",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_E2_1_1_COMPRA_MIN",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_E2_1_2_COMPRA_MEDIA",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_E2_1_3_COMPRA_MAX",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_E2_2_1_VENDA_MIN",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_E2_2_2_VENDA_MEDIA",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_E2_2_3_VENDA_MAX",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_F1_1_1_COMPRA_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_F1_1_2_COMPRA_MEDIA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_F1_1_3_COMPRA_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_F1_2_1_VENDA_MIN",
+      "tipos": [
+        "double",
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_F1_2_2_VENDA_MEDIA",
+      "tipos": [
+        "double",
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_F1_2_3_VENDA_MAX",
+      "tipos": [
+        "double",
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_F2_1_1_COMPRA_MIN",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_F2_1_2_COMPRA_MEDIA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_F2_1_3_COMPRA_MAX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_F2_2_1_VENDA_MIN",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_F2_2_2_VENDA_MEDIA",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_IX_F2_2_3_VENDA_MAX",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_V_A_VL_DIRCRED_PRAZO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_V_A1_VL_PRAZO_VENC_30",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_V_A2_VL_PRAZO_VENC_60",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_V_A3_VL_PRAZO_VENC_90",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_V_A4_VL_PRAZO_VENC_120",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_V_A5_VL_PRAZO_VENC_150",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_V_A6_VL_PRAZO_VENC_180",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_V_A7_VL_PRAZO_VENC_360",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_V_A8_VL_PRAZO_VENC_720",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_V_A9_VL_PRAZO_VENC_1080",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_V_A10_VL_PRAZO_VENC_MAIOR_1080",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_V_B_VL_DIRCRED_INAD",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_V_B1_VL_INAD_30",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_V_B2_VL_INAD_60",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_V_B3_VL_INAD_90",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_V_B4_VL_INAD_120",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_V_B5_VL_INAD_150",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_V_B6_VL_INAD_180",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_V_B7_VL_INAD_360",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_V_B8_VL_INAD_720",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_V_B9_VL_INAD_1080",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_V_B10_VL_INAD_MAIOR_1080",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_V_C_VL_DIRCRED_ANTECIPADO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_V_C1_VL_ANTECIPADO_30",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_V_C2_VL_ANTECIPADO_60",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_V_C3_VL_ANTECIPADO_90",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_V_C4_VL_ANTECIPADO_120",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_V_C5_VL_ANTECIPADO_150",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_V_C6_VL_ANTECIPADO_180",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_V_C7_VL_ANTECIPADO_360",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_V_C8_VL_ANTECIPADO_720",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_V_C9_VL_ANTECIPADO_1080",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_V_C10_VL_ANTECIPADO_MAIOR_1080",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VI_A_VL_DIRCRED_PRAZO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VI_A1_VL_PRAZO_VENC_30",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VI_A2_VL_PRAZO_VENC_60",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VI_A3_VL_PRAZO_VENC_90",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VI_A4_VL_PRAZO_VENC_120",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VI_A5_VL_PRAZO_VENC_150",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VI_A6_VL_PRAZO_VENC_180",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VI_A7_VL_PRAZO_VENC_360",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VI_A8_VL_PRAZO_VENC_720",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VI_A9_VL_PRAZO_VENC_1080",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VI_A10_VL_PRAZO_VENC_MAIOR_1080",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VI_B_VL_DIRCRED_INAD",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VI_B1_VL_INAD_30",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VI_B2_VL_INAD_60",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VI_B3_VL_INAD_90",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VI_B4_VL_INAD_120",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VI_B5_VL_INAD_150",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VI_B6_VL_INAD_180",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VI_B7_VL_INAD_360",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VI_B8_VL_INAD_720",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VI_B9_VL_INAD_1080",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VI_B10_VL_INAD_MAIOR_1080",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VI_C_VL_DIRCRED_ANTECIPADO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VI_C1_VL_ANTECIPADO_30",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VI_C2_VL_ANTECIPADO_60",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VI_C3_VL_ANTECIPADO_90",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VI_C4_VL_ANTECIPADO_120",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VI_C5_VL_ANTECIPADO_150",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VI_C6_VL_ANTECIPADO_180",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VI_C7_VL_ANTECIPADO_360",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VI_C8_VL_ANTECIPADO_720",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VI_C9_VL_ANTECIPADO_1080",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VI_C10_VL_ANTECIPADO_MAIOR_1080",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VII_A1_1_QT_DIRCRED_RISCO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VII_A1_2_VL_DIRCRED_RISCO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VII_A2_1_QT_DIRCRED_SEM_RISCO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VII_A2_2_VL_DIRCRED_SEM_RISCO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VII_A3_1_QT_DIRCRED_VENC_AD",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VII_A3_2_VL_DIRCRED_VENC_AD",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VII_A4_1_QT_DIRCRED_VENC_INAD",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VII_A4_2_VL_DIRCRED_VENC_INAD",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VII_A5_1_QT_DIRCRED_INAD",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VII_A5_2_VL_DIRCRED_INAD",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VII_B1_1_QT_CEDENTE",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VII_B1_2_VL_CEDENTE",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VII_B1_3_VL_CONTAB_CEDENTE",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VII_B2_1_QT_PREST",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VII_B2_2_VL_PREST",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VII_B2_3_VL_CONTAB_PREST",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VII_B3_1_QT_TERCEIRO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VII_B3_2_VL_TERCEIRO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VII_B3_3_VL_CONTAB_TERCEIRO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VII_C_1_QT_SUBST",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VII_C_2_VL_SUBST",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VII_C_3_VL_CONTAB_SUBST",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VII_D_1_QT_RECOMPRA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VII_D_2_VL_RECOMPRA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_VII_D_3_VL_CONTAB_RECOMPRA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "SEQUENCIAL",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "VALOR",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_NR_COTST_SENIOR_PF",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_NR_COTST_SENIOR_PJ_NAO_FINANC",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_NR_COTST_SENIOR_BANCO",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_NR_COTST_SENIOR_CORRETORA_DISTRIB",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_NR_COTST_SENIOR_PJ_FINANC",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_NR_COTST_SENIOR_INVNR",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_NR_COTST_SENIOR_EAPC",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_NR_COTST_SENIOR_EFPC",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_NR_COTST_SENIOR_RPPS",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_NR_COTST_SENIOR_SEGUR",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_NR_COTST_SENIOR_CAPITALIZ",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_NR_COTST_SENIOR_COTA_FIDC",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_NR_COTST_SENIOR_FII",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_NR_COTST_SENIOR_OUTRO_FI",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_NR_COTST_SENIOR_CLUBE",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_NR_COTST_SENIOR_OUTRO",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_NR_COTST_SUBORD_PF",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_NR_COTST_SUBORD_PJ_NAO_FINANC",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_NR_COTST_SUBORD_BANCO",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_NR_COTST_SUBORD_CORRETORA_DISTRIB",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_NR_COTST_SUBORD_PJ_FINANC",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_NR_COTST_SUBORD_INVNR",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_NR_COTST_SUBORD_EAPC",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_NR_COTST_SUBORD_EFPC",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_NR_COTST_SUBORD_RPPS",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_NR_COTST_SUBORD_SEGUR",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_NR_COTST_SUBORD_CAPITALIZ",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_NR_COTST_SUBORD_COTA_FIDC",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_NR_COTST_SUBORD_FII",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_NR_COTST_SUBORD_OUTRO_FI",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_NR_COTST_SUBORD_CLUBE",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_NR_COTST_SUBORD_OUTRO",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_CLASSE_SERIE",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "ID_SUBCLASSE",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_NR_COTST",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_SCR_RISCO_DEVEDOR_AA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_SCR_RISCO_DEVEDOR_A",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_SCR_RISCO_DEVEDOR_B",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_SCR_RISCO_DEVEDOR_C",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_SCR_RISCO_DEVEDOR_D",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_SCR_RISCO_DEVEDOR_E",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_SCR_RISCO_DEVEDOR_F",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_SCR_RISCO_DEVEDOR_G",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_SCR_RISCO_DEVEDOR_H",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_SCR_RISCO_OPER_AA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_SCR_RISCO_OPER_A",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_SCR_RISCO_OPER_B",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_SCR_RISCO_OPER_C",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_SCR_RISCO_OPER_D",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_SCR_RISCO_OPER_E",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_SCR_RISCO_OPER_F",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_SCR_RISCO_OPER_G",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_SCR_RISCO_OPER_H",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_DEBITO_TRIBUT",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_QT_COTA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_VL_COTA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_VL_RENTAB_MES",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_TP_OPER",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_VL_TOTAL",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_VL_LIQUIDEZ_0",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_VL_LIQUIDEZ_30",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_VL_LIQUIDEZ_60",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_VL_LIQUIDEZ_90",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_VL_LIQUIDEZ_180",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_VL_LIQUIDEZ_360",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_VL_LIQUIDEZ_MAIOR_360",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_PR_DESEMP_ESPERADO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_PR_DESEMP_REAL",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_VL_GARANTIA_DIRCRED",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TAB_X_PR_GARANTIA_DIRCRED",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-01",
+      "periodo_fim": "2026-10"
+    }
+  ],
+  "arquivos": 54
+}

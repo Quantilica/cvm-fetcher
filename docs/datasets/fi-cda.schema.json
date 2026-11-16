@@ -1,0 +1,526 @@
+{
+  "fonte": "cvm",
+  "dataset": "fi-cda",
+  "gerado_em": "2026-11-16T03:58:44+00:00",
+  "particoes": [
+    "ano",
+    "mes"
+  ],
+  "colunas": [
+    {
+      "nome": "TP_FUNDO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2023-01"
+    },
+    {
+      "nome": "CNPJ_FUNDO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2023-01"
+    },
+    {
+      "nome": "DENOM_SOCIAL",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "DT_COMPTC",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TP_APLIC",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TP_ATIVO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "EMISSOR_LIGADO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TP_NEGOC",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "QT_VENDA_NEGOC",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "VL_VENDA_NEGOC",
+      "tipos": [
+        "double",
+        "int64",
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "QT_AQUIS_NEGOC",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "VL_AQUIS_NEGOC",
+      "tipos": [
+        "double",
+        "int64",
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "QT_POS_FINAL",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "VL_MERC_POS_FINAL",
+      "tipos": [
+        "double",
+        "int64"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "VL_CUSTO_POS_FINAL",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "DT_CONFID_APLIC",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TP_TITPUB",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CD_ISIN",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CD_SELIC",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "DT_EMISSAO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "DT_VENC",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CNPJ_FUNDO_COTA",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2023-01"
+    },
+    {
+      "nome": "NM_FUNDO_COTA",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2023-01"
+    },
+    {
+      "nome": "CD_SWAP",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "DS_SWAP",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CD_ATIVO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "DS_ATIVO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "DT_INI_VIGENCIA",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "DT_FIM_VIGENCIA",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CNPJ_EMISSOR",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "EMISSOR",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TITULO_POSFX",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CD_INDEXADOR_POSFX",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "DS_INDEXADOR_POSFX",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_INDEXADOR_POSFX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_CUPOM_POSFX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PR_TAXA_PREFX",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "RISCO_EMISSOR",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "AG_RISCO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "DT_RISCO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "GRAU_RISCO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PF_PJ_EMISSOR",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CPF_CNPJ_EMISSOR",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TITULO_CETIP",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TITULO_GARANTIA",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CNPJ_INSTITUICAO_FINANC_COOBR",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "INVEST_COLETIVO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "INVEST_COLETIVO_GESTOR",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CD_PAIS",
+      "tipos": [
+        "int64",
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "PAIS",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CD_BV_MERC",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "BV_MERC",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CD_ATIVO_BV_MERC",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "DS_ATIVO_EXTERIOR",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "QT_ATIVO_EXTERIOR",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "VL_ATIVO_EXTERIOR",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "VL_PATRIM_LIQ",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "ID_DOC",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2023-01",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "TP_FUNDO_CLASSE",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2024-12",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CNPJ_FUNDO_CLASSE",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2024-12",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CNPJ_FUNDO_CLASSE_COTA",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2024-12",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "ID_SUBCLASSE",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2024-12",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "NM_FUNDO_CLASSE_SUBCLASSE_COTA",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2024-12",
+      "periodo_fim": "2026-10"
+    }
+  ],
+  "arquivos": 32
+}

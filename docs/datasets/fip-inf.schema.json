@@ -1,0 +1,504 @@
+{
+  "fonte": "cvm",
+  "dataset": "fip-inf",
+  "gerado_em": "2026-11-16T03:58:46+00:00",
+  "particoes": [
+    "ano"
+  ],
+  "colunas": [
+    {
+      "nome": "CNPJ_FUNDO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2023"
+    },
+    {
+      "nome": "DENOM_SOCIAL",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "DT_COMPTC",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "VL_PATRIM_LIQ",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "QT_COTA",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "VL_PATRIM_COTA",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "NR_COTST",
+      "tipos": [
+        "int64",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "ENTID_INVEST",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PUBLICO_ALVO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "VL_CAP_COMPROM",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "QT_COTA_SUBSCR",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "VL_CAP_SUBSCR",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "QT_COTA_INTEGR",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "VL_CAP_INTEGR",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "VL_INVEST_FIP_COTA",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "NR_COTST_SUBSCR_PF",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COTA_SUBSCR_PF",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "NR_COTST_SUBSCR_PJ_NAO_FINANC",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COTA_SUBSCR_PJ_NAO_FINANC",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "NR_COTST_SUBSCR_BANCO",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COTA_SUBSCR_BANCO",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "NR_COTST_SUBSCR_CORRETORA_DISTRIB",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COTA_SUBSCR_CORRETORA_DISTRIB",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "NR_COTST_SUBSCR_PJ_FINANC",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COTA_SUBSCR_PJ_FINANC",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "NR_COTST_SUBSCR_INVNR",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COTA_SUBSCR_INVNR",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "NR_COTST_SUBSCR_EAPC",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COTA_SUBSCR_EAPC",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "NR_COTST_SUBSCR_EFPC",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COTA_SUBSCR_EFPC",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "NR_COTST_SUBSCR_RPPS",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COTA_SUBSCR_RPPS",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "NR_COTST_SUBSCR_SEGUR",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COTA_SUBSCR_SEGUR",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "NR_COTST_SUBSCR_CAPITALIZ",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COTA_SUBSCR_CAPITALIZ",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "NR_COTST_SUBSCR_FII",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COTA_SUBSCR_FII",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "NR_COTST_SUBSCR_FI",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COTA_SUBSCR_FI",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "NR_COTST_SUBSCR_DISTRIB",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COTA_SUBSCR_DISTRIB",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "NR_COTST_SUBSCR_OUTRO",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_COTA_SUBSCR_OUTRO",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "NR_TOTAL_COTST_SUBSCR",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "PR_TOTAL_COTA_SUBSCR",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CLASSE_COTA",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "NR_COTST_SUBSCR_CLASSE",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "QT_COTA_SUBSCR_CLASSE",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "QT_COTA_INTEGR_CLASSE",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "VL_QUOTA_CLASSE",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "DIREITO_POLIT_CLASSE",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "DIREITO_ECON_CLASSE",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "TP_FUNDO_CLASSE",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2024",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CNPJ_FUNDO_CLASSE",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2024",
+      "periodo_fim": "2026"
+    }
+  ],
+  "arquivos": 5
+}

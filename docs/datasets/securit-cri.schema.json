@@ -1,0 +1,2306 @@
+{
+  "fonte": "cvm",
+  "dataset": "securit-cri",
+  "gerado_em": "2026-11-16T04:00:19+00:00",
+  "particoes": [
+    "ano"
+  ],
+  "colunas": [
+    {
+      "nome": "CNPJ_Emissora",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2018",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nome_Emissora",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2018",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Referencia",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2018",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Versao",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2018",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Entrega",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2018",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nome_Certificado",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2018",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Codigo_Identificacao_Certificado",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2018",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Link_Download",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2018",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Parecer_Auditor",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2018",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Ativo",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Ativo_Circulante",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Ativo_Circulante_Disponibilidades",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Ativo_Circulante_Aplicacoes",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Ativo_Circulante_Creditos",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Ativo_Circulante_Outros",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Ativo_Nao_Circulante",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Ativo_Nao_Circulante_Aplicacoes",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Ativo_Nao_Circulante_Creditos",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Ativo_Nao_Circulante_Outros",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Creditos",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Creditos_A_Vencer_Sem_Parcelas_Atraso",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Creditos_A_Vencer_Com_Parcelas_Atraso",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Creditos_Vencidos",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Reducao_Valor_Recuperacao",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Caixa_Equivalentes",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Caixa_Titulos_Publicos_Federais",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Caixa_Cotas_Fundos",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Caixa_Operacoes_Compromissadas",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Caixa_Outros",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Ativo_Derivativos",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Ativo_Contratos_Termo",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Ativo_Futuros",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Ativo_Opcoes",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Ativo_Swap",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Outros_Ativos",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Passivo",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Passivo_Circulante",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Passivo_Circulante_Valores_Mobiliarios",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Passivo_Circulante_Outros",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Passivo_Nao_Circulante",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Passivo_Nao_Circulante_Valores_Mobiliarios",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Passivo_Nao_Circulante_Outros",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Passivo_Derivativos",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Passivo_Contratos_Termo",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Passivo_Futuros",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Passivo_Opcoes",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Passivo_Swap",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Valor_Atualizado_Emissao",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Reducao_Valor_Emissao",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Outros_Passivos",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Companhia_Securitizadora_Emissora",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Total_Recebimentos",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Pagamentos_Despesas_Comissoes",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Senior_Pagamentos",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Senior_Amortizacao_Principal",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Senior_Juros",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Subordinada_Pagamentos",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Subordinada_Amortizacao_Principal",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Subordinada_Juros",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Outros_Pagamentos_Recebimentos",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Suficiencia_Insuficiencia_Caixa",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Premio_Subordinacao",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Valor_Securitizadora",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Valor_Fundo_Despesa",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Valor_Fundo_Reforco",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Outros_Valores",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Descricao_Outros_Valores",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Valor_Pagamentos_Contratuais",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Valor_Pagamentos_Contratuais_Senior",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Valor_Pagamentos_Contratuais_Subordinada",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Creditos_Vinculados",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Creditos_Vinculados_Prazo_Vencimento_Ate30Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Creditos_Vinculados_Prazo_Vencimento_31a60Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Creditos_Vinculados_Prazo_Vencimento_61a90Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Creditos_Vinculados_Prazo_Vencimento_91a120Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Creditos_Vinculados_Prazo_Vencimento_121a150Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Creditos_Vinculados_Prazo_Vencimento_151a180Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Creditos_Vinculados_Prazo_Vencimento_Acima180Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Creditos_Vinculados_Inadimplentes",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Creditos_Vinculados_Inadimplentes_Ate30Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Creditos_Vinculados_Inadimplentes_31a60Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Creditos_Vinculados_Inadimplentes_61a90Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Creditos_Vinculados_Inadimplentes_91a120Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Creditos_Vinculados_Inadimplentes_121a150Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Creditos_Vinculados_Inadimplentes_151a180Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Creditos_Vinculados_Inadimplentes_Acima180Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Creditos_Vinculados_Pagos",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Creditos_Vinculados_Pagos_Ate30Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Creditos_Vinculados_Pagos_31a60Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Creditos_Vinculados_Pagos_61a90Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Creditos_Vinculados_Pagos_91a120Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Creditos_Vinculados_Pagos_121a150Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Creditos_Vinculados_Pagos_151a180Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Creditos_Vinculados_Pagos_Acima180Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Creditos_Processo_Liquidacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Evento",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2019"
+    },
+    {
+      "nome": "Valor",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Justificativa",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2019"
+    },
+    {
+      "nome": "Classe",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Numero_Serie",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Tipo_Oferta",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Codigo_CETIP",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Codigo_ISIN",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade",
+      "tipos": [
+        "int64",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Vencimento",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Taxas_Indexadores",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Situacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Total_Integralizado",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Taxa_Juros",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Pagamento_Periodicidade",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Pagamento_Mes_Base",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_Certificados",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Valor_Certificados",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Rendimentos",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Amortizacoes",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Rentabilidade",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Classificacao_Risco_Atual",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nivel_Subordinacao",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Periodicidade_Amortizacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Indice_Subordinacao_Minimo",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Indice_Subordinacao_Data_Base",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Parcelas_Atraso",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Concentracao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Creditos_Natureza_Economica",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Creditos_Incorporacao_Imobiliaria",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Creditos_Alugueis",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Creditos_Aquisicao_Imoveis",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Creditos_Loteamento",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Creditos_Multipropriedade",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Creditos_Home_Equity",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Creditos_Outros",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "A_Vencer",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "A_Vencer_Ate30Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "A_Vencer_31a60Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "A_Vencer_61a90Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "A_Vencer_91a120Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "A_Vencer_121a150Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "A_Vencer_151a180Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "A_Vencer_181a360Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "A_Vencer_Acima361Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nao_Pagos",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nao_Pagos_Ate30Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nao_Pagos_31a60Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nao_Pagos_61a90Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nao_Pagos_91a120Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nao_Pagos_121a150Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nao_Pagos_151a180Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nao_Pagos_181a360Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nao_Pagos_Acima361Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Pre_Pagamentos",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Pre_Pagamento_Lastro",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Pre_Pagamento_Impacto",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Dividas_Emissor_Securitizadora",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Risco_Cedentes",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Outras_Garantias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Garantias_Exceto_Coobrigacao",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Periodicidade_Avaliacao_Garantias",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Duration_Carteira",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Relacao_Total_Emissao",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Outras_Consideracoes",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Maior_Devedor",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Cinco_Maiores_Devedores",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Dez_Maiores_Devedores",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Vinte_Maiores_Devedores",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Maior_Cedente",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Cinco_Maiores_Cedentes",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Dez_Maiores_Cedentes",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Vinte_Maiores_Cedentes",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Mercado_Termo_Juros",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Mercado_Termo_Commodities",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Mercado_Termo_Cambio",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Mercado_Termo_Outros",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Futuros_Juros",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Futuros_Commodities",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Futuros_Cambio",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Futuros_Outros",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Opcoes_Juros",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Opcoes_Commodities",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Opcoes_Cambio",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Opcoes_Outros",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Swap_Juros",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Swap_Commodities",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Swap_Cambio",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Swap_Outros",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Pagamento_Despesas",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Pagamento_Despesas_Ate30Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Pagamento_Despesas_31a60Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Pagamento_Despesas_61a90Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Pagamento_Despesas_91a120Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Pagamento_Despesas_121a150Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Pagamento_Despesas_151a180Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Pagamento_Despesas_181a360Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Pagamento_Despesas_Acima361Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Pagamento_Investidores",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Pagamento_Investidores_Ate30Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Pagamento_Investidores_31a60Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Pagamento_Investidores_61a90Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Pagamento_Investidores_91a120Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Pagamento_Investidores_121a150Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Pagamento_Investidores_151a180Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Pagamento_Investidores_181a360Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Pagamento_Investidores_Acima361Dias",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Recebimentos_Creditos",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Pagamentos_Despesas",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Pagamentos_Classe_Senior",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Pagamentos_Classe_Senior_Amortizacao_Principal",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Pagamentos_Classe_Senior_Juros",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Pagamentos_Classe_Subordinada_Mezanino",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Pagamentos_Classe_Subordinada_Mezanino_Amortizacao_Principal",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Pagamentos_Classe_Subordinada_Mezanino_Juros",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Pagamentos_Classe_Subordinada_Junior",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Pagamentos_Classe_Subordinada_Junior_Amortizacao_Principal",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Pagamentos_Classe_Subordinada_Junior_Juros",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Recebimentos_Alienacao_Caixa",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Aquisicao_Caixa",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Aquisicao_Novos_Creditos",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Outros_Recebimentos",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Outros_Pagamentos",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Variacao_Liquida_Caixa",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Numero_Emissao",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nome_Emissao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_Series",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Emissao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Companhia_Emissora",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Instituicao_Regime_Fiduciario",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Agente_Fiduciario",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CNPJ_Agente_Fiduciario",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Custodiante",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CNPJ_Custodiante",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Segmento_Creditos_Vinculados",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Valor_Aquisicao_Credito",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Taxas_Medias_Indexadores_Creditos_Vinculados",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Anos_Duration_Carteira",
+      "tipos": [
+        "int64",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Meses_Duration_Carteira",
+      "tipos": [
+        "int64",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Forma_Calculo_Duration",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Tipos_Garantias_Coobrigacao_Securitizadora",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Tipos_Garantias_Coobrigacao_Terceiros",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Indice_LTV",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_LTV",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Tipo_Lastro",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Detalhamento_Lastro",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Sobrecolateralizacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Outras_Caracteristicas_Emissao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Tipo_Retencao_Risco",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Retentor_Risco",
+      "tipos": [
+        "int64",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Agencia_Classificadora",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CNPJ_Agencia_Classificadora",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Ultima_Classificacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Recomposicao_Indice",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Impacto_Eventos_Pre_Pagamento",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Analise_Impacto_Eventos_Pre_Pagamento",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Analise_Impacto_Outros_Eventos",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Analise_Impacto_Demais_Fatos",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Patrimonio_Liquido_Emissao",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Desempenho_Emissao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Contingencias_Principais_Fatos",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Contingencias_Valores_Envolvidos",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Outras_Contigencias_Relevantes",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nome",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2019"
+    },
+    {
+      "nome": "Cargo",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2019",
+      "periodo_fim": "2019"
+    },
+    {
+      "nome": "Tipo",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2026",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CNPJ",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2026",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2026",
+      "periodo_fim": "2026"
+    }
+  ],
+  "arquivos": 22
+}

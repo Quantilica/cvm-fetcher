@@ -1,0 +1,1100 @@
+{
+  "fonte": "cvm",
+  "dataset": "fiagro-inf-mensal",
+  "gerado_em": "2026-11-16T03:58:44+00:00",
+  "particoes": [
+    "ano",
+    "mes"
+  ],
+  "colunas": [
+    {
+      "nome": "CNPJ_Classe",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Nome_Classe",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Data_Referencia",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Data_Entrega",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Versao",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Classe_Unica",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CNPJ_Administrador",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Nome_Administrador",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Data_Registro",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Publico_Alvo",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Codigo_ISIN",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Cotistas_Vinculo_Familiar",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Regra_Anexo",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Classificacao_Autorregulada",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Prazo_Duracao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Encerramento_Exercicio_Social",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Mercado_Negociacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Entidade_Administradora",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Email_Administrador",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Servico_Atendimento_Cotista",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Site",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Nome_Gestor",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CNPJ_Gestor",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Numero_Cotistas",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Numero_Cotistas_Pessoa_Natural",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Numero_Cotistas_Pessoa_Juridica_Nao_Financeira",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Numero_Cotistas_Pessoa_Juridica_Financeira",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Numero_Cotistas_Investidor_Nao_Residente",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Numero_Cotistas_Entidade_Previdencia_Complementar_Exceto_RPPS",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Numero_Cotistas_Entidade_RPPS",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Numero_Cotistas_Sociedade_Seguradora_Resseguradora",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Numero_Cotistas_Fundos_Investimento",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Numero_Cotistas_Distribuidos_Conta_Ordem",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Numero_Cotistas_Outros_Tipos",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Valor_Ativo",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Patrimonio_Liquido",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Cotas_Emitidas",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Valor_Patrimonial_Cotas",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Percentual_Despesas_Taxa_Administracao",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Percentual_Despesas_Taxa_Gestao",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Percentual_Despesas_Taxa_Distribuicao",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Rentabilidade_Efetiva_Mes",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Rentabilidade_Patrimonial_Mes",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Dividend_Yield_Mes",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Percentual_Amortizacao_Cotas_Mes",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Total_Necessidades_Liquidez",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Fundos_Renda_Fixa",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Titulos_Renda_Fixa",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Total_Investido",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Imoveis_Rurais",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Participacoes_Societarias",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Ativos_Financeiros_Lato_Sensu",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Ativos_Financeiros",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Ativos_Financeiros_Emissao_IF",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "LCA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "LCI",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Outros_Ativos_Emissao_IF",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Outros_Ativos_Financeiros",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Valores_Mobiliarios",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Titulos_Participacoes_Societarias",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Acoes_Certificados_Deposito",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Outros_Titulos_Participacao",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Titulos_Divida_Corporativa",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Debentures",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Debentures_Conversiveis",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Debentures_Nao_Conversiveis",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Notas_Comerciais",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Notas_Comerciais_Curto_Prazo",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Notas_Comerciais_Longo_Prazo",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Outros_Titulos_Divida_Corporativa",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Valor_Titulos_Credito",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CPR",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CPR_Financeira",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CPR_Fisica",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CDCA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CDA_WA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Outros_Titulos_Credito_Agronegocio",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Titulos_Credito_Liquidacao_Financeira",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Devedor_Pessoa_Juridica_Liquidacao_Financeira",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Devedor_Pessoa_Natural_Liquidacao_Financeira",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Titulos_Credito_Liquidacao_Fisica",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Devedor_Pessoa_Juridica_Liquidacao_Fisica",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Devedor_Pessoa_Natural_Liquidacao_Fisica",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Demais_Direitos_Creditorios",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Direitos_Creditorios_Agronegocio",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Direitos_Creditorios_Imoveis_Rurais",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Titulos_Securitizacao",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CRA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "CRI",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Outros_Titulos_Securitizacao",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Cotas_Fundos_Investimento",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "FIF",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "FIDC",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "FII",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "FIP",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "FIIM",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "FIAGRO",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Creditos_Carbono_Agronegocio",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Creditos_Descarbonizacao",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Valores_Receber",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Total_Ativos_Prazo_Vencimento",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "A_Vencer",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "A_Vencer_Ate30Dias",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "A_Vencer_31a60Dias",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "A_Vencer_61a90Dias",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "A_Vencer_91a120Dias",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "A_Vencer_121a180Dias",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "A_Vencer_181a360Dias",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "A_Vencer_361a720Dias",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "A_Vencer_721a1080Dias",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "A_Vencer_Acima1080_Dias",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Vencidos",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Vencidos_Ate30Dias",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Vencidos_31a60Dias",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Vencidos_61a90Dias",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Vencidos_91a120Dias",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Vencidos_121a180Dias",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Vencidos_181a360Dias",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Vencidos_361a720Dias",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Vencidos_721a1080Dias",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Vencidos_Acima1080Dias",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Rendimentos_Distribuir",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Taxa_Administracao_Pagar",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Taxa_Gestao_Pagar",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Taxa_Performance_Pagar",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Taxa_Distribuicao_Pagar",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Obrigacoes_Aquisicao_Ativos",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Adiantamento_Venda_Ativos",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Adiantamento_Valores_Receber",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Instrumentos_Financeiros_Derivativos",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Provisoes_Contigencias",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Outros_Valores_Pagar",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Total_Passivo",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Nome_Subclasse",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Numero_Cotas",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    },
+    {
+      "nome": "Valor_Patrimonial_Cota",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025-05",
+      "periodo_fim": "2026-10"
+    }
+  ],
+  "arquivos": 6
+}

@@ -1,0 +1,943 @@
+{
+  "fonte": "cvm",
+  "dataset": "fii-inf-mensal",
+  "gerado_em": "2026-11-16T03:58:45+00:00",
+  "particoes": [
+    "ano"
+  ],
+  "colunas": [
+    {
+      "nome": "CNPJ_Fundo",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2016"
+    },
+    {
+      "nome": "Data_Referencia",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Versao",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Total_Necessidades_Liquidez",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Disponibilidades",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Titulos_Publicos",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Titulos_Privados",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Fundos_Renda_Fixa",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Total_Investido",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Direitos_Bens_Imoveis",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Terrenos",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Imoveis_Renda_Acabados",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Imoveis_Renda_Construcao",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Imoveis_Venda_Acabados",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Imoveis_Venda_Construcao",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Outros_Direitos_Reais",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Acoes",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Debentures",
+      "tipos": [
+        "double",
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Bonus_Subscricao",
+      "tipos": [
+        "double",
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Certificados_Deposito_Valores_Mobiliarios",
+      "tipos": [
+        "double",
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Cedulas_Debentures",
+      "tipos": [
+        "double",
+        "int64",
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Fundo_Acoes",
+      "tipos": [
+        "double",
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "FIP",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "FII",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "FDIC",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Outras_Cotas_FI",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Notas_Promissorias",
+      "tipos": [
+        "double",
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Acoes_Sociedades_Atividades_FII",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Cotas_Sociedades_Atividades_FII",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CEPAC",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CRI",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Letras_Hipotecarias",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "LCI",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "LIG",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Outros_Valores_Mobliarios",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Valores_Receber",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Contas_Receber_Aluguel",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Contas_Receber_Venda_Imoveis",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Outros_Valores_Receber",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Rendimentos_Distribuir",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Taxa_Administracao_Pagar",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Taxa_Performance_Pagar",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Obrigacoes_Aquisicao_Imoveis",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Adiantamento_Venda_Imoveis",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Adiantamento_Alugueis",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Obrigacoes_Securitizacao_Recebiveis",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Instrumentos_Financeiros_Derivativos",
+      "tipos": [
+        "double",
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Provisoes_Contigencias",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Outros_Valores_Pagar",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Total_Passivo",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Informacao_Numero_Cotistas",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Total_Numero_Cotistas",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Numero_Cotistas_Pessoa_Fisica",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Numero_Cotistas_Pessoa_Juridica_Nao_Financeira",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Numero_Cotistas_Banco_Comercial",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Numero_Cotistas_Corretora_Distribuidora",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Numero_Cotistas_Outras_Pessoas_Juridicas_Financeira",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Numero_Cotistas_Investidores_Nao_Residentes",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Numero_Cotistas_Entidade_Aberta_Previdencia_Complementar",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Numero_Cotistas_Entidade_Fechada_Previdência_Complementar",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Numero_Cotistas_Regime_Proprio_Previdencia_Servidores_Publicos",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Numero_Cotistas_Sociedade_Seguradora_Resseguradora",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Numero_Cotistas_Sociedade_Capitalizacao_Arrendamento_Mercantil",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Numero_Cotistas_FII",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Numero_Cotistas_Outros_Fundos",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Numero_Cotistas_Distribuidores_Fundo",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Numero_Cotistas_Outros_Tipos",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Valor_Ativo",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Patrimonio_Liquido",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Cotas_Emitidas",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Valor_Patrimonial_Cotas",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Despesas_Taxa_Administracao",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Despesas_Agente_Custodiante",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Rentabilidade_Efetiva_Mes",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Rentabilidade_Patrimonial_Mes",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Dividend_Yield_Mes",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Amortizacao_Cotas_Mes",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Entrega",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nome_Fundo",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2016"
+    },
+    {
+      "nome": "Data_Funcionamento",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Publico_Alvo",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Codigo_ISIN",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_Cotas_Emitidas",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Fundo_Exclusivo",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Cotistas_Vinculo_Familiar",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Mandato",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Segmento_Atuacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Tipo_Gestao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Prazo_Duracao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Prazo_Duracao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Encerramento_Exercicio_Social",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Mercado_Negociacao_Bolsa",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Mercado_Negociacao_MBO",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Mercado_Negociacao_MB",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Entidade_Administradora_BVMF",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Entidade_Administradora_CETIP",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nome_Administrador",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CNPJ_Administrador",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Logradouro",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Numero",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Complemento",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Bairro",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Cidade",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Estado",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CEP",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Telefone1",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Telefone2",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Telefone3",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Site",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Email",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2016",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CNPJ_Fundo_Classe",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2021",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CRI_CRA",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2021",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "LCI_LCA",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2021",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Tipo_Fundo_Classe",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2021",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nome_Fundo_Classe",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2021",
+      "periodo_fim": "2026"
+    }
+  ],
+  "arquivos": 9
+}
