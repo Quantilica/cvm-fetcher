@@ -69,6 +69,10 @@ uv run ruff check cvm-fetcher/
 uv run ruff format --check cvm-fetcher/
 ```
 
+## Documentação dos dados
+
+O que cada dataset contém, de onde vem, como chega ao lake e os cuidados de uso: [docs/README.md](docs/README.md).
+
 ## Licença
 
 MIT — consulte [LICENSE](LICENSE).
