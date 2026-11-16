@@ -1,0 +1,17 @@
+_commit: v0.2.1
+_src_path: /home/dk/code/Quantilica/fetcher-template
+author_email: daniel@dkko.me
+author_name: Komesu, D.K.
+cadencia: daily
+description: Coletor de dados abertos da CVM (Comissão de Valores Mobiliários)
+domain: mercado-capitais
+dominio: financas
+has_lake: true
+homepage: https://dados.cvm.gov.br/dados/
+licenca: Open Data Commons Open Database License (ODbL)
+orgao: Comissão de Valores Mobiliários (CVM)
+package_name: cvm-fetcher
+package_slug: cvm_fetcher
+protocol: http
+source_id: cvm
+source_name: CVM - Dados Abertos

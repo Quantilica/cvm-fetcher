@@ -10,8 +10,6 @@
 # (o bootstrap.sh faz isso automaticamente).
 set -euo pipefail
 
-export PATH="$HOME/.local/bin:$HOME/.cargo/bin:$PATH"
-
 cd "$(git rev-parse --show-toplevel)"
 
 [ -d src ] || exit 0
