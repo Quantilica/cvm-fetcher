@@ -50,13 +50,13 @@ O fetcher declara **31 datasets**, um por conjunto de dados do portal; muitos re
 | `fii-inf-anual` | Informe anual estruturado dos Fundos de Investimento Imobiliário (FII): dados gerais, administração, ativos, cotistas e demais itens do informe, em tabelas separadas | 11 | [fii-inf-anual](datasets/fii-inf-anual.md) |
 | `fii-inf-mensal` | Informe mensal estruturado dos Fundos de Investimento Imobiliário (FII): dados gerais, ativos, passivos e cotistas por fundo e mês, em três tabelas | 11 | [fii-inf-mensal](datasets/fii-inf-mensal.md) |
 | `fii-inf-trim` | Informe trimestral estruturado dos Fundos de Investimento Imobiliário (FII): dados gerais, imóveis, ativos e outros itens do informe, em tabelas separadas | 11 | [fii-inf-trim](datasets/fii-inf-trim.md) |
-| `fip-inf` | Informes dos Fundos de Investimento em Participações (FIP): trimestral até 2024 e quadrimestral desde 2025 | 17 | [fip-inf](datasets/fip-inf.md) |
+| `fip-inf` | Informes dos Fundos de Investimento em Participações (FIP): trimestral de 2010 a 2023 e quadrimestral desde 2024 | 17 | [fip-inf](datasets/fip-inf.md) |
 
 ## Ofertas e securitização
 
 | Dataset | O que é | Arquivos no catálogo | Página |
 |---|---|---|---|
-| `ofertas` | Ofertas públicas de distribuição de valores mobiliários registradas na CVM: o ofertante, o valor, o coordenador e as características da oferta, nos regimes anterior e posterior à Resolução CVM 160 | 1 | [ofertas](datasets/ofertas.md) |
+| `ofertas` | Ofertas públicas de distribuição de valores mobiliários registradas na CVM: o ofertante, o valor, o coordenador e as características da oferta, nos regimes anterior e posterior à Resolução CVM 160 (o ZIP da fonte estava vazio em 2026-11-16: sem conversão para o lake) | 1 | [ofertas](datasets/ofertas.md) |
 | `securit-cra` | Securitização de Certificados de Recebíveis do Agronegócio (CRA): as demonstrações financeiras anuais das securitizadoras (`dfin_cra`) e o informe mensal de cada CRA (`inf_mensal_cra`), em tabelas separadas | 16 | [securit-cra](datasets/securit-cra.md) |
 | `securit-cri` | Securitização de Certificados de Recebíveis Imobiliários (CRI): as demonstrações financeiras anuais das securitizadoras (`dfin_cri`) e o informe mensal de cada CRI (`inf_mensal_cri`), em tabelas separadas | 17 | [securit-cri](datasets/securit-cri.md) |
 
@@ -73,4 +73,6 @@ O fetcher declara **31 datasets**, um por conjunto de dados do portal; muitos re
 ## Como os conjuntos se relacionam
 
 - Companhias abertas ligam-se por `CD_CVM` e `CNPJ_CIA` (DFP, ITR) ou `CNPJ_Companhia` (FCA, FRE, IPE, CGVN) ao cadastro `cia-cad`.
-- Fundos ligam-se por `CNPJ_FUNDO` (ou `CNPJ_FUNDO_CLASSE` nos arquivos recentes) ao cadastro `fi-cad`; confira o nome da coluna em cada conjunto.
+- Fundos ligam-se por `CNPJ_FUNDO` (ou `CNPJ_FUNDO_CLASSE` nos arquivos a partir de 2023-11 ou 2023-12, conforme o conjunto: a adaptação à Resolução CVM 175 renomeou a coluna) ao cadastro `fi-cad`; confira o nome da coluna em cada conjunto e coalesça as duas ao ler vários meses.
+- O formato do CNPJ varia: os informes, balancetes, extratos, lâminas, perfis, CDA e FIDC trazem a máscara (`00.000.000/0000-00`); `fi-entrega`, `fiagro-inf-mensal` e as tabelas `registro_*` de `fi-cad` trazem só os 14 dígitos; nos conjuntos de FII e de securitização o CNPJ do fundo ou da emissora tem máscara e o do administrador ou do cedente/devedor, não. Normalize antes de juntar.
+- Os conjuntos mensais e trimestrais de FII e de securitização trazem cada reapresentação como uma linha com `Versao` maior: escolha a maior `Versao` por CNPJ e data de referência.

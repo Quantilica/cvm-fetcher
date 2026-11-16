@@ -16,7 +16,7 @@ dataset:
   dados_pessoais: nenhum
   eras: []
   revisado_em: 2026-11-15
-  versao_fetcher: 0.0.0
+  versao_fetcher: 0.4.0
 ---
 
 # Cias Abertas: Documentos: Periódicos e Eventuais (IPE) - Conjunto de d
@@ -48,7 +48,7 @@ Informações Periódicas e Eventuais (IPE): a lista dos documentos que as compa
 | Dados pessoais | nenhum |
 | Eras | nenhuma |
 | Revisado em | 2026-11-15 |
-| Versão do fetcher | 0.0.0 |
+| Versão do fetcher | 0.4.0 |
 
 ## Origem e coleta
 

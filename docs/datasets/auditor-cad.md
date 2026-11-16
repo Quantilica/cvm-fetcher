@@ -20,7 +20,7 @@ dataset:
     - {coluna: CEP, categoria: "endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)"}
   eras: []
   revisado_em: 2026-11-15
-  versao_fetcher: 0.0.0
+  versao_fetcher: 0.4.0
 ---
 
 # Auditores: Informação Cadastral
@@ -52,7 +52,7 @@ Cadastro dos auditores independentes registrados na CVM, em duas tabelas: pessoa
 | Dados pessoais | `LOGRADOURO` (endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)); `CEP` (endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)) |
 | Eras | nenhuma |
 | Revisado em | 2026-11-15 |
-| Versão do fetcher | 0.0.0 |
+| Versão do fetcher | 0.4.0 |
 
 ## Origem e coleta
 

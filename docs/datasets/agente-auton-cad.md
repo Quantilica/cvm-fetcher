@@ -24,7 +24,7 @@ dataset:
     - {coluna: EMAIL, categoria: "endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)"}
   eras: []
   revisado_em: 2026-11-15
-  versao_fetcher: 0.0.0
+  versao_fetcher: 0.4.0
 ---
 
 # Agentes Autônomos: Informação Cadastral
@@ -56,7 +56,7 @@ Cadastro dos agentes autônomos de investimento registrados na CVM, em duas tabe
 | Dados pessoais | `LOGRADOURO` (endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)); `CEP` (endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)); `DDD` (endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)); `EMAIL` (endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)) |
 | Eras | nenhuma |
 | Revisado em | 2026-11-15 |
-| Versão do fetcher | 0.0.0 |
+| Versão do fetcher | 0.4.0 |
 
 ## Origem e coleta
 

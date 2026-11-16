@@ -25,7 +25,7 @@ dataset:
   dados_pessoais: nenhum
   eras: []
   revisado_em: 2026-11-15
-  versao_fetcher: 0.0.0
+  versao_fetcher: 0.4.0
 ---
 
 # Cias Abertas: Documentos: Formulário de Demonstrações Financeiras Padr
@@ -57,7 +57,7 @@ Demonstrações Financeiras Padronizadas (DFP) das companhias abertas: balanço 
 | Dados pessoais | nenhum |
 | Eras | nenhuma |
 | Revisado em | 2026-11-15 |
-| Versão do fetcher | 0.0.0 |
+| Versão do fetcher | 0.4.0 |
 
 ## Origem e coleta
 

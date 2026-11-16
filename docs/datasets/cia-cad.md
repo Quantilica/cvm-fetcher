@@ -32,7 +32,7 @@ dataset:
     - {coluna: EMAIL_RESP, categoria: "endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)"}
   eras: []
   revisado_em: 2026-11-15
-  versao_fetcher: 0.0.0
+  versao_fetcher: 0.4.0
 ---
 
 # Cias Abertas: Informação Cadastral
@@ -64,7 +64,7 @@ Cadastro vigente das companhias abertas registradas na CVM: situação do regist
 | Dados pessoais | `LOGRADOURO` (endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)); `CEP` (endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)); `EMAIL` (endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)); `LOGRADOURO_RESP` (endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)); `EMAIL_RESP` (endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)) |
 | Eras | nenhuma |
 | Revisado em | 2026-11-15 |
-| Versão do fetcher | 0.0.0 |
+| Versão do fetcher | 0.4.0 |
 
 ## Origem e coleta
 

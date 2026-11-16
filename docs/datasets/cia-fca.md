@@ -31,7 +31,7 @@ dataset:
     - {coluna: CPF_Responsavel, categoria: "endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)"}
   eras: []
   revisado_em: 2026-11-15
-  versao_fetcher: 0.0.0
+  versao_fetcher: 0.4.0
 ---
 
 # Cias Abertas: Documentos: Formulário Cadastral (FCA) - Conjunto de dad
@@ -63,7 +63,7 @@ Formulário Cadastral (FCA) das companhias abertas: dados gerais, endereços, au
 | Dados pessoais | `CPF_CNPJ_Auditor` (endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)); `CPF_Responsavel_Tecnico` (endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)); `Logradouro` (endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)); `Complemento` (endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)); `CEP` (endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)); `DDI_Telefone` (endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)); `DDD_Telefone` (endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)); `Telefone` (endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)); `Email` (endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)); `CPF_Responsavel` (endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)) |
 | Eras | nenhuma |
 | Revisado em | 2026-11-15 |
-| Versão do fetcher | 0.0.0 |
+| Versão do fetcher | 0.4.0 |
 
 ## Origem e coleta
 

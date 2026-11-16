@@ -19,7 +19,7 @@ dataset:
   dados_pessoais: nenhum
   eras: []
   revisado_em: 2026-11-15
-  versao_fetcher: 0.0.0
+  versao_fetcher: 0.4.0
 ---
 
 # Cias Abertas: Documentos: Informe do Código de Governança (ICBGC) - Co
@@ -51,7 +51,7 @@ Informe do Código Brasileiro de Governança Corporativa (ICBGC, 'pratique ou ex
 | Dados pessoais | nenhum |
 | Eras | nenhuma |
 | Revisado em | 2026-11-15 |
-| Versão do fetcher | 0.0.0 |
+| Versão do fetcher | 0.4.0 |
 
 ## Origem e coleta
 

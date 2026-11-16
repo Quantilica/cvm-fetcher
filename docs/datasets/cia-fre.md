@@ -182,7 +182,7 @@ dataset:
     - {coluna: CPF_Pessoa_Relacionada, categoria: "endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)"}
   eras: []
   revisado_em: 2026-11-15
-  versao_fetcher: 0.0.0
+  versao_fetcher: 0.4.0
 ---
 
 # Cias Abertas: Documentos: Formulário de Referência (FRE) - Conjunto de
@@ -214,7 +214,7 @@ Formulário de Referência (FRE) das companhias abertas: capital social, adminis
 | Dados pessoais | `CPF` (endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)); `Complemento_Cargo_Eletivo_Ocupado` (endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)); `CPF_Auditor` (endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)); `CPF_Responsavel_Tecnico` (endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)); `Logradouro` (endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)); `Complemento` (endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)); `CEP` (endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)); `DDI_Telefone` (endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)); `DDD_Telefone` (endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)); `Telefone` (endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)); `Email` (endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)); `CPF_CNPJ_Acionista` (endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)); `CPF_CNPJ_Acionista_Relacionado` (endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)); `CPF_CNPJ_Representante_legal` (endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)); `CPF_Administrador` (endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)); `CPF_Pessoa_Relacionada` (endereço, telefone, e-mail ou CPF (pode ser de pessoa jurídica)) |
 | Eras | nenhuma |
 | Revisado em | 2026-11-15 |
-| Versão do fetcher | 0.0.0 |
+| Versão do fetcher | 0.4.0 |
 
 ## Origem e coleta
 
