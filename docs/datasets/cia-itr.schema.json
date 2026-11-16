@@ -1,0 +1,251 @@
+{
+  "fonte": "cvm",
+  "dataset": "cia-itr",
+  "gerado_em": "2026-11-16T00:42:54+00:00",
+  "particoes": [
+    "ano"
+  ],
+  "colunas": [
+    {
+      "nome": "CNPJ_CIA",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2011",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "DT_REFER",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2011",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "VERSAO",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2011",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "DENOM_CIA",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2011",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CD_CVM",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2011",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CATEG_DOC",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2011",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "ID_DOC",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2011",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "DT_RECEB",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2011",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "LINK_DOC",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2011",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "GRUPO_DFP",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2011",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "MOEDA",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2011",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "ESCALA_MOEDA",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2011",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "ORDEM_EXERC",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2011",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "DT_FIM_EXERC",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2011",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CD_CONTA",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2011",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "DS_CONTA",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2011",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "VL_CONTA",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2011",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "ST_CONTA_FIXA",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2011",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "DT_INI_EXERC",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2011",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "COLUNA_DF",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2011",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "TP_RELAT_ESP",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2011",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "TP_PARECER_DECL",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2011",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "NUM_ITEM_PARECER_DECL",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2011",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "TXT_PARECER_DECL",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2011",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "QT_ACAO_ORDIN_CAP_INTEGR",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2023",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "QT_ACAO_PREF_CAP_INTEGR",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2023",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "QT_ACAO_TOTAL_CAP_INTEGR",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2023",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "QT_ACAO_ORDIN_TESOURO",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2023",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "QT_ACAO_PREF_TESOURO",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2023",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "QT_ACAO_TOTAL_TESOURO",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2023",
+      "periodo_fim": "2026"
+    }
+  ],
+  "arquivos": 111
+}

@@ -1,0 +1,116 @@
+{
+  "fonte": "cvm",
+  "dataset": "cia-ipe",
+  "gerado_em": "2026-11-16T00:42:54+00:00",
+  "particoes": [
+    "ano"
+  ],
+  "colunas": [
+    {
+      "nome": "CNPJ_Companhia",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2003",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nome_Companhia",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2003",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Codigo_CVM",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2003",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Referencia",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2003",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Categoria",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2003",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Tipo",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2003",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Especie",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2003",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Assunto",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2003",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Entrega",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2003",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Tipo_Apresentacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2003",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Protocolo_Entrega",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2003",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Versao",
+      "tipos": [
+        "int64",
+        "large_string"
+      ],
+      "periodo_inicio": "2003",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Link_Download",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2003",
+      "periodo_fim": "2026"
+    }
+  ],
+  "arquivos": 6
+}

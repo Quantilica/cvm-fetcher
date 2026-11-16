@@ -1,0 +1,155 @@
+{
+  "fonte": "cvm",
+  "dataset": "cia-cgvn",
+  "gerado_em": "2026-11-16T00:42:54+00:00",
+  "particoes": [
+    "ano"
+  ],
+  "colunas": [
+    {
+      "nome": "CNPJ_Companhia",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2018",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Referencia",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2018",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Versao",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2018",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nome_Empresarial",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2018",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "ID_Documento",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2018",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Codigo_CVM",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2018",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Categoria",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2018",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Entrega",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2018",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Link_Download",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2018",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Inicio_Exercicio_Social",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2018",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Fim_Exercicio_Social",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2018",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Motivo_Reapresentacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2018",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "ID_Item",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2018",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Capitulo",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2018",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Principio",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2018",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Pratica_Recomendada",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2018",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Pratica_Adotada",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2018",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Explicacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2018",
+      "periodo_fim": "2026"
+    }
+  ],
+  "arquivos": 12
+}

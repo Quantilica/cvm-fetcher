@@ -1,0 +1,291 @@
+{
+  "fonte": "cvm",
+  "dataset": "cia-cad",
+  "gerado_em": "2026-11-16T00:42:53+00:00",
+  "particoes": [],
+  "colunas": [
+    {
+      "nome": "CNPJ_CIA",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DENOM_SOCIAL",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DENOM_COMERC",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_REG",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_CONST",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_CANCEL",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "MOTIVO_CANCEL",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "SIT",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_INI_SIT",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "CD_CVM",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "SETOR_ATIV",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "TP_MERC",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "CATEG_REG",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_INI_CATEG",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "SIT_EMISSOR",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_INI_SIT_EMISSOR",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "CONTROLE_ACIONARIO",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "TP_ENDER",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "LOGRADOURO",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "COMPL",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "BAIRRO",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "MUN",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "UF",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "PAIS",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "CEP",
+      "tipos": [
+        "int64"
+      ]
+    },
+    {
+      "nome": "DDD_TEL",
+      "tipos": [
+        "int64"
+      ]
+    },
+    {
+      "nome": "TEL",
+      "tipos": [
+        "int64"
+      ]
+    },
+    {
+      "nome": "DDD_FAX",
+      "tipos": [
+        "int64"
+      ]
+    },
+    {
+      "nome": "FAX",
+      "tipos": [
+        "int64"
+      ]
+    },
+    {
+      "nome": "EMAIL",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "TP_RESP",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "RESP",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_INI_RESP",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "LOGRADOURO_RESP",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "COMPL_RESP",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "BAIRRO_RESP",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "MUN_RESP",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "UF_RESP",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "PAIS_RESP",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "CEP_RESP",
+      "tipos": [
+        "int64"
+      ]
+    },
+    {
+      "nome": "DDD_TEL_RESP",
+      "tipos": [
+        "int64"
+      ]
+    },
+    {
+      "nome": "TEL_RESP",
+      "tipos": [
+        "int64"
+      ]
+    },
+    {
+      "nome": "DDD_FAX_RESP",
+      "tipos": [
+        "int64"
+      ]
+    },
+    {
+      "nome": "FAX_RESP",
+      "tipos": [
+        "int64"
+      ]
+    },
+    {
+      "nome": "EMAIL_RESP",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "CNPJ_AUDITOR",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "AUDITOR",
+      "tipos": [
+        "large_string"
+      ]
+    }
+  ],
+  "arquivos": 1
+}

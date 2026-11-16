@@ -1,0 +1,129 @@
+{
+  "fonte": "cvm",
+  "dataset": "agente-auton-cad",
+  "gerado_em": "2026-11-16T00:42:54+00:00",
+  "particoes": [],
+  "colunas": [
+    {
+      "nome": "NOME",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_REG",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_CANCEL",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "MOTIVO_CANCEL",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "SIT",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DT_INI_SIT",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "CNPJ",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DENOM_SOCIAL",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "DENOM_COMERC",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "TP_ENDER",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "LOGRADOURO",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "COMPL",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "BAIRRO",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "MUN",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "UF",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "CEP",
+      "tipos": [
+        "int64"
+      ]
+    },
+    {
+      "nome": "DDD",
+      "tipos": [
+        "int64"
+      ]
+    },
+    {
+      "nome": "TEL",
+      "tipos": [
+        "int64"
+      ]
+    },
+    {
+      "nome": "EMAIL",
+      "tipos": [
+        "large_string"
+      ]
+    },
+    {
+      "nome": "SITE_ADMIN",
+      "tipos": [
+        "large_string"
+      ]
+    }
+  ],
+  "arquivos": 2
+}

@@ -1,0 +1,714 @@
+{
+  "fonte": "cvm",
+  "dataset": "cia-fca",
+  "gerado_em": "2026-11-16T00:42:54+00:00",
+  "particoes": [
+    "ano"
+  ],
+  "colunas": [
+    {
+      "nome": "CNPJ_CIA",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "DT_REFER",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "VERSAO",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "DENOM_CIA",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CD_CVM",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CATEG_DOC",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "ID_DOC",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "DT_RECEB",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "LINK_DOC",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CNPJ_Companhia",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Referencia",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Versao",
+      "tipos": [
+        "int64",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "ID_Documento",
+      "tipos": [
+        "int64",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nome_Empresarial",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Auditor",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CPF_CNPJ_Auditor",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Codigo_CVM_Auditor",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Origem_Auditor",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Inicio_Atuacao_Auditor",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Fim_Atuacao_Auditor",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Responsavel_Tecnico",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CPF_Responsavel_Tecnico",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Inicio_Atuacao_Responsavel_Tecnico",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Fim_Atuacao_Responsavel_Tecnico",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Canal_Divulgacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Sigla_UF",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Contato",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Inicio_Contato",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Fim_Contato",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Tipo_Endereco",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Logradouro",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Complemento",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Bairro",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Cidade",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Pais",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CEP",
+      "tipos": [
+        "int64",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "DDI_Telefone",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "DDD_Telefone",
+      "tipos": [
+        "int64",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Telefone",
+      "tipos": [
+        "int64",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "DDI_Fax",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "DDD_Fax",
+      "tipos": [
+        "int64",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Fax",
+      "tipos": [
+        "int64",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Email",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Tipo_Responsavel",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Responsavel",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CPF_Responsavel",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "UF",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Inicio_Atuacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Fim_Atuacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Caixa_Postal",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Escriturador",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CNPJ_Escriturador",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Nome_Empresarial",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nome_Empresarial_Anterior",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Constituicao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Codigo_CVM",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Registro_CVM",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Categoria_Registro_CVM",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Categoria_Registro_CVM",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Situacao_Registro_CVM",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Situacao_Registro_CVM",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Pais_Origem",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Pais_Custodia_Valores_Mobiliarios",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Setor_Atividade",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Descricao_Atividade",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Situacao_Emissor",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Situacao_Emissor",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Especie_Controle_Acionario",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Especie_Controle_Acionario",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Dia_Encerramento_Exercicio_Social",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Mes_Encerramento_Exercicio_Social",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Alteracao_Exercicio_Social",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Pagina_Web",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Admissao_Negociacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Valor_Mobiliario",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Sigla_Classe_Acao_Preferencial",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Classe_Acao_Preferencial",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Codigo_Negociacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Composicao_BDR_Unit",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Mercado",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Sigla_Entidade_Administradora",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Entidade_Administradora",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Inicio_Negociacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Fim_Negociacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Segmento",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Inicio_Listagem",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Fim_Listagem",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    }
+  ],
+  "arquivos": 60
+}

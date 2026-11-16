@@ -1,0 +1,3145 @@
+{
+  "fonte": "cvm",
+  "dataset": "cia-fre",
+  "gerado_em": "2026-11-16T00:42:54+00:00",
+  "particoes": [
+    "ano"
+  ],
+  "colunas": [
+    {
+      "nome": "CNPJ_CIA",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "DT_REFER",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "VERSAO",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "DENOM_CIA",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CD_CVM",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CATEG_DOC",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "ID_DOC",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "DT_RECEB",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "LINK_DOC",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CNPJ_Companhia",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Referencia",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Versao",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "ID_Documento",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nome_Companhia",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Orgao_Administracao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nome",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CPF",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Profissao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Cargo_Eletivo_Ocupado",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Complemento_Cargo_Eletivo_Ocupado",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Eleicao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Posse",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Inicio_Primeiro_Mandato",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Prazo_Mandato",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Eleito_Controlador",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Outro_Cargo_Funcao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Experiencia_Profissional",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Nascimento",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Numero_Mandatos_Consecutivos",
+      "tipos": [
+        "int64",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Participacao_Reunioes",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Descricao_Bem_Ativo",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Pais",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "UF",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Municipio",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Tipo_Propriedade",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Tipo_Ativo",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Descricao_Ativo",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Duracao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Evento_Perda_Direito",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Consequencia_Perda_Direito",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "ID_Auditor",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Auditor",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CPF_Auditor",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CNPJ_Auditor",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Codigo_CVM_Auditor",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Tipo_Origem_Auditor",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Inicio_Contratacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Fim_Contratacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Inicio_Prestacao_Servico",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Servico_Contratado",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Remuneracao_Auditor",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Justificativa_Substituicao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Razao_Apresentada",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Inicio_Responsavel_Tecnico",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Data_Fim_Responsavel_Tecnico",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Responsavel_Tecnico",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "CPF_Responsavel_Tecnico",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Logradouro",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Complemento",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Bairro",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Cidade",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Sigla_UF",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CEP",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "DDI_Telefone",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "DDD_Telefone",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Telefone",
+      "tipos": [
+        "int64",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Fax",
+      "tipos": [
+        "int64",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Email",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "ID_Capital_Social",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Tipo_Capital",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Autorizacao_Aprovacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Valor_Capital",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Prazo_Integralizacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_Acoes_Ordinarias",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_Acoes_Preferenciais",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_Total_Acoes",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "ID_Capital_Social_Aumento",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Data_Deliberacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Orgao_Deliberacao_Aumento",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Data_Emissao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Valor_Total_Emissao",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Tipo_Subscricao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Subscricao_Capital_Anterior",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Fator_Cotacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Preco_Emissao",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Criterio_Determinacao_Preco_Emissao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Forma_Integralizacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Tipo_Classe_Acao_Preferencial",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_Acoes",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "ID_Capital_Social_Desdobramento",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Data_Aprovacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Tipo_Evento",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Quantidade_Acoes_Ordinarias_Antes_Aprovacao",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Quantidade_Acoes_Preferenciais_Antes_Aprovacao",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Quantidade_Total_Acoes_Antes_Aprovacao",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Quantidade_Acoes_Ordinarias_Depois_Aprovacao",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Quantidade_Acoes_Preferenciais_Depois_Aprovacao",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Quantidade_Total_Acoes_Depois_Aprovacao",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Quantidade_Acoes_Antes_Aprovacao",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Quantidade_Acoes_Depois_Aprovacao",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "ID_Capital_Social_Reducao",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Data_Reducao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Valor_Total_Reducao",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Reducao_Capital_Anterior",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Valor_Restituido_Por_Acao",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Forma_Restituicao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Razao_Reducao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Titulo_Conversivel_Acao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Condicoes_Conversao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Especie_Acao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Classe_Acao_Preferencial",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Percentual_Tag_Along",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Direito_Dividendo",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Direito_Voto",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Conversibilidade",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Descricao_Voto_Restrito",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Condicao_Conversibilidade_Efeito_Capital_Social",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Direito_Reembolso_Capital",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Restricao_Circulacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Caracteristicas_Reembolso_Capital",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Descricao_Restricao_Circulacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Resgatavel",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Hipotese_Resgate_Formula_Calculo",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Condicao_Alteracao_Direitos",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Outras_Caracteristicas_Relevantes",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_Acionistas_PF",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_Acionistas_PJ",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_Acionistas_Investidores_Institucionais",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_Acoes_Ordinarias_Circulacao",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Acoes_Ordinarias_Circulacao",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_Acoes_Preferenciais_Circulacao",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Acoes_Preferenciais_Circulacao",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_Total_Acoes_Circulacao",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Total_Acoes_Circulacao",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Ultima_Assembleia",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Sigla_Classe_Acoes_Preferenciais",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Classe_Acoes_Preferenciais",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Inicio_Exercicio_Social",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Fim_Exercicio_Social",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Lucro_Liquido_Ajustado",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Taxa_Retorno_Patrimonio_Liquido_Emissor",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Lucro_Liquido_Retido",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Dividendo_Distribuido_Lucro_Liquido_Ajustado",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Dividendo_Distribuido_Total",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Data_Aprovacao_Retencao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Classe_Acao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Dividendo_Distribuido",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Montante",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Data_Pagamento_Dividendo",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Passivo",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Indice_Endividamento",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Tipo_Indice",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Descricao_Outro_Indice",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Data_Operacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2014"
+    },
+    {
+      "nome": "Descricao_Operacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2014"
+    },
+    {
+      "nome": "Evento_Societario",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2014"
+    },
+    {
+      "nome": "Data_Constituicao_Emissor",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Forma_Constituicao_Emissor",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Sigla_Pais_Constituicao_Emissor",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Pais_Constituicao_Emissor",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Prazo_Duracao_Emissor",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Data_Registro_Emissor",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Requisicao_Registro_Emissor",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Codigo_Conta",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Descricao_Conta",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Valor",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Informacao_Financeira",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Tipo_Moeda",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Escala_Moeda",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Tipo_Comite",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Descricao_Outros_Comites",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Cargo_Ocupado",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Descricao_Outro_Cargo_Ocupado",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Tipo_Obrigacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Tipo_Garantia",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Descricao_Outras_Garantias",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Divida_Inferior_1_Ano",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Divida_1a3Anos",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Divida_3a5Anos",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Divida_Superior_5Anos",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Divida_Total",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Observacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Valor_Mobiliario",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Identificacao_Valor_Mobiliario",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Vencimento",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_Pessoa_Fisica",
+      "tipos": [
+        "int64",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_Pessoa_Juridica",
+      "tipos": [
+        "int64",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_Investidor_Institucional",
+      "tipos": [
+        "int64",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Saldo_Devedor",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Caracteristicas_Valores_Mobiliarios_Divida",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "ID_Sociedade",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Razao_Social",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CNPJ",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Tipo_Sociedade",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Descricao_Atividades",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Pais_Sede",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "UF_Sede",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Municipio_Sede",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Participacao_Emissor",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Possui_Registro_CVM",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Codigo_CVM",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Razao_Aquisicao_Manutencao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Valor_Mercado",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Valor_Contabil",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Valor_Mercado",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Valor_Contabil",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Encerramento",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Variacao_Percentual_Valor_Contabil",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Variacao_Percentual_Valor_Mercado",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Valor_Montante_Dividendos_Recebidos",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "ID_Plano_Recompra",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Data_Inicio_Recompra",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Data_Fim_Recompra",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Valor_Reserva_Disponivel_Recompra",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Outras_Caracteristicas_Importantes",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Quantidade_Adquirida",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Escala_Cotacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Quantidade_Prevista",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Valor_Preco_Medio",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Percentual_Previsto",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Percentual_Adquirido",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "ID_Politica",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Orgao_Aprovacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Principais_Caracteristicas",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Vedacao_Procedimentos_Fiscalizacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Cargo_Pessoa_Vinculada",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "ID_Acionista",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Acionista",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Tipo_Pessoa_Acionista",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CPF_CNPJ_Acionista",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "ID_Acionista_Relacionado",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Acionista_Relacionado",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Tipo_Pessoa_Acionista_Relacionado",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CPF_CNPJ_Acionista_Relacionado",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_Acao_Ordinaria_Circulacao",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Acao_Ordinaria_Circulacao",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_Acao_Preferencial_Circulacao",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Acao_Preferencial_Circulacao",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nacionalidade",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Residente_Exterior",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Representante_Legal",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Tipo_Pessoa_Representante_Legal",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CPF_CNPJ_Representante_legal",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Composicao_Capital_Social",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Ultima_Alteracao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Acionista_Controlador",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Participante_Acordo_Acionistas",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual_Acoes",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nome_Administrador",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CPF_Administrador",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nome_Emissor",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CNPJ_Emissor",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Cargo_Administrador",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nome_Pessoa_Relacionada",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CPF_Pessoa_Relacionada",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nome_Emissor_Pessoa_Relacionada",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "CNPJ_Emissor_Pessoa_Relacionada",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Cargo_Pessoa_Relacionada",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Tipo_Parentesco",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Tipo_Pessoa_Relacionada",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Documento_Pessoa_Relacionada",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Categoria_Pessoa_Relacionada",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Tipo_Relacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Numero_Membros",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Numero_Membros_Remunerados",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Valor_Maior_Remuneracao",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Valor_Menor_Remuneracao",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Valor_Medio_Remuneracao",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Total_Remuneracao",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Total_Remuneracao_Orgao",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Salario",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Beneficios_Diretos_Indiretos",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Participacoes_Comites",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Outros_Valores_Fixos",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Descricao_Outros_Remuneracoes_Fixas",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Bonus",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Participacao_Resultados",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Participacao_Reunioes",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Outros_Valores_Variaveis",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Comissoes",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Descricao_Outros_Remuneracoes_Variaveis",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Pos_emprego",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Cessacao_Cargo",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Baseada_Acoes",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nome_Responsavel",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Cargo_Responsavel",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Parte_Relacionada",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Tipo_Pessoa",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Documento_Parte_Relacionada",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Relacao_Emissor",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Transacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Objeto_Contrato",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Montante_Envolvido",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Saldo_Existente",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Montante_Interesse_Parte_Relacionada",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Garantia_Seguro",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Duracao_Transacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Emprestimo_Divida",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Rescisao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Natureza_Razao_Operacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Taxa_Juros",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Posicao_Contratual_Emissor",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Especificacao_Posicao_Contratual_Emissor",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Descricao_Valor_Mobiliario",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Quantidade_Inicial",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Valor_Total_Inicial",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Valor_Preco_Medio_Inicial",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Valor_Total_Adquirido",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Valor_Preco_Medio_Adquirido",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Quantidade_Alienada",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Valor_Total_Alienado",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Valor_Preco_Medio_Alienado",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Quantidade_Cancelada",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Valor_Total_Cancelado",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Valor_Preco_Medio_Cancelado",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Quantidade_Final",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Valor_Total_Final",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Valor_Preco_Medio_Final",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Percentual_Relacao_Valores_Mobiliarios_Circulacao",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Quantidade_Valor_Mobiliario",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2014"
+    },
+    {
+      "nome": "Data_Aquisicao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2014"
+    },
+    {
+      "nome": "Percentual_Circulacao",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2014"
+    },
+    {
+      "nome": "Data_Fim_Trimestre",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Mercado_Valor_Mobiliario",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Entidade_Administradora_Mercado",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Descricao_Outro_Valor_Mobiliario",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Valor_Volume_Negociado",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Valor_Maior_Cotacao",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Valor_Menor_Cotacao",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Valor_Cotacao_Media",
+      "tipos": [
+        "double",
+        "large_string"
+      ],
+      "periodo_inicio": "2010",
+      "periodo_fim": "2022"
+    },
+    {
+      "nome": "Quantidade_Investidor",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2018",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Valor_Nominal",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2018",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Condicao_Conversibilidade",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2018",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Possibilidade_Resgate",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2018",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Hipotese_Calculo_Resgate",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2018",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Caracteristicas_Divida",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2018",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Outras_Caracteristicas",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2018",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Pais_Negociacao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2022",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Mercado",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2022",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Administradora",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2022",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Data_Inicio_Listagem",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2022",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Percentual",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2022",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Descricao_Segmento",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2022",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Descricao_Proporcao_Certificado",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2022",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Descricao_Banco_Depositario",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2022",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Descricao_Instituicao_Custodiante",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2022",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_Total_Membros",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_Membros_Remunerados",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Preco_Medio_Ponderado_Aquisicao",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Preco_Medio_Ponderado_Mercado",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Valor_Diferenca_Aquisicao_Mercado",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_Feminino",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_Masculino",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_Nao_Binario",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_Outros",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_Sem_Resposta",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Nao_Aplicavel",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_Amarelo",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_Branco",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_Preto",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_Pardo",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_Indigena",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_PCD",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_Nao_PCD",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Local",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_Ate30Anos",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_30a50Anos",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_Acima50Anos",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Codigo_Posicao",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Posicao",
+      "tipos": [
+        "large_string"
+      ],
+      "periodo_inicio": "2025",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_Norte",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_Nordeste",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_Centro_Oeste",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_Sudeste",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_Sul",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Quantidade_Exterior",
+      "tipos": [
+        "int64"
+      ],
+      "periodo_inicio": "2025",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Diluicao_Potencial",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Preco_Medio_Ponderado_Opcoes_Em_Aberto",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Preco_Medio_Ponderado_Opcoes_Perdidas",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Preco_Medio_Ponderado_Opcoes_Exercidas",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Bonus_Valor_Minimo",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Bonus_Valor_Maximo",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Bonus_Valor_Metas_Atingidas",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Bonus_Valor_Efetivo",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Participacao_Valor_Minimo",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Participacao_Valor_Maximo",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Participacao_Valor_Metas_Atingidas",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025",
+      "periodo_fim": "2026"
+    },
+    {
+      "nome": "Participacao_Valor_Efetivo",
+      "tipos": [
+        "double"
+      ],
+      "periodo_inicio": "2025",
+      "periodo_fim": "2026"
+    }
+  ],
+  "arquivos": 249
+}

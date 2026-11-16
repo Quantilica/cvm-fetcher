@@ -65,6 +65,7 @@ dev = [
     # host já traz. Piso = 0.13.0, primeira versão com o convert do lake
     # (--lake, --dataset, --force), que este plugin usa.
     "quantilica-cli>=0.17.0",
+    "quantilica-core[docs]>=0.19.0",
     "typer>=0.15.0",
     "rich>=13.0.0",
 ]
