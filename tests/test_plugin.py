@@ -31,6 +31,7 @@ class _FakeSdkHttp:
         self.retry_base_delay = kwargs.get("retry_base_delay", 0.0)
         self.verify = kwargs.get("verify", True)
         self.transport = kwargs.get("transport", None)
+        self.host_policies: dict[str, Any] = kwargs.get("host_policies") or {}
         self.limits = kwargs.get("limits", None)
         self.emulate_browser = kwargs.get("emulate_browser", False)
 
@@ -42,6 +43,10 @@ class _FakeSdkHttp:
 
     def close(self) -> None:
         return None
+
+    def share_host_state(self, other: _FakeSdkHttp) -> _FakeSdkHttp:
+        self.host_policies = other.host_policies
+        return self
 
     def head_last_modified_date(self, url: str) -> None:
         return None
