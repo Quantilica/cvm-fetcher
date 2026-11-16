@@ -239,7 +239,7 @@ Conferir se o ZIP bruto tem arquivos antes de converter.
 ```python
 import zipfile
 
-with zipfile.ZipFile('ofertas/oferta_distribuicao@20261116.zip') as z:
+with zipfile.ZipFile("ofertas/oferta_distribuicao@20261116.zip") as z:
     print(z.namelist())  # [] quando o arquivo da CVM está vazio
 ```
 
