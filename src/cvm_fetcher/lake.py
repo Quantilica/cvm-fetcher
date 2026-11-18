@@ -19,11 +19,13 @@ from typing import Any
 
 try:
     import polars as pl
-    from quantilica.analytics.lake import LakeError, LakeWriter
+    from quantilica.analytics.lake import META_FILE_KEY, LakeError, LakeWriter
     from quantilica.core.files import decompress_archive
     from quantilica.core.lake import (
         DatasetDescriptor,
         composite_file_key,
+        file_key,
+        partition_dir,
         partition_types_for,
         select_current,
     )
@@ -96,6 +98,49 @@ def _read_csv_with_codes(path: Path) -> pl.DataFrame:
     """Lê um CSV da CVM mantendo CNPJ, ISIN e códigos CVM como ``pl.String``."""
     df = read_csv_smart(path, schema_overrides=_detect_code_overrides(path))
     return _cast_code_columns(df)
+
+
+def _zip_members_current(
+    writer: LakeWriter, path: Path, partitions: dict[str, str], lake_dir: Path
+) -> int | None:
+    """Quantos membros do ZIP ``path`` já estão em dia no lake, sem abrir o ZIP.
+
+    Os nomes dos membros só se conhecem abrindo o ZIP, e abri-lo no bruto
+    (montagem de rede lenta) é o que o build sem mudança deve evitar. Em vez
+    disso, procura na partição os Parquets gravados a partir deste ZIP (rodapé
+    ``quantilica.origin_file`` igual ao nome do arquivo), junta as chaves dos
+    membros e confere cada uma com ``is_current`` (sha256 do bruto, versão do
+    layout e partes completas). Devolve o número de membros em dia, ou ``None``
+    quando não há nenhum registrado ou algum está desatualizado: aí o ZIP é
+    aberto e convertido como antes. Sem ``force``, sempre a pré-checagem.
+    """
+    if writer.force:
+        return None
+    target = partition_dir(
+        lake_dir / SOURCE_ID / writer.descriptor.dataset_id, partitions
+    )
+    if not target.is_dir():
+        return None
+    base = file_key(path)
+    keys: set[str] = set()
+    for parquet in target.glob(f"{base}*.parquet"):
+        try:
+            meta = pl.read_parquet_metadata(parquet)
+        except (OSError, pl.exceptions.PolarsError):
+            return None
+        key = meta.get(META_FILE_KEY)
+        if (
+            key
+            and meta.get("quantilica.origin_file") == path.name
+            and (key == base or key.startswith(f"{base}__"))
+        ):
+            keys.add(key)
+    if not keys:
+        return None
+    for key in sorted(keys):
+        if not writer.is_current(path, partitions=partitions, file_key_name=key):
+            return None
+    return len(keys)
 
 
 @dataclass
@@ -232,6 +277,11 @@ class LakeConverter:
 
             if path.suffix.lower() == ".csv":
                 try:
+                    # Em dia no lake: pula antes de ler (ou detectar o cabeçalho
+                    # de) o bruto, que pode estar numa montagem de rede lenta.
+                    if writer.is_current(path, partitions=part_vals):
+                        result.skipped += 1
+                        continue
                     df = _read_csv_with_codes(path)
                     written = writer.write_polars(
                         df,
@@ -255,6 +305,16 @@ class LakeConverter:
                     continue
 
             elif path.suffix.lower() == ".zip":
+                try:
+                    em_dia = _zip_members_current(writer, path, part_vals, lake_dir)
+                except Exception as exc:  # noqa: BLE001 - na dúvida, converte como antes
+                    logger.warning(
+                        "%s: pré-checagem do lake falhou (%s)", path.name, exc
+                    )
+                    em_dia = None
+                if em_dia is not None:
+                    result.skipped += em_dia
+                    continue
                 with tempfile.TemporaryDirectory() as tmp:
                     try:
                         extracted = decompress_archive(path, Path(tmp))

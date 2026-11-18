@@ -7,6 +7,9 @@ e este projeto adere ao [Semantic Versioning](https://semver.org/lang/pt-BR/).
 
 ## [Não lançado]
 
+### Corrigido
+- `lake`: o build sem mudança não lê mais o bruto. Antes de ler o CSV (e de detectar seu cabeçalho) ou de extrair o ZIP, confere no rodapé do Parquet se o arquivo já está em dia e, estando, só conta `skipped`. No ZIP, os membros em dia são localizados pelos Parquets da partição gravados a partir dele, sem abrir o ZIP. Mesma contagem de `converted`/`skipped`/`errors`; `force` e bruto novo seguem convertendo.
+
 ### Alterado
 - CI e infraestrutura alinhados ao template (fetcher-template v0.2.1).
 
