@@ -19,13 +19,11 @@ from typing import Any
 
 try:
     import polars as pl
-    from quantilica.analytics.lake import META_FILE_KEY, LakeError, LakeWriter
+    from quantilica.analytics.lake import LakeError, LakeWriter, output_id
     from quantilica.core.files import decompress_archive
     from quantilica.core.lake import (
         DatasetDescriptor,
         composite_file_key,
-        file_key,
-        partition_dir,
         partition_types_for,
         select_current,
     )
@@ -100,47 +98,32 @@ def _read_csv_with_codes(path: Path) -> pl.DataFrame:
     return _cast_code_columns(df)
 
 
-def _zip_members_current(
-    writer: LakeWriter, path: Path, partitions: dict[str, str], lake_dir: Path
+def _zip_outputs_current(
+    writer: LakeWriter, path: Path, partitions: dict[str, str]
 ) -> int | None:
-    """Quantos membros do ZIP ``path`` já estão em dia no lake, sem abrir o ZIP.
+    """Quantas saídas do ZIP ``path`` já estão no lake, sem abrir o ZIP.
 
     Os nomes dos membros só se conhecem abrindo o ZIP, e abri-lo no bruto
-    (montagem de rede lenta) é o que o build sem mudança deve evitar. Em vez
-    disso, procura na partição os Parquets gravados a partir deste ZIP (rodapé
-    ``quantilica.origin_file`` igual ao nome do arquivo), junta as chaves dos
-    membros e confere cada uma com ``is_current`` (sha256 do bruto, versão do
-    layout e partes completas). Devolve o número de membros em dia, ou ``None``
-    quando não há nenhum registrado ou algum está desatualizado: aí o ZIP é
+    (montagem de rede lenta) é o que o build sem mudança deve evitar. A conversão
+    declara ao lake, antes da primeira gravação, todas as saídas do ZIP
+    (``origin_outputs``); aqui, ``LakeWriter.origin_complete`` confirma, só pelos
+    rodapés e pelo sidecar, que todas existem com o sha256 atual. Devolve o número
+    de saídas, ou ``None`` quando o ZIP não está completo no lake (conversão
+    interrompida, membro que falhou, Parquet gravado antes da declaração, outro
+    sha256) ou quando a partição do nome não é a das saídas declaradas: aí o ZIP é
     aberto e convertido como antes. Sem ``force``, sempre a pré-checagem.
+
+    A declaração não enxerga mudança no código que deriva chaves ou partições
+    (``composite_file_key``, ``resolve_partitions``): quem a mudar precisa
+    reconverter com ``force``.
     """
-    if writer.force:
+    if writer.force or not writer.origin_complete(path):
         return None
-    target = partition_dir(
-        lake_dir / SOURCE_ID / writer.descriptor.dataset_id, partitions
-    )
-    if not target.is_dir():
+    saidas = writer.origin_outputs(path)
+    prefixo = output_id(partitions, "")
+    if not saidas or not all(o.startswith(prefixo) for o in saidas):
         return None
-    base = file_key(path)
-    keys: set[str] = set()
-    for parquet in target.glob(f"{base}*.parquet"):
-        try:
-            meta = pl.read_parquet_metadata(parquet)
-        except (OSError, pl.exceptions.PolarsError):
-            return None
-        key = meta.get(META_FILE_KEY)
-        if (
-            key
-            and meta.get("quantilica.origin_file") == path.name
-            and (key == base or key.startswith(f"{base}__"))
-        ):
-            keys.add(key)
-    if not keys:
-        return None
-    for key in sorted(keys):
-        if not writer.is_current(path, partitions=partitions, file_key_name=key):
-            return None
-    return len(keys)
+    return len(saidas)
 
 
 @dataclass
@@ -306,7 +289,7 @@ class LakeConverter:
 
             elif path.suffix.lower() == ".zip":
                 try:
-                    em_dia = _zip_members_current(writer, path, part_vals, lake_dir)
+                    em_dia = _zip_outputs_current(writer, path, part_vals)
                 except Exception as exc:  # noqa: BLE001 - na dúvida, converte como antes
                     logger.warning(
                         "%s: pré-checagem do lake falhou (%s)", path.name, exc
@@ -327,18 +310,33 @@ class LakeConverter:
                         )
                         if not members and extracted.is_file():
                             members = [extracted]
+                        members = [m for m in members if m.is_file()]
+                        # Todas as saídas do ZIP, conhecidas antes da primeira
+                        # gravação e iguais a cada execução para os mesmos bytes: o
+                        # lake as registra e só dá o ZIP por completo (pulo) quando
+                        # todas existem.
+                        keys = {m: composite_file_key(path, m.stem) for m in members}
+                        saidas = sorted(
+                            {output_id(part_vals, k) for k in keys.values()}
+                        )
                         for member in members:
-                            if not member.is_file():
+                            key = keys[member]
+                            if writer.is_current(
+                                path,
+                                partitions=part_vals,
+                                file_key_name=key,
+                                origin_outputs=saidas,
+                            ):
+                                result.skipped += 1
                                 continue
                             df = _read_csv_with_codes(member)
-                            member_name = member.stem
-                            key = composite_file_key(path, member_name)
                             written = writer.write_polars(
                                 df,
                                 path,
                                 partitions=part_vals,
                                 file_key_name=key,
                                 converter=f"cvm-fetcher {__version__}",
+                                origin_outputs=saidas,
                             )
                             if written.status == "skipped":
                                 result.skipped += 1

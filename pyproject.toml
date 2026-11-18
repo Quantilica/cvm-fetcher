@@ -36,7 +36,7 @@ dependencies = [
 
 [project.optional-dependencies]
 analysis = [
-    "quantilica-analytics>=0.10.0",
+    "quantilica-analytics>=0.15.0",
     "polars>=1.0.0",
 ]
 
