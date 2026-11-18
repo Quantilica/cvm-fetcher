@@ -42,6 +42,14 @@ SOURCE_ID = "cvm"
 
 logger = logging.getLogger(__name__)
 
+#: Revisão do layout do lake para os ZIPs: incremente SÓ quando mudar como chaves,
+#: partições ou o filtro de membros são derivados (``composite_file_key``,
+#: ``resolve_partitions``, quais membros do ZIP viram saída). É gravada no rodapé
+#: de cada Parquet de ZIP (``quantilica.converter``) e conferida antes do pulo:
+#: com outra revisão no lake, o ZIP é reconvertido. Não é a versão do pacote, que
+#: muda sem mexer no layout. A reconversão não apaga as saídas de chaves antigas.
+LAKE_LAYOUT_REVISION = 1
+
 DATASET_ALIASES: dict[str, str] = {
     "securit-cri": "securitizacao_cri",
     "securit-cra": "securitizacao_cra",
@@ -98,6 +106,11 @@ def _read_csv_with_codes(path: Path) -> pl.DataFrame:
     return _cast_code_columns(df)
 
 
+def _zip_converter_tag() -> str:
+    """Tag gravada nos Parquets de ZIP: só a revisão do layout, nunca a versão."""
+    return f"cvm-fetcher layout-{LAKE_LAYOUT_REVISION}"
+
+
 def _zip_outputs_current(
     writer: LakeWriter, path: Path, partitions: dict[str, str]
 ) -> int | None:
@@ -107,23 +120,40 @@ def _zip_outputs_current(
     (montagem de rede lenta) é o que o build sem mudança deve evitar. A conversão
     declara ao lake, antes da primeira gravação, todas as saídas do ZIP
     (``origin_outputs``); aqui, ``LakeWriter.origin_complete`` confirma, só pelos
-    rodapés e pelo sidecar, que todas existem com o sha256 atual. Devolve o número
-    de saídas, ou ``None`` quando o ZIP não está completo no lake (conversão
+    rodapés e pelo sidecar, que todas existem com o sha256 atual e foram gravadas
+    na revisão atual do layout (``LAKE_LAYOUT_REVISION``). Devolve o número de
+    saídas, ou ``None`` quando o ZIP não está completo no lake (conversão
     interrompida, membro que falhou, Parquet gravado antes da declaração, outro
-    sha256) ou quando a partição do nome não é a das saídas declaradas: aí o ZIP é
-    aberto e convertido como antes. Sem ``force``, sempre a pré-checagem.
+    sha256, outra revisão) ou quando a partição do nome não é a das saídas
+    declaradas: aí o ZIP é aberto e convertido como antes. Sem ``force``, sempre a
+    pré-checagem.
 
-    A declaração não enxerga mudança no código que deriva chaves ou partições
-    (``composite_file_key``, ``resolve_partitions``): quem a mudar precisa
-    reconverter com ``force``.
+    Os nomes dos membros não se sabem sem abrir o ZIP, então ``expected=`` não
+    cabe aqui: a conferência do prefixo de partição das saídas declaradas segue
+    valendo.
     """
-    if writer.force or not writer.origin_complete(path):
+    if writer.force or not writer.origin_complete(path, converter=_zip_converter_tag()):
         return None
     saidas = writer.origin_outputs(path)
     prefixo = output_id(partitions, "")
     if not saidas or not all(o.startswith(prefixo) for o in saidas):
         return None
     return len(saidas)
+
+
+def _revisao_do_layout_velha(writer: LakeWriter, path: Path) -> bool:
+    """O ZIP está completo no lake, mas gravado em outra revisão do layout.
+
+    Nesse caso o conteúdo antigo ainda "está em dia" para o ``is_current`` de cada
+    membro (mesmo sha256, mesma declaração), que pularia a regravação e deixaria a
+    revisão velha no rodapé para sempre: o ZIP seria aberto a cada build. A
+    conversão regrava os membros, então, com um escritor ``force``.
+    """
+    if writer.force:
+        return False
+    return writer.origin_complete(path) and not writer.origin_complete(
+        path, converter=_zip_converter_tag()
+    )
 
 
 @dataclass
@@ -288,8 +318,13 @@ class LakeConverter:
                     continue
 
             elif path.suffix.lower() == ".zip":
+                zip_writer = writer
                 try:
                     em_dia = _zip_outputs_current(writer, path, part_vals)
+                    if em_dia is None and _revisao_do_layout_velha(writer, path):
+                        zip_writer = LakeWriter(
+                            writer.dataset_dir, writer.descriptor, force=True
+                        )
                 except Exception as exc:  # noqa: BLE001 - na dúvida, converte como antes
                     logger.warning(
                         "%s: pré-checagem do lake falhou (%s)", path.name, exc
@@ -321,7 +356,7 @@ class LakeConverter:
                         )
                         for member in members:
                             key = keys[member]
-                            if writer.is_current(
+                            if zip_writer.is_current(
                                 path,
                                 partitions=part_vals,
                                 file_key_name=key,
@@ -330,12 +365,12 @@ class LakeConverter:
                                 result.skipped += 1
                                 continue
                             df = _read_csv_with_codes(member)
-                            written = writer.write_polars(
+                            written = zip_writer.write_polars(
                                 df,
                                 path,
                                 partitions=part_vals,
                                 file_key_name=key,
-                                converter=f"cvm-fetcher {__version__}",
+                                converter=_zip_converter_tag(),
                                 origin_outputs=saidas,
                             )
                             if written.status == "skipped":
