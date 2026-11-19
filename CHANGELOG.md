@@ -5,15 +5,17 @@ Todas as mudanças notáveis deste projeto serão documentadas neste arquivo.
 O formato segue [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/),
 e este projeto adere ao [Semantic Versioning](https://semver.org/lang/pt-BR/).
 
-## [Não lançado]
+## [0.5.1] - 2026-11-19
+
+### Alterado
+
+- CI e infraestrutura alinhados ao template (fetcher-template v0.2.1).
 
 ### Corrigido
+
 - `lake`: o build sem mudança não lê mais o bruto. Antes de ler o CSV (e de detectar seu cabeçalho) ou de extrair o ZIP, confere no rodapé do Parquet se o arquivo já está em dia e, estando, só conta `skipped`. No ZIP, os membros em dia são localizados pelos Parquets da partição gravados a partir dele, sem abrir o ZIP. Mesma contagem de `converted`/`skipped`/`errors`; `force` e bruto novo seguem convertendo.
 - `lake`: um ZIP só é dado por completo (pulo sem abri-lo) quando todas as suas saídas, declaradas ao lake antes da primeira gravação (`origin_outputs`), existem com o sha256 atual (`LakeWriter.origin_complete`) e a partição do nome é a das saídas. Uma conversão interrompida ou um membro que falhou deixa de virar pulo permanente: o ZIP é reaberto e só o que falta é gravado, sem reler o CSV dos membros em dia; erros de membro seguem aparecendo a cada build. Lake gravado sem a declaração reconverte uma vez. `skipped` de um ZIP em dia conta as saídas (chaves distintas). Exige `quantilica-analytics>=0.15.0`.
 - `lake`: mudança no código que deriva chaves, partições ou o filtro de membros dos ZIPs passa a ser detectada pelo pulo. A constante `LAKE_LAYOUT_REVISION` (começa em 1; incremente SÓ quando mudar como chaves, partições ou o filtro de membros são derivados) é gravada no rodapé dos Parquets de ZIP (`quantilica.converter`, agora `cvm-fetcher layout-<revisão>` em vez da versão do pacote) e conferida antes do pulo: com outra revisão no lake o ZIP é reaberto e regravado; a versão do pacote não reconverte. A reconversão não apaga as saídas de chaves antigas. Lake gravado com a tag anterior reconverte os ZIPs uma vez.
-
-### Alterado
-- CI e infraestrutura alinhados ao template (fetcher-template v0.2.1).
 
 ## [0.5.0] - 2026-11-16
 ### Adicionado
